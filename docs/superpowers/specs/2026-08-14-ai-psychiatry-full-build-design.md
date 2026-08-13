@@ -2,7 +2,9 @@
 
 ## Purpose
 
-Build `AI-Psychiatry` as a distributable, skills-only plugin for Claude Code and OpenAI Codex, then apply the same framework to its own repository. The result must provide practical executive-control guidance without claiming that AI systems have psychiatric diagnoses.
+Build and publish `AI-Psychiatry` as a skills-only plugin for both Claude Code and OpenAI Codex, then apply the same framework to its own repository. Each plugin installs the complete system derived from the master prompt: skills, rules, agent adapters, context, memory, state, machine formats, tests, and documentation. The result must provide practical executive-control guidance without claiming that AI systems have psychiatric diagnoses.
+
+The product name deliberately uses psychiatry as branding. Human terms such as ADHD, OCD, executive dysfunction, perseveration, distraction, and perfectionism are explanatory analogies for observable agent failure modes—not diagnoses or claims about consciousness. Operational rules use engineering terms and map those analogies to measurable behaviors such as objective switching, repeated verification, recursive task spawning, context reload loops, unsupported claims, and failure to terminate.
 
 The source pack at `D:\Freelance\Packs, Plans, And Prompts\AI-Psychiatry` is the requirements source. It remains unchanged. The implementation target is this repository.
 
@@ -37,8 +39,9 @@ Machine representations mirror only runtime-relevant facts. They do not become i
 - `skills/install-framework/SKILL.md` is the shared public entrypoint.
 - `skills/install-framework/references/master-prompt.md` holds the large specification outside always-loaded context.
 - `docs/publishing.md` documents validation, local testing, and public submission requirements.
+- Public listing metadata, starter prompts, positive and negative evaluation cases, release notes, support information, and publisher-verification requirements are checked in where each marketplace accepts repository-hosted materials.
 
-No MCP server, hook, or app is added because the plugin needs no external tools or data.
+No MCP server, hook, or app is added because the plugin needs no external tools or data. Claude and Codex packages expose the same capability and installation semantics even where their marketplace manifest formats differ.
 
 ### Dogfood runtime
 
@@ -75,6 +78,8 @@ An installing agent follows this flow:
 
 Daily runtime behavior begins with bootstrap, locks the primary objective, classifies findings, limits work in progress, uses bounded retries and verification, records evidence, detects deadlock/livelock, narrows recovery strategies, and terminates after proven completion.
 
+The rule and skill catalog must cover every normative requirement in the master prompt, including hallucination/evidence control; ADHD-style distraction, attention switching, and task abandonment; OCD-style repeated checking, perfectionism, and compulsive verification; recursive thinking and nested-job limits; rabbit holes; semantic repetition; retry, critic, and verification budgets; context reload loops; deadlock, livelock, and strategy oscillation; fake progress/background work; multi-agent coordination; destructive-action safety; and completion avoidance. A traceability manifest maps all numbered master-prompt sections to their implementing rule, skill, adapter, test, or documentation artifact so no section disappears during decomposition.
+
 ## State and Memory Boundaries
 
 - Durable memory contains reusable knowledge that will save future work.
@@ -102,25 +107,29 @@ Validation is layered:
 5. Enforce thin-adapter and boot-context size budgets.
 6. Confirm every declared skill and rule exists and every required frontmatter field is present.
 7. Run scenario cases for attention drift, nested investigation, retry loops, critic loops, context reload loops, scope drift, livelock, and completion avoidance.
-8. Run repository integrity checks and inspect the final Git diff.
+8. Verify master-prompt traceability: every numbered normative section has an implementation or an explicit packaging/documentation classification.
+9. Run repository integrity checks and inspect the final Git diff.
 
 Validation scripts use only the Python standard library so plugin consumers do not inherit a package dependency.
 
 ## Delivery Scope
 
-The full build includes plugin manifests, the public installer skill and master reference, the useful target `.ai/` architecture, adapters, human documentation, validation scripts, and framework tests. Files are split by responsibility but omitted when they would be empty or meaningless.
+The full build includes plugin manifests, the public installer skill and master reference, the useful target `.ai/` architecture, adapters, human documentation, validation scripts, framework tests, prompt-to-artifact traceability, and marketplace submission materials. Files are split by responsibility but omitted when they would be empty or meaningless.
 
-Public-listing artwork, screenshots, support/legal URLs, and actual marketplace submission remain deferred because they require publisher assets or external actions. The build will document those requirements without inventing them.
+Publication is part of the goal. The implementation will validate and locally test both packages, prepare complete listing materials, configure the repository marketplace metadata, and execute submission or publication commands when supported by installed tooling and existing authenticated accounts. Vendor review, account verification, legal/support URLs owned by the publisher, and marketplace approval are external gates; if any gate cannot be completed from the workspace, the final report must identify the exact remaining action rather than describing a publish-ready package as already published.
 
 ## Acceptance Criteria
 
 - Claude and Codex consume one shared install skill.
+- Claude and Codex plugin packages are submitted/published through their supported channels when authentication and platform tooling permit; otherwise the precise external gate and ready-to-submit artifact are proven.
 - The complete master specification is present and progressively disclosed.
+- Every normative master-prompt section is represented in the traceability manifest and covered by an operational or explanatory artifact.
 - The dogfood runtime covers objective locking, scope, attention, retry/verification/critic budgets, evidence, recovery, context, memory, communication, progress, multi-agent control, completion, and termination.
+- Named failure-mode coverage includes hallucination, distraction/ADHD analogy, compulsive checking/OCD analogy, nested jobs, recursive thinking, rabbit holes, deadlock, livelock, context reload loops, fake progress, perfectionism, scope drift, and completion avoidance.
 - Routers are thin and consistent; canonical knowledge is not duplicated.
 - Markdown, JSON, TOON, SJON, schemas, and manifests are present where operationally useful.
 - Initial state contains no fake task history or chain-of-thought.
 - Framework scenarios and structural validators pass.
 - Plugin manifests pass available platform validation.
-- The README explains installation, invocation, architecture, validation, and publishing links accurately.
+- The README explains installation, invocation, architecture, analogy terminology, validation, publication status, and publishing links accurately.
 - The source pack is unchanged and the destination repository contains the complete implementation.
