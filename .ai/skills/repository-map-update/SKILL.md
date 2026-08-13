@@ -1,35 +1,36 @@
 ---
 name: repository-map-update
-description: Use repository map update when the task needs bounded repository map update control while preserving the locked objective.
+description: Use when packages, services, ownership boundaries, entrypoints, tests, commands, or dependencies changed and the compact repository map needs a focused update.
 ---
 
 # Repository Map Update
 
-## Trigger
+## Core principle
 
-Use when observable task state calls for this control. Do not invoke it speculatively.
-
-## Inputs
-
-Locked objective, constraints, current evidence, attempts, and completion proof.
+Update only affected map sections so agents can locate authoritative sources cheaply.
 
 ## Procedure
 
-1. Restate the objective in one line.
-2. Inspect only relevant evidence and classify the issue.
-3. Take the smallest action that can change or prove state.
-4. Record result, information gained, and the next valid action.
-5. Respect WIP 1, retry 3, verification 2, critic 1, and nested depth 2.
+1. Identify the architectural change and affected boundary.
+2. Verify new paths, ownership, commands, and relationships from source.
+3. Edit only related map entries.
+4. Remove or mark stale entries.
+5. Keep detail at navigation level and link to deeper sources.
+6. Validate links and context index references.
 
-## Output
+## Required output
 
-Return status, evidence, result, blocker if any, and one next recommendation. Never return hidden reasoning.
+Affected map entries, evidence, removed stale facts, and validation result.
 
-## Escalation
+## Limits
 
-If repeated work adds no information, narrow scope, change strategy, or report the exact blocker.
+The map is compact navigation, not a repository dump.
+
+## Common mistakes
+
+Do not regenerate unrelated architecture prose or record temporary task state.
 
 ## Stop condition
 
-Stop when the requested control is proven, the main Definition of Done is met, or progress requires external input.
+Stop when changed boundaries are accurately discoverable and all references resolve.
 

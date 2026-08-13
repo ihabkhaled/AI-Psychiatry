@@ -1,35 +1,36 @@
 ---
 name: executive-function
-description: Use executive function when the task needs bounded executive function control while preserving the locked objective.
+description: Use when a task needs explicit control of objective, scope, priority, nesting, retries, verification, progress, drift, recovery, or termination.
 ---
 
 # Executive Function
 
-## Trigger
+## Core principle
 
-Use when observable task state calls for this control. Do not invoke it speculatively.
-
-## Inputs
-
-Locked objective, constraints, current evidence, attempts, and completion proof.
+Reasoning quality needs executive control: decide what deserves thought, how much, when to act, when to reset, and when to stop.
 
 ## Procedure
 
-1. Restate the objective in one line.
-2. Inspect only relevant evidence and classify the issue.
-3. Take the smallest action that can change or prove state.
-4. Record result, information gained, and the next valid action.
-5. Respect WIP 1, retry 3, verification 2, critic 1, and nested depth 2.
+1. Load the locked objective and finite DoD.
+2. Keep one active work item and classify every new branch.
+3. Track observable depth, retries, critic rounds, evidence, and last meaningful progress.
+4. Choose the smallest action that changes state or proves a requirement.
+5. Trigger attention reset on drift and strategy reset on repeated failure.
+6. Run the completion gate when remaining required items reach zero.
 
-## Output
+## Required output
 
-Return status, evidence, result, blocker if any, and one next recommendation. Never return hidden reasoning.
+Current state, selected controller, evidence, one next action, and either completion proof or an exact blocker.
 
-## Escalation
+## Limits
 
-If repeated work adds no information, narrow scope, change strategy, or report the exact blocker.
+WIP 1; nesting 3; same strategy 3; critics 2; delegation 2; stalled reset after 4 cycles.
+
+## Common mistakes
+
+Do not turn the framework into verbose introspection or load every deep guide for ordinary work.
 
 ## Stop condition
 
-Stop when the requested control is proven, the main Definition of Done is met, or progress requires external input.
+Stop control work when execution is advancing, a real blocker is reported, or DoD is proven.
 

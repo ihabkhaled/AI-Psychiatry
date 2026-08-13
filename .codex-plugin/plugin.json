@@ -1,7 +1,7 @@
 {
   "name": "ai-psychiatry",
-  "version": "0.1.0",
-  "description": "Repository-wide executive-function, focus, anti-overthinking, context, memory, evidence, progress, recovery, and delivery controls for AI coding agents.",
+  "version": "0.2.0",
+  "description": "Operational executive control for attention drift, compulsive verification, overthinking, recursive tasks, hallucination, loops, context, memory, and delivery.",
   "author": {
     "name": "Ihab Khaled"
   },
@@ -13,13 +13,16 @@
     "executive-function",
     "context-management",
     "anti-overthinking",
-    "agent-skills"
+    "agent-skills",
+    "attention-control",
+    "hallucination-control",
+    "recursive-tasks"
   ],
   "skills": "./skills/",
   "interface": {
     "displayName": "AI Psychiatry",
     "shortDescription": "Executive control for coding agents",
-    "longDescription": "Installs and maintains a repository-wide AI executive-control framework focused on goal preservation, scope control, context efficiency, evidence, bounded verification, recovery, concise communication, and stopping when done.",
+    "longDescription": "Installs and applies a repository-wide AI executive-control framework for attention drift, compulsive checking, overthinking, recursive tasks, hallucination, scope, context, memory, recovery, and stopping when done.",
     "developerName": "Ihab Khaled",
     "category": "Productivity",
     "capabilities": [
@@ -28,9 +31,9 @@
     ],
     "websiteURL": "https://github.com/ihabkhaled/AI-Psychiatry",
     "defaultPrompt": [
-      "Install the AI Psychiatry framework in this repository.",
-      "Upgrade the repository AI executive-control framework using AI Psychiatry.",
-      "Audit this repository's AI-agent instructions for focus, scope drift, retry loops, context waste, and completion discipline."
+      "Install the complete AI Psychiatry framework.",
+      "Stop this agent's overthinking and recursive task loop.",
+      "Audit attention drift, hallucination, and repeated checking."
     ]
   }
 }

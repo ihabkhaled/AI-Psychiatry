@@ -1,7 +1,7 @@
 {
   "name": "ai-psychiatry",
-  "version": "0.1.0",
-  "description": "Repository-wide executive-function, focus, anti-overthinking, context, memory, evidence, progress, recovery, and delivery controls for AI coding agents.",
+  "version": "0.2.0",
+  "description": "Operational executive control for attention drift, compulsive verification, overthinking, recursive tasks, hallucination, loops, context, memory, and delivery.",
   "author": {
     "name": "Ihab Khaled"
   },
@@ -13,6 +13,9 @@
     "executive-function",
     "context-management",
     "anti-overthinking",
-    "agent-skills"
+    "agent-skills",
+    "attention-control",
+    "hallucination-control",
+    "recursive-tasks"
   ]
 }

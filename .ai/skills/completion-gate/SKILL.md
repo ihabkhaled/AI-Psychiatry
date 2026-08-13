@@ -1,35 +1,36 @@
 ---
 name: completion-gate
-description: Use completion gate when the task needs bounded completion gate control while preserving the locked objective.
+description: Use when requested behavior appears complete, remaining work is optional, perfectionism delays delivery, or the agent continues auditing, refining, testing, or researching after proof.
 ---
 
 # Completion Gate
 
-## Trigger
+## Core principle
 
-Use when observable task state calls for this control. Do not invoke it speculatively.
-
-## Inputs
-
-Locked objective, constraints, current evidence, attempts, and completion proof.
+Once objective and finite Definition of Done are proven, report evidence and stop.
 
 ## Procedure
 
-1. Restate the objective in one line.
-2. Inspect only relevant evidence and classify the issue.
-3. Take the smallest action that can change or prove state.
-4. Record result, information gained, and the next valid action.
-5. Respect WIP 1, retry 3, verification 2, critic 1, and nested depth 2.
+1. Freeze new scope and fresh audits.
+2. Check objective, every DoD condition, required tests, mandatory gates, and known blocking regressions.
+3. Classify remaining findings.
+4. Resolve only blockers and required items.
+5. Record optional follow-ups.
+6. Report delivered outcome and exact proof, then terminate.
 
-## Output
+## Required output
 
-Return status, evidence, result, blocker if any, and one next recommendation. Never return hidden reasoning.
+Completion verdict, proof, known blockers or none, and deferred optional findings.
 
-## Escalation
+## Limits
 
-If repeated work adds no information, narrow scope, change strategy, or report the exact blocker.
+Near completion optional exploration is zero.
+
+## Common mistakes
+
+Do not say done without proof or continue with one more improvement after proof.
 
 ## Stop condition
 
-Stop when the requested control is proven, the main Definition of Done is met, or progress requires external input.
+Stop immediately when all finite completion conditions are true.
 

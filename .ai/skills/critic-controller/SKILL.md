@@ -1,35 +1,36 @@
 ---
 name: critic-controller
-description: Use critic controller when the task needs bounded critic controller control while preserving the locked objective.
+description: Use when reviewers or judges repeat rounds, invent requirements, block on style, expand scope, or continue after correctness, security, regression, and explicit requirements are satisfied.
 ---
 
 # Critic Controller
 
-## Trigger
+## Core principle
 
-Use when observable task state calls for this control. Do not invoke it speculatively.
-
-## Inputs
-
-Locked objective, constraints, current evidence, attempts, and completion proof.
+A critic checks the requested outcome; it does not become product owner.
 
 ## Procedure
 
-1. Restate the objective in one line.
-2. Inspect only relevant evidence and classify the issue.
-3. Take the smallest action that can change or prove state.
-4. Record result, information gained, and the next valid action.
-5. Respect WIP 1, retry 3, verification 2, critic 1, and nested depth 2.
+1. Give the critic objective, requirements, scope, and evidence.
+2. Limit review to correctness, security, data safety, regression, and required quality.
+3. Classify each finding as blocker, required, optional, or unrelated.
+4. Fix blockers and required findings.
+5. Record optional findings without scope expansion.
+6. Stop after the critic budget and run completion gate.
 
-## Output
+## Required output
 
-Return status, evidence, result, blocker if any, and one next recommendation. Never return hidden reasoning.
+Round count, classified findings, required fixes, deferred items, and completion decision.
 
-## Escalation
+## Limits
 
-If repeated work adds no information, narrow scope, change strategy, or report the exact blocker.
+Two rounds by default; three only for evidenced high-risk work.
+
+## Common mistakes
+
+Do not let elegance, theoretical optimization, or speculative architecture block delivery.
 
 ## Stop condition
 
-Stop when the requested control is proven, the main Definition of Done is met, or progress requires external input.
+Stop when required findings are resolved and remaining findings are optional or unrelated.
 

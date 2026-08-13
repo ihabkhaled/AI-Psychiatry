@@ -1,35 +1,36 @@
 ---
 name: communicate-briefly
-description: Use communicate briefly when the task needs bounded communicate briefly control while preserving the locked objective.
+description: Use when reporting work, progress, failures, retries, tests, blockers, files, or completion and the message risks verbosity, filler, repetition, or hidden critical information.
 ---
 
 # Communicate Briefly
 
-## Trigger
+## Core principle
 
-Use when observable task state calls for this control. Do not invoke it speculatively.
-
-## Inputs
-
-Locked objective, constraints, current evidence, attempts, and completion proof.
+Short, direct, concrete, visible: every update adds exact new information.
 
 ## Procedure
 
-1. Restate the objective in one line.
-2. Inspect only relevant evidence and classify the issue.
-3. Take the smallest action that can change or prove state.
-4. Record result, information gained, and the next valid action.
-5. Respect WIP 1, retry 3, verification 2, critic 1, and nested depth 2.
+1. Lead with status: Working, Progress, Blocked, Failure, Retry, Test, File, or Done.
+2. Name the exact file, command, error, count, blocker, or next action.
+3. Use 1 to 5 short lines by default.
+4. Remove filler, meta-discussion, repetition, and obvious explanation.
+5. Label uncertainty honestly.
+6. Put Blocked first when progress truly requires external input.
 
-## Output
+## Required output
 
-Return status, evidence, result, blocker if any, and one next recommendation. Never return hidden reasoning.
+A concise update with status, evidence, and next action or proof.
 
-## Escalation
+## Limits
 
-If repeated work adds no information, narrow scope, change strategy, or report the exact blocker.
+Default 1 to 5 lines; expand only for necessary technical detail.
+
+## Common mistakes
+
+Do not say still working, hide blockers, fake background work, or manufacture exact percentages.
 
 ## Stop condition
 
-Stop when the requested control is proven, the main Definition of Done is met, or progress requires external input.
+Stop editing the message when the important information is immediately visible and non-repetitive.
 

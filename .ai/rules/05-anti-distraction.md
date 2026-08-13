@@ -1,18 +1,43 @@
-# Anti Distraction
+# Anti-Distraction
 
-**Purpose:** Park optional and unrelated discoveries. Do not convert novelty into scope.
+**Purpose:** Prevent ADHD-like distraction as a behavioral analogy: novelty, optional defects, and context switching must not replace the locked objective.
 
-**Trigger:** Load when the manifest condition matches the current task.
+Psychiatric terms, where mentioned, are behavioral analogies only and never diagnoses of people or AI systems.
 
-**Required behavior:** Preserve repository constraints and canonical sources. Classify side findings before acting.
+## Trigger
 
-**Budget:** WIP 1; same-strategy attempts 3; verification passes 2; critic rounds 1; nested depth 2.
+An optional or unrelated discovery interrupts required work, active WIP exceeds one, or the objective changes without authority.
 
-**Evidence:** Record commands, source locations, test output, or explicitly labeled inference.
+## Mandatory control
 
-**Escalation:** If the next action is invalid or repeated work adds no information, reset strategy or report the exact blocker.
+1. Freeze the current branch and new searches.
+2. Restate objective, remaining DoD, and one active item.
+3. Classify the discovery as blocker, required, optional, or unrelated.
+4. Allow only blocker or required work to interrupt, and only minimally.
+5. Record optional or unrelated findings with evidence and future action.
+6. Resume the shortest action serving an unmet DoD condition.
 
-**Stop condition:** The rule's required outcome is proven or a blocker is declared.
+## Limits
 
-**Master prompt:** sections 23–26.
+Maximum active work items is one unless truly independent parallelism is authorized.
+
+## Evidence
+
+Use observable repository sources, command or test output, task-state counters, completed requirements, and last meaningful progress. Store conclusions and results, never chain-of-thought.
+
+## Escalation
+
+Escalate only when the current controller cannot restore progress: attention reset, materially different strategy, minimal isolation, then an exact blocker. Recovery must reduce branches and assumptions.
+
+## Forbidden behavior
+
+Do not silently adopt technical debt, cleanup, optimization, or architecture work. Do not lose useful discoveries; park them.
+
+## Deep guidance
+
+Read [Anti-Distraction guide](../guides/attention-drift.md) only when this rule triggers. Keep ordinary boot context small.
+
+## Stop condition
+
+One objective and one required next action are active; side branches are parked.
 

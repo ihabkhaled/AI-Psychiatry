@@ -1,35 +1,36 @@
 ---
 name: context-refresh
-description: Use context refresh when the task needs bounded context refresh control while preserving the locked objective.
+description: Use when active context is large, stale, contradictory, repeatedly reread, or no longer represents current source and task state.
 ---
 
 # Context Refresh
 
-## Trigger
+## Core principle
 
-Use when observable task state calls for this control. Do not invoke it speculatively.
-
-## Inputs
-
-Locked objective, constraints, current evidence, attempts, and completion proof.
+Refresh preserves facts, decisions, blockers, and state while dropping speculation and reloading only changed authoritative sources.
 
 ## Procedure
 
-1. Restate the objective in one line.
-2. Inspect only relevant evidence and classify the issue.
-3. Take the smallest action that can change or prove state.
-4. Record result, information gained, and the next valid action.
-5. Respect WIP 1, retry 3, verification 2, critic 1, and nested depth 2.
+1. Summarize goal, completed, remaining, decisions, evidence, blocker, and next action.
+2. Discard abandoned hypotheses and repetitive output.
+3. Check source hashes, versions, or modification evidence.
+4. Reload only stale or changed sources.
+5. Resolve conflicts in favor of current source.
+6. Update compact task context and resume.
 
-## Output
+## Required output
 
-Return status, evidence, result, blocker if any, and one next recommendation. Never return hidden reasoning.
+Compressed state, refreshed sources, retired stale facts, and next action.
 
-## Escalation
+## Limits
 
-If repeated work adds no information, narrow scope, change strategy, or report the exact blocker.
+Two identical reloads without source change trigger attention reset.
+
+## Common mistakes
+
+Do not reread the entire repository or trust stale summaries over source.
 
 ## Stop condition
 
-Stop when the requested control is proven, the main Definition of Done is met, or progress requires external input.
+Stop when current context is small, fresh, and sufficient for the next action.
 

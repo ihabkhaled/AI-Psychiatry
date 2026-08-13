@@ -1,35 +1,36 @@
 ---
 name: knowledge-maintainer
-description: Use knowledge maintainer when the task needs bounded knowledge maintainer control while preserving the locked objective.
+description: Use when repository architecture, rules, skills, commands, context routing, manifests, or generated AI knowledge change and dependent sources may become stale.
 ---
 
 # Knowledge Maintainer
 
-## Trigger
+## Core principle
 
-Use when observable task state calls for this control. Do not invoke it speculatively.
-
-## Inputs
-
-Locked objective, constraints, current evidence, attempts, and completion proof.
+Change the smallest authoritative source, regenerate dependents, validate references, and never synchronize prose copies manually.
 
 ## Procedure
 
-1. Restate the objective in one line.
-2. Inspect only relevant evidence and classify the issue.
-3. Take the smallest action that can change or prove state.
-4. Record result, information gained, and the next valid action.
-5. Respect WIP 1, retry 3, verification 2, critic 1, and nested depth 2.
+1. Identify canonical and generated artifacts.
+2. Inspect dependencies and instruction precedence.
+3. Modify the smallest authoritative source.
+4. Regenerate indexes, manifests, and runtime mirrors.
+5. Validate JSON, schemas, links, IDs, conflicts, freshness, and cycles.
+6. Update only affected documentation and maps.
 
-## Output
+## Required output
 
-Return status, evidence, result, blocker if any, and one next recommendation. Never return hidden reasoning.
+Canonical change, regenerated artifacts, validation proof, and resolved conflicts.
 
-## Escalation
+## Limits
 
-If repeated work adds no information, narrow scope, change strategy, or report the exact blocker.
+No parallel knowledge system; routers stay thin.
+
+## Common mistakes
+
+Do not edit generated output against its generator or duplicate canonical rules across adapters.
 
 ## Stop condition
 
-Stop when the requested control is proven, the main Definition of Done is met, or progress requires external input.
+Stop when dependents are current, references resolve, and validation passes.
 

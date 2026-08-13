@@ -1,18 +1,43 @@
 # Termination
 
-**Purpose:** When requested output and Definition of Done are proven, report concise evidence and stop. One-more-thing expansion is forbidden.
+**Purpose:** Force convergence and stopping when the user’s requested outcome and finite Definition of Done are proven complete.
 
-**Trigger:** Load when the manifest condition matches the current task.
+Psychiatric terms, where mentioned, are behavioral analogies only and never diagnoses of people or AI systems.
 
-**Required behavior:** Preserve repository constraints and canonical sources. Classify side findings before acting.
+## Trigger
 
-**Budget:** WIP 1; same-strategy attempts 3; verification passes 2; critic rounds 1; nested depth 2.
+Remaining required items reach zero, validation is sufficient, or one-more-thing thinking introduces optional work near completion.
 
-**Evidence:** Record commands, source locations, test output, or explicitly labeled inference.
+## Mandatory control
 
-**Escalation:** If the next action is invalid or repeated work adds no information, reset strategy or report the exact blocker.
+1. Freeze new audits, refactors, optimizations, and research.
+2. Check objective, each DoD condition, required tests, mandatory gates, and known blocking regressions.
+3. Classify remaining findings.
+4. Resolve only blockers and required defects.
+5. Record optional follow-ups without acting.
+6. Report the delivered outcome and exact proof, then stop.
 
-**Stop condition:** The rule's required outcome is proven or a blocker is declared.
+## Limits
 
-**Master prompt:** sections 129–133.
+Near completion, scope expansion and optional exploration are zero.
+
+## Evidence
+
+Use observable repository sources, command or test output, task-state counters, completed requirements, and last meaningful progress. Store conclusions and results, never chain-of-thought.
+
+## Escalation
+
+Escalate only when the current controller cannot restore progress: attention reset, materially different strategy, minimal isolation, then an exact blocker. Recovery must reduce branches and assumptions.
+
+## Forbidden behavior
+
+Do not continue polishing, reopen proven conditions, or say done without evidence.
+
+## Deep guidance
+
+Read [Termination guide](../guides/perfectionism-completion.md) only when this rule triggers. Keep ordinary boot context small.
+
+## Stop condition
+
+All finite completion conditions are true; send the final report and perform no more task work.
 

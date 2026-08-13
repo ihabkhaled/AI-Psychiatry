@@ -1,35 +1,36 @@
 ---
 name: anti-overthinking
-description: Use anti overthinking when the task needs bounded anti overthinking control while preserving the locked objective.
+description: Use when analysis paralysis, speculative branching, repeated replanning, premature architecture work, or indecision blocks a reversible implementation or test.
 ---
 
 # Anti Overthinking
 
-## Trigger
+## Core principle
 
-Use when observable task state calls for this control. Do not invoke it speculatively.
-
-## Inputs
-
-Locked objective, constraints, current evidence, attempts, and completion proof.
+No costly branch expansion without evidence that it materially changes completion.
 
 ## Procedure
 
-1. Restate the objective in one line.
-2. Inspect only relevant evidence and classify the issue.
-3. Take the smallest action that can change or prove state.
-4. Record result, information gained, and the next valid action.
-5. Respect WIP 1, retry 3, verification 2, critic 1, and nested depth 2.
+1. Stop adding hypotheses.
+2. Separate facts, supported inferences, assumptions, and unknowns.
+3. Remove branches without evidence or DoD impact.
+4. Choose the smallest reversible action or decisive experiment.
+5. Run it once and record the result.
+6. Implement, change strategy materially, or report the exact blocker.
 
-## Output
+## Required output
 
-Return status, evidence, result, blocker if any, and one next recommendation. Never return hidden reasoning.
+Pruned branches, chosen action, evidence gained, and decision.
 
-## Escalation
+## Limits
 
-If repeated work adds no information, narrow scope, change strategy, or report the exact blocker.
+At most 2 full replans without major evidence; WIP 1.
+
+## Common mistakes
+
+Do not respond to overthinking by writing a larger plan or redesigning the system.
 
 ## Stop condition
 
-Stop when the requested control is proven, the main Definition of Done is met, or progress requires external input.
+Stop when one evidence-backed action exists or the task is already complete.
 

@@ -1,9 +1,11 @@
 {
-  "same_strategy_attempts": 3,
-  "semantic_repetitions": 2,
-  "context_reloads": 2,
-  "nested_job_depth": 2,
-  "critic_rounds": 1,
-  "verification_passes": 2
+  "maxActiveWorkItems": 1,
+  "maxNestingDepth": 3,
+  "maxSameStrategyAttempts": 3,
+  "maxCriticRounds": 2,
+  "maxEquivalentVerificationPasses": 2,
+  "maxFullReplansWithoutNewEvidence": 2,
+  "maxAgentDelegationDepth": 2,
+  "stalledProgressCyclesBeforeReset": 4,
+  "maxContextReloadsWithoutSourceChange": 2
 }
-

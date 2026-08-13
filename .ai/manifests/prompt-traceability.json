@@ -1,1336 +1,1423 @@
 {
   "canonical_source": "skills/install-framework/references/master-prompt.md",
+  "canonical_sha256": "32AAB10548A9B1808BE5051207EA2732A72274081933AC8F87B5F57B9DBE1075",
   "sections": {
     "0": {
-      "title": "Master prompt section 0",
+      "title": "TERMINOLOGY — IMPORTANT",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/00-master-rules.md"
+        ".ai/rules/00-master-rules.md",
+        "docs/ai/human-behavior-analogies.md",
+        ".ai/guides/failure-mode-catalog.md"
       ]
     },
     "1": {
-      "title": "Master prompt section 1",
+      "title": "PRIMARY PURPOSE",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/00-master-rules.md"
       ]
     },
     "2": {
-      "title": "Master prompt section 2",
+      "title": "CORE EXECUTIVE PRINCIPLE",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/00-master-rules.md"
       ]
     },
     "3": {
-      "title": "Master prompt section 3",
+      "title": "CORE COMMUNICATION PRINCIPLE",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/00-master-rules.md"
       ]
     },
     "4": {
-      "title": "Master prompt section 4",
+      "title": "INSPECT BEFORE MODIFYING THE AI ARCHITECTURE",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/01-pre-action-gate.md"
       ]
     },
     "5": {
-      "title": "Master prompt section 5",
+      "title": "NEVER DESTROY USEFUL EXISTING KNOWLEDGE",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/01-pre-action-gate.md"
       ]
     },
     "6": {
-      "title": "Master prompt section 6",
+      "title": "DO NOT CREATE PARALLEL KNOWLEDGE SYSTEMS",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/01-pre-action-gate.md"
       ]
     },
     "7": {
-      "title": "Master prompt section 7",
+      "title": "CANONICAL SOURCE PRINCIPLE",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/01-pre-action-gate.md"
       ]
     },
     "8": {
-      "title": "Master prompt section 8",
+      "title": "TARGET ARCHITECTURE",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/01-pre-action-gate.md"
+        ".ai/rules/01-pre-action-gate.md",
+        ".ai/README.md",
+        ".ai/manifests/install.json"
       ]
     },
     "9": {
-      "title": "Master prompt section 9",
+      "title": "MANY ROUTERS, FEW SOURCES OF TRUTH",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/02-goal-preservation.md"
       ]
     },
     "10": {
-      "title": "Master prompt section 10",
+      "title": "BOOTSTRAP MUST HAPPEN BEFORE PLANNING",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/02-goal-preservation.md"
+        ".ai/rules/02-goal-preservation.md",
+        ".ai/bootstrap/boot.md"
       ]
     },
     "11": {
-      "title": "Master prompt section 11",
+      "title": "BOOTSTRAP MUST HAPPEN BEFORE AUDITING",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/02-goal-preservation.md"
       ]
     },
     "12": {
-      "title": "Master prompt section 12",
+      "title": "BOOTSTRAP MUST HAPPEN BEFORE CODE MODIFICATION",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/02-goal-preservation.md"
       ]
     },
     "13": {
-      "title": "Master prompt section 13",
+      "title": "PRE-ACTION GATE",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/03-scope-control.md"
       ]
     },
     "14": {
-      "title": "Master prompt section 14",
+      "title": "PRIMARY OBJECTIVE IS LOCKED",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/03-scope-control.md"
       ]
     },
     "15": {
-      "title": "Master prompt section 15",
+      "title": "ISSUE CLASSIFICATION",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/03-scope-control.md"
       ]
     },
     "16": {
-      "title": "Master prompt section 16",
+      "title": "DISCOVERY PARKING LOT",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/03-scope-control.md"
       ]
     },
     "17": {
-      "title": "Master prompt section 17",
+      "title": "WORK-IN-PROGRESS LIMIT",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/03-scope-control.md"
       ]
     },
     "18": {
-      "title": "Master prompt section 18",
+      "title": "NESTED THINKING LIMIT",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/04-attention-control.md"
+        ".ai/rules/04-attention-control.md",
+        ".ai/guides/recursive-investigation.md"
       ]
     },
     "19": {
-      "title": "Master prompt section 19",
+      "title": "RABBIT-HOLE DETECTOR",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/04-attention-control.md"
+        ".ai/rules/04-attention-control.md",
+        ".ai/guides/rabbit-holes-scope-drift.md"
       ]
     },
     "20": {
-      "title": "Master prompt section 20",
+      "title": "SEMANTIC REPETITION DETECTION",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/04-attention-control.md"
+        ".ai/rules/04-attention-control.md",
+        ".ai/guides/deadlock-livelock.md"
       ]
     },
     "21": {
-      "title": "Master prompt section 21",
+      "title": "RETRY BUDGET",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/04-attention-control.md"
       ]
     },
     "22": {
-      "title": "Master prompt section 22",
+      "title": "FAILURE MUST PRODUCE INFORMATION",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/04-attention-control.md"
       ]
     },
     "23": {
-      "title": "Master prompt section 23",
+      "title": "VERIFICATION BUDGET",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/05-anti-distraction.md"
+        ".ai/rules/05-anti-distraction.md",
+        ".ai/guides/compulsive-verification.md"
       ]
     },
     "24": {
-      "title": "Master prompt section 24",
+      "title": "CRITIC BUDGET",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/05-anti-distraction.md"
+        ".ai/rules/05-anti-distraction.md",
+        ".ai/guides/compulsive-verification.md"
       ]
     },
     "25": {
-      "title": "Master prompt section 25",
+      "title": "ANTI-PERFECTIONISM RULE",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/05-anti-distraction.md"
+        ".ai/rules/05-anti-distraction.md",
+        ".ai/guides/perfectionism-completion.md"
       ]
     },
     "26": {
-      "title": "Master prompt section 26",
+      "title": "EVIDENCE GATE",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/05-anti-distraction.md"
+        ".ai/rules/05-anti-distraction.md",
+        ".ai/guides/hallucination-evidence.md"
       ]
     },
     "27": {
-      "title": "Master prompt section 27",
+      "title": "HALLUCINATION CONTROL",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/06-anti-overthinking.md"
+        ".ai/rules/06-anti-overthinking.md",
+        ".ai/guides/hallucination-evidence.md"
       ]
     },
     "28": {
-      "title": "Master prompt section 28",
+      "title": "UNCERTAINTY CLASSIFICATION",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/06-anti-overthinking.md"
       ]
     },
     "29": {
-      "title": "Master prompt section 29",
+      "title": "EVIDENCE-FREE BRANCH EXPANSION IS FORBIDDEN",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/06-anti-overthinking.md"
+        ".ai/rules/06-anti-overthinking.md",
+        ".ai/guides/overthinking-analysis-paralysis.md"
       ]
     },
     "30": {
-      "title": "Master prompt section 30",
+      "title": "PROGRESS LEDGER",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/06-anti-overthinking.md"
       ]
     },
     "31": {
-      "title": "Master prompt section 31",
+      "title": "PROGRESS MODEL",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/06-anti-overthinking.md"
       ]
     },
     "32": {
-      "title": "Master prompt section 32",
+      "title": "DEADLOCK",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/07-anti-recursion.md"
+        ".ai/rules/07-anti-recursion.md",
+        ".ai/guides/deadlock-livelock.md"
       ]
     },
     "33": {
-      "title": "Master prompt section 33",
+      "title": "LIVELOCK",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/07-anti-recursion.md"
+        ".ai/rules/07-anti-recursion.md",
+        ".ai/guides/deadlock-livelock.md"
       ]
     },
     "34": {
-      "title": "Master prompt section 34",
+      "title": "STRATEGY OSCILLATION",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/07-anti-recursion.md"
+        ".ai/rules/07-anti-recursion.md",
+        ".ai/guides/deadlock-livelock.md"
       ]
     },
     "35": {
-      "title": "Master prompt section 35",
+      "title": "RETURN-TO-OBJECTIVE PROTOCOL",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/07-anti-recursion.md"
       ]
     },
     "36": {
-      "title": "Master prompt section 36",
+      "title": "ATTENTION RESET SKILL",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/07-anti-recursion.md"
       ]
     },
     "37": {
-      "title": "Master prompt section 37",
+      "title": "DEADLOCK RECOVERY LEVELS",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/08-anti-perfectionism.md"
       ]
     },
     "38": {
-      "title": "Master prompt section 38",
+      "title": "EXECUTIVE STATE MACHINE",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/08-anti-perfectionism.md"
+        ".ai/rules/08-anti-perfectionism.md",
+        ".ai/executive-function/state-machine.json"
       ]
     },
     "39": {
-      "title": "Master prompt section 39",
+      "title": "DELIVERY-FIRST LOOP",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/08-anti-perfectionism.md"
       ]
     },
     "40": {
-      "title": "Master prompt section 40",
+      "title": "CHECKPOINTS FOR LARGE TASKS",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/08-anti-perfectionism.md"
       ]
     },
     "41": {
-      "title": "Master prompt section 41",
+      "title": "TEST STRATEGY",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/09-work-in-progress.md"
       ]
     },
     "42": {
-      "title": "Master prompt section 42",
+      "title": "PRE-COMMIT / LINT-STAGED STRATEGY",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/09-work-in-progress.md"
       ]
     },
     "43": {
-      "title": "Master prompt section 43",
+      "title": "DO NOT REPLAN EVERYTHING AFTER EVERY STEP",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/09-work-in-progress.md"
       ]
     },
     "44": {
-      "title": "Master prompt section 44",
+      "title": "SEARCH BEFORE READING EVERYTHING",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/09-work-in-progress.md"
       ]
     },
     "45": {
-      "title": "Master prompt section 45",
+      "title": "LAYERED CONTEXT",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/09-work-in-progress.md"
       ]
     },
     "46": {
-      "title": "Master prompt section 46",
+      "title": "CONTEXT ROUTER",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/10-progress-control.md"
+        ".ai/rules/10-progress-control.md",
+        ".ai/context/context-index.json"
       ]
     },
     "47": {
-      "title": "Master prompt section 47",
+      "title": "CONTEXT BUDGET",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/10-progress-control.md"
       ]
     },
     "48": {
-      "title": "Master prompt section 48",
+      "title": "CONTEXT REFRESH",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/10-progress-control.md"
       ]
     },
     "49": {
-      "title": "Master prompt section 49",
+      "title": "CONTEXT RELOAD LOOP DETECTOR",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/10-progress-control.md"
       ]
     },
     "50": {
-      "title": "Master prompt section 50",
+      "title": "CONTEXT FRESHNESS",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/11-retry-budget.md"
       ]
     },
     "51": {
-      "title": "Master prompt section 51",
+      "title": "CONTEXT DEDUPLICATION",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/11-retry-budget.md"
       ]
     },
     "52": {
-      "title": "Master prompt section 52",
+      "title": "MEMORY ARCHITECTURE",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/11-retry-budget.md"
+        ".ai/rules/11-retry-budget.md",
+        ".ai/memory/index.md"
       ]
     },
     "53": {
-      "title": "Master prompt section 53",
+      "title": "MEMORY PROMOTION RULE",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/11-retry-budget.md"
       ]
     },
     "54": {
-      "title": "Master prompt section 54",
+      "title": "TEMPORARY TASK STATE IS NOT DURABLE MEMORY",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/11-retry-budget.md"
       ]
     },
     "55": {
-      "title": "Master prompt section 55",
+      "title": "FAILURE MEMORY",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/12-verification-budget.md"
       ]
     },
     "56": {
-      "title": "Master prompt section 56",
+      "title": "REPOSITORY MAP",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/12-verification-budget.md"
       ]
     },
     "57": {
-      "title": "Master prompt section 57",
+      "title": "KNOWLEDGE SYSTEM",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/12-verification-budget.md"
       ]
     },
     "58": {
-      "title": "Master prompt section 58",
+      "title": "GENERATED `.ai` LAYER",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/12-verification-budget.md"
       ]
     },
     "59": {
-      "title": "Master prompt section 59",
+      "title": "JSON REPRESENTATION",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/12-verification-budget.md"
+        ".ai/rules/12-verification-budget.md",
+        ".ai/executive-function/executive-function.json"
       ]
     },
     "60": {
-      "title": "Master prompt section 60",
+      "title": "TOON REPRESENTATION",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/13-evidence-gate.md"
+        ".ai/rules/13-evidence-gate.md",
+        ".ai/executive-function/executive-function.toon"
       ]
     },
     "61": {
-      "title": "Master prompt section 61",
+      "title": "SJON REPRESENTATION",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/13-evidence-gate.md"
+        ".ai/rules/13-evidence-gate.md",
+        ".ai/executive-function/executive-function.sjon"
       ]
     },
     "62": {
-      "title": "Master prompt section 62",
+      "title": "RUNTIME CORE VS DEEP GUIDANCE",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/13-evidence-gate.md"
       ]
     },
     "63": {
-      "title": "Master prompt section 63",
+      "title": "META-RULE — THE FRAMEWORK MUST NOT BECOME THE DISTRACTION",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/13-evidence-gate.md"
       ]
     },
     "64": {
-      "title": "Master prompt section 64",
+      "title": "COMMUNICATION — DEFAULT SIZE",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/14-hallucination-control.md"
       ]
     },
     "65": {
-      "title": "Master prompt section 65",
+      "title": "CONCRETE LANGUAGE",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/14-hallucination-control.md"
       ]
     },
     "66": {
-      "title": "Master prompt section 66",
+      "title": "SIMPLE LANGUAGE",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/14-hallucination-control.md"
       ]
     },
     "67": {
-      "title": "Master prompt section 67",
+      "title": "ANTI-BABBLE",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/14-hallucination-control.md"
       ]
     },
     "68": {
-      "title": "Master prompt section 68",
+      "title": "ASSERTIVENESS",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/14-hallucination-control.md"
       ]
     },
     "69": {
-      "title": "Master prompt section 69",
+      "title": "STATUS FORMAT",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/15-deadlock-detection.md"
       ]
     },
     "70": {
-      "title": "Master prompt section 70",
+      "title": "NEVER HIDE THE BLOCKER",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/15-deadlock-detection.md"
       ]
     },
     "71": {
-      "title": "Master prompt section 71",
+      "title": "FAILURE FORMAT",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/15-deadlock-detection.md"
       ]
     },
     "72": {
-      "title": "Master prompt section 72",
+      "title": "REAL PROGRESS ONLY",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/15-deadlock-detection.md"
       ]
     },
     "73": {
-      "title": "Master prompt section 73",
+      "title": "ATOMIC PROGRESS REPORTING",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/15-deadlock-detection.md"
       ]
     },
     "74": {
-      "title": "Master prompt section 74",
+      "title": "UPDATES MUST ADD INFORMATION",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/16-livelock-detection.md"
       ]
     },
     "75": {
-      "title": "Master prompt section 75",
+      "title": "NO FAKE BACKGROUND WORK",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/16-livelock-detection.md"
       ]
     },
     "76": {
-      "title": "Master prompt section 76",
+      "title": "FOREGROUND EXECUTION",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/16-livelock-detection.md"
       ]
     },
     "77": {
-      "title": "Master prompt section 77",
+      "title": "NO UNNECESSARY META DISCUSSION",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/16-livelock-detection.md"
       ]
     },
     "78": {
-      "title": "Master prompt section 78",
+      "title": "NO REPETITIVE EXPLANATION",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/17-recovery.md"
       ]
     },
     "79": {
-      "title": "Master prompt section 79",
+      "title": "PROBLEM-SOLVING COMMUNICATION",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/17-recovery.md"
       ]
     },
     "80": {
-      "title": "Master prompt section 80",
+      "title": "DEFINITION OF DONE",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/17-recovery.md"
       ]
     },
     "81": {
-      "title": "Master prompt section 81",
+      "title": "COMPLETION GATE",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/17-recovery.md"
       ]
     },
     "82": {
-      "title": "Master prompt section 82",
+      "title": "TERMINATION RULE",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/17-recovery.md"
       ]
     },
     "83": {
-      "title": "Master prompt section 83",
+      "title": "DONE REQUIRES PROOF",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/18-context-efficiency.md"
       ]
     },
     "84": {
-      "title": "Master prompt section 84",
+      "title": "DELIVERY DOES NOT MEAN SKIPPING QUALITY",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/18-context-efficiency.md"
       ]
     },
     "85": {
-      "title": "Master prompt section 85",
+      "title": "STRICT PRIORITY MODEL",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/18-context-efficiency.md"
       ]
     },
     "86": {
-      "title": "Master prompt section 86",
+      "title": "NO AUTONOMOUS SCOPE EXPANSION",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/18-context-efficiency.md"
       ]
     },
     "87": {
-      "title": "Master prompt section 87",
+      "title": "TOOL DISCIPLINE",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/18-context-efficiency.md"
       ]
     },
     "88": {
-      "title": "Master prompt section 88",
+      "title": "COMMAND DISCIPLINE",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/19-context-routing.md"
       ]
     },
     "89": {
-      "title": "Master prompt section 89",
+      "title": "LARGE TEST RUNS",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/19-context-routing.md"
       ]
     },
     "90": {
-      "title": "Master prompt section 90",
+      "title": "MULTI-AGENT ARCHITECTURE",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/19-context-routing.md"
+        ".ai/rules/19-context-routing.md",
+        ".ai/guides/nested-job-control.md"
       ]
     },
     "91": {
-      "title": "Master prompt section 91",
+      "title": "MULTI-AGENT WORK-IN-PROGRESS",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/19-context-routing.md"
+        ".ai/rules/19-context-routing.md",
+        ".ai/guides/nested-job-control.md"
       ]
     },
     "92": {
-      "title": "Master prompt section 92",
+      "title": "SUBAGENT DEPTH LIMIT",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/20-context-refresh.md"
+        ".ai/rules/20-context-refresh.md",
+        ".ai/guides/nested-job-control.md"
       ]
     },
     "93": {
-      "title": "Master prompt section 93",
+      "title": "SUBAGENT RETURN CONTRACT",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/20-context-refresh.md"
+        ".ai/rules/20-context-refresh.md",
+        ".ai/guides/nested-job-control.md"
       ]
     },
     "94": {
-      "title": "Master prompt section 94",
+      "title": "COORDINATOR DEADLOCK",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/20-context-refresh.md"
+        ".ai/rules/20-context-refresh.md",
+        ".ai/guides/nested-job-control.md"
       ]
     },
     "95": {
-      "title": "Master prompt section 95",
+      "title": "ONE WRITER PRINCIPLE",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/20-context-refresh.md"
+        ".ai/rules/20-context-refresh.md",
+        ".ai/guides/nested-job-control.md"
       ]
     },
     "96": {
-      "title": "Master prompt section 96",
+      "title": "CRITIC MUST NOT BECOME PRODUCT OWNER",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/20-context-refresh.md"
+        ".ai/rules/20-context-refresh.md",
+        ".ai/guides/nested-job-control.md"
       ]
     },
     "97": {
-      "title": "Master prompt section 97",
+      "title": "HUMAN ANALOGY DOCUMENT",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/21-memory-policy.md"
+        ".ai/rules/21-memory-policy.md",
+        "docs/ai/human-behavior-analogies.md",
+        ".ai/guides/attention-drift.md",
+        ".ai/guides/compulsive-verification.md",
+        ".ai/guides/overthinking-analysis-paralysis.md",
+        ".ai/guides/recursive-investigation.md",
+        ".ai/guides/perfectionism-completion.md"
       ]
     },
     "98": {
-      "title": "Master prompt section 98",
+      "title": "FAILURE MODE CATALOG",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/21-memory-policy.md"
+        ".ai/rules/21-memory-policy.md",
+        ".ai/guides/failure-mode-catalog.md"
       ]
     },
     "99": {
-      "title": "Master prompt section 99",
+      "title": "OBSERVABILITY WITHOUT CHAIN-OF-THOUGHT LOGGING",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/21-memory-policy.md"
+        ".ai/rules/21-memory-policy.md",
+        ".ai/telemetry/signals.schema.json"
       ]
     },
     "100": {
-      "title": "Master prompt section 100",
+      "title": "LOOP SIGNALS CONFIG",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/21-memory-policy.md"
+        ".ai/rules/21-memory-policy.md",
+        ".ai/telemetry/thresholds.json"
       ]
     },
     "101": {
-      "title": "Master prompt section 101",
+      "title": "STALLED PROGRESS DETECTOR",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/22-testing-strategy.md"
+        ".ai/rules/22-testing-strategy.md",
+        ".ai/guides/deadlock-livelock.md"
       ]
     },
     "102": {
-      "title": "Master prompt section 102",
+      "title": "ACTION NOVELTY",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/22-testing-strategy.md"
+        ".ai/rules/22-testing-strategy.md",
+        ".ai/guides/deadlock-livelock.md"
       ]
     },
     "103": {
-      "title": "Master prompt section 103",
+      "title": "RECOVERY MUST REDUCE THE SEARCH SPACE",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/22-testing-strategy.md"
+        ".ai/rules/22-testing-strategy.md",
+        ".ai/guides/deadlock-livelock.md"
       ]
     },
     "104": {
-      "title": "Master prompt section 104",
+      "title": "CONTEXT COMPRESSION SKILL",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/22-testing-strategy.md"
+        ".ai/rules/22-testing-strategy.md",
+        ".ai/skills/context-compression/SKILL.md"
       ]
     },
     "105": {
-      "title": "Master prompt section 105",
+      "title": "RESUME SKILL",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/22-testing-strategy.md"
+        ".ai/rules/22-testing-strategy.md",
+        ".ai/skills/resume-task/SKILL.md"
       ]
     },
     "106": {
-      "title": "Master prompt section 106",
+      "title": "HANDOFF SKILL",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/23-precommit-strategy.md"
+        ".ai/rules/23-precommit-strategy.md",
+        ".ai/skills/handoff-task/SKILL.md"
       ]
     },
     "107": {
-      "title": "Master prompt section 107",
+      "title": "COMMUNICATION SKILL",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/23-precommit-strategy.md"
+        ".ai/rules/23-precommit-strategy.md",
+        ".ai/skills/communicate-briefly/SKILL.md"
       ]
     },
     "108": {
-      "title": "Master prompt section 108",
+      "title": "EXECUTIVE FUNCTION SKILL",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/23-precommit-strategy.md"
+        ".ai/rules/23-precommit-strategy.md",
+        ".ai/skills/executive-function/SKILL.md"
       ]
     },
     "109": {
-      "title": "Master prompt section 109",
+      "title": "GOAL LOCK SKILL",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/23-precommit-strategy.md"
+        ".ai/rules/23-precommit-strategy.md",
+        ".ai/skills/goal-lock/SKILL.md"
       ]
     },
     "110": {
-      "title": "Master prompt section 110",
+      "title": "SCOPE GUARD SKILL",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/23-precommit-strategy.md"
+        ".ai/rules/23-precommit-strategy.md",
+        ".ai/skills/scope-guard/SKILL.md"
       ]
     },
     "111": {
-      "title": "Master prompt section 111",
+      "title": "BOUNDED INVESTIGATION SKILL",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/24-critic-control.md"
+        ".ai/rules/24-critic-control.md",
+        ".ai/skills/bounded-investigation/SKILL.md"
       ]
     },
     "112": {
-      "title": "Master prompt section 112",
+      "title": "LOOP DETECTOR SKILL",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/24-critic-control.md"
+        ".ai/rules/24-critic-control.md",
+        ".ai/skills/loop-detector/SKILL.md"
       ]
     },
     "113": {
-      "title": "Master prompt section 113",
+      "title": "DEADLOCK RECOVERY SKILL",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/24-critic-control.md"
+        ".ai/rules/24-critic-control.md",
+        ".ai/skills/deadlock-recovery/SKILL.md"
       ]
     },
     "114": {
-      "title": "Master prompt section 114",
+      "title": "LIVELOCK RECOVERY SKILL",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/24-critic-control.md"
+        ".ai/rules/24-critic-control.md",
+        ".ai/skills/livelock-recovery/SKILL.md"
       ]
     },
     "115": {
-      "title": "Master prompt section 115",
+      "title": "PROGRESS AUDIT SKILL",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/25-multi-agent-control.md"
+        ".ai/rules/25-multi-agent-control.md",
+        ".ai/skills/progress-audit/SKILL.md"
       ]
     },
     "116": {
-      "title": "Master prompt section 116",
+      "title": "EVIDENCE GATE SKILL",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/25-multi-agent-control.md"
+        ".ai/rules/25-multi-agent-control.md",
+        ".ai/skills/evidence-gate/SKILL.md",
+        "skills/evidence-gate/SKILL.md"
       ]
     },
     "117": {
-      "title": "Master prompt section 117",
+      "title": "VERIFICATION CONTROLLER SKILL",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/25-multi-agent-control.md"
+        ".ai/rules/25-multi-agent-control.md",
+        ".ai/skills/verification-controller/SKILL.md"
       ]
     },
     "118": {
-      "title": "Master prompt section 118",
+      "title": "CRITIC CONTROLLER SKILL",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/25-multi-agent-control.md"
+        ".ai/rules/25-multi-agent-control.md",
+        ".ai/skills/critic-controller/SKILL.md"
       ]
     },
     "119": {
-      "title": "Master prompt section 119",
+      "title": "COMPLETION GATE SKILL",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/25-multi-agent-control.md"
+        ".ai/rules/25-multi-agent-control.md",
+        ".ai/skills/completion-gate/SKILL.md",
+        "skills/completion-gate/SKILL.md"
       ]
     },
     "120": {
-      "title": "Master prompt section 120",
+      "title": "FAILURE LEARNING SKILL",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/26-delivery-first.md"
+        ".ai/rules/26-delivery-first.md",
+        ".ai/skills/failure-learning/SKILL.md"
       ]
     },
     "121": {
-      "title": "Master prompt section 121",
+      "title": "KNOWLEDGE MAINTAINER SKILL",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/26-delivery-first.md"
+        ".ai/rules/26-delivery-first.md",
+        ".ai/skills/knowledge-maintainer/SKILL.md"
       ]
     },
     "122": {
-      "title": "Master prompt section 122",
+      "title": "REPOSITORY MAP UPDATE SKILL",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/26-delivery-first.md"
+        ".ai/rules/26-delivery-first.md",
+        ".ai/skills/repository-map-update/SKILL.md"
       ]
     },
     "123": {
-      "title": "Master prompt section 123",
+      "title": "KNOWLEDGE VALIDATION",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/26-delivery-first.md"
+        ".ai/rules/26-delivery-first.md",
+        "scripts/validate_framework.py"
       ]
     },
     "124": {
-      "title": "Master prompt section 124",
+      "title": "KNOWLEDGE COMMANDS",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/26-delivery-first.md"
       ]
     },
     "125": {
-      "title": "Master prompt section 125",
+      "title": "FRAMEWORK SELF-TESTS",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/27-definition-of-done.md"
+        ".ai/rules/27-definition-of-done.md",
+        ".ai/tests/executive-function-cases.md"
       ]
     },
     "126": {
-      "title": "Master prompt section 126",
+      "title": "FRAMEWORK REGRESSION TESTS",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/27-definition-of-done.md"
+        ".ai/rules/27-definition-of-done.md",
+        "tests/test_interventions.py"
       ]
     },
     "127": {
-      "title": "Master prompt section 127",
+      "title": "BOOT CONTEXT SIZE CONTROL",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/27-definition-of-done.md"
       ]
     },
     "128": {
-      "title": "Master prompt section 128",
+      "title": "INSTRUCTION GRAPH",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/27-definition-of-done.md"
+        ".ai/rules/27-definition-of-done.md",
+        ".ai/manifests/agents.json"
       ]
     },
     "129": {
-      "title": "Master prompt section 129",
+      "title": "AGENT ROUTER CONSISTENCY",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/28-termination.md"
+        ".ai/rules/28-termination.md",
+        "tests/test_framework_assets.py"
       ]
     },
     "130": {
-      "title": "Master prompt section 130",
+      "title": "OTHER AGENT FILES",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/28-termination.md"
       ]
     },
     "131": {
-      "title": "Master prompt section 131",
+      "title": "`.cursorrules`",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/28-termination.md"
       ]
     },
     "132": {
-      "title": "Master prompt section 132",
+      "title": "CURSOR SCOPED RULES",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/28-termination.md"
       ]
     },
     "133": {
-      "title": "Master prompt section 133",
+      "title": "CLAUDE.md",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/28-termination.md"
       ]
     },
     "134": {
-      "title": "Master prompt section 134",
+      "title": "CODEX.md",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/29-communication-style.md"
       ]
     },
     "135": {
-      "title": "Master prompt section 135",
+      "title": "AGENTS.md",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/29-communication-style.md"
       ]
     },
     "136": {
-      "title": "Master prompt section 136",
+      "title": "MODEL-SPECIFIC ROUTERS",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/29-communication-style.md"
       ]
     },
     "137": {
-      "title": "Master prompt section 137",
+      "title": "GENERATED MANIFESTS",
       "classification": "operational",
       "artifacts": [
-        ".ai/rules/29-communication-style.md"
+        ".ai/rules/29-communication-style.md",
+        ".ai/manifests/rules.json",
+        ".ai/manifests/skills.json",
+        ".ai/manifests/agents.json",
+        ".ai/manifests/knowledge.json"
       ]
     },
     "138": {
-      "title": "Master prompt section 138",
+      "title": "CONTINUOUS MAINTENANCE",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/29-communication-style.md"
       ]
     },
     "139": {
-      "title": "Master prompt section 139",
+      "title": "STALE MEMORY DETECTION",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/30-progress-reporting.md"
       ]
     },
     "140": {
-      "title": "Master prompt section 140",
+      "title": "DECISION MEMORY",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/30-progress-reporting.md"
       ]
     },
     "141": {
-      "title": "Master prompt section 141",
+      "title": "MEMORY MUST SAVE FUTURE TOKENS",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/30-progress-reporting.md"
       ]
     },
     "142": {
-      "title": "Master prompt section 142",
+      "title": "NO INSTRUCTION EXPLOSION",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/30-progress-reporting.md"
       ]
     },
     "143": {
-      "title": "Master prompt section 143",
+      "title": "NO SILENT CONFLICTS",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/31-tool-discipline.md"
       ]
     },
     "144": {
-      "title": "Master prompt section 144",
+      "title": "NO CIRCULAR RULE REFERENCES",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/31-tool-discipline.md"
       ]
     },
     "145": {
-      "title": "Master prompt section 145",
+      "title": "PRIORITY MUST BE MACHINE-DISCOVERABLE",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/31-tool-discipline.md"
       ]
     },
     "146": {
-      "title": "Master prompt section 146",
+      "title": "LOAD CONDITIONS",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/31-tool-discipline.md"
       ]
     },
     "147": {
-      "title": "Master prompt section 147",
+      "title": "HIGH-FREQUENCY RULES",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/31-tool-discipline.md"
       ]
     },
     "148": {
-      "title": "Master prompt section 148",
+      "title": "LOW-FREQUENCY GUIDANCE",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/32-search-before-read.md"
       ]
     },
     "149": {
-      "title": "Master prompt section 149",
+      "title": "USER COMMUNICATION PREFERENCE",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/32-search-before-read.md"
       ]
     },
     "150": {
-      "title": "Master prompt section 150",
+      "title": "PROGRESS REPORTING VS INTERNAL STATE",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/32-search-before-read.md"
       ]
     },
     "151": {
-      "title": "Master prompt section 151",
+      "title": "BLOCKER ESCALATION",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/32-search-before-read.md"
       ]
     },
     "152": {
-      "title": "Master prompt section 152",
+      "title": "NO BLOCKER THEATER",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/33-no-fake-background-work.md"
       ]
     },
     "153": {
-      "title": "Master prompt section 153",
+      "title": "ERROR SIMPLICITY",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/33-no-fake-background-work.md"
       ]
     },
     "154": {
-      "title": "Master prompt section 154",
+      "title": "AGENT SHOULD NOT ORBIT THE PROBLEM",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/33-no-fake-background-work.md"
       ]
     },
     "155": {
-      "title": "Master prompt section 155",
+      "title": "\"ONE MORE THING\" DETECTOR",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/33-no-fake-background-work.md"
       ]
     },
     "156": {
-      "title": "Master prompt section 156",
+      "title": "COMPLETION PRESSURE",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/33-no-fake-background-work.md"
       ]
     },
     "157": {
-      "title": "Master prompt section 157",
+      "title": "START BROAD, FINISH NARROW",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/34-failure-communication.md"
       ]
     },
     "158": {
-      "title": "Master prompt section 158",
+      "title": "AGILE DELIVERY PRINCIPLE",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/34-failure-communication.md"
       ]
     },
     "159": {
-      "title": "Master prompt section 159",
+      "title": "REFACTOR GATE",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/34-failure-communication.md"
       ]
     },
     "160": {
-      "title": "Master prompt section 160",
+      "title": "ARCHITECTURE REDESIGN GATE",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/34-failure-communication.md"
       ]
     },
     "161": {
-      "title": "Master prompt section 161",
+      "title": "OPTIMIZATION GATE",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/34-failure-communication.md"
       ]
     },
     "162": {
-      "title": "Master prompt section 162",
+      "title": "TEST FAILURE CLASSIFICATION",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/35-knowledge-maintenance.md"
       ]
     },
     "163": {
-      "title": "Master prompt section 163",
+      "title": "FAILURE ISOLATION",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/35-knowledge-maintenance.md"
       ]
     },
     "164": {
-      "title": "Master prompt section 164",
+      "title": "TOOL OUTPUT COMPRESSION",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/35-knowledge-maintenance.md"
       ]
     },
     "165": {
-      "title": "Master prompt section 165",
+      "title": "FILE READ DISCIPLINE",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/35-knowledge-maintenance.md"
       ]
     },
     "166": {
-      "title": "Master prompt section 166",
+      "title": "SOURCE FRESHNESS",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/36-instruction-priority.md"
       ]
     },
     "167": {
-      "title": "Master prompt section 167",
+      "title": "TASK STATE CHECKPOINT",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/36-instruction-priority.md"
       ]
     },
     "168": {
-      "title": "Master prompt section 168",
+      "title": "NO FAKE MEMORY",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/36-instruction-priority.md"
       ]
     },
     "169": {
-      "title": "Master prompt section 169",
+      "title": "NO RAW CHAIN-OF-THOUGHT STORAGE",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/36-instruction-priority.md"
       ]
     },
     "170": {
-      "title": "Master prompt section 170",
+      "title": "FRAMEWORK SECURITY",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/36-instruction-priority.md"
       ]
     },
     "171": {
-      "title": "Master prompt section 171",
+      "title": "DESTRUCTIVE ACTION GATE",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/37-context-freshness.md"
       ]
     },
     "172": {
-      "title": "Master prompt section 172",
+      "title": "QUALITY GATE ORDER",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/37-context-freshness.md"
       ]
     },
     "173": {
-      "title": "Master prompt section 173",
+      "title": "FINAL REPORT",
       "classification": "operational",
       "artifacts": [
         ".ai/rules/37-context-freshness.md"
       ]
     },
     "174": {
-      "title": "Master prompt section 174",
+      "title": "ACCEPTANCE CRITERIA — ARCHITECTURE",
       "classification": "acceptance",
       "artifacts": [
-        ".ai/rules/37-context-freshness.md"
+        ".ai/rules/37-context-freshness.md",
+        "scripts/validate_framework.py"
       ]
     },
     "175": {
-      "title": "Master prompt section 175",
+      "title": "ACCEPTANCE CRITERIA — EXECUTIVE CONTROL",
       "classification": "acceptance",
       "artifacts": [
-        ".ai/rules/37-context-freshness.md"
+        ".ai/rules/37-context-freshness.md",
+        "tests/test_interventions.py"
       ]
     },
     "176": {
-      "title": "Master prompt section 176",
+      "title": "ACCEPTANCE CRITERIA — COMMUNICATION",
       "classification": "acceptance",
       "artifacts": [
-        ".ai/rules/38-no-repetitive-planning.md"
+        ".ai/rules/38-no-repetitive-planning.md",
+        ".ai/skills/communicate-briefly/SKILL.md"
       ]
     },
     "177": {
-      "title": "Master prompt section 177",
+      "title": "ACCEPTANCE CRITERIA — CONTEXT",
       "classification": "acceptance",
       "artifacts": [
-        ".ai/rules/38-no-repetitive-planning.md"
+        ".ai/rules/38-no-repetitive-planning.md",
+        ".ai/context/context-index.json"
       ]
     },
     "178": {
-      "title": "Master prompt section 178",
+      "title": "ACCEPTANCE CRITERIA — MEMORY",
       "classification": "acceptance",
       "artifacts": [
-        ".ai/rules/38-no-repetitive-planning.md"
+        ".ai/rules/38-no-repetitive-planning.md",
+        ".ai/memory/index.json"
       ]
     },
     "179": {
-      "title": "Master prompt section 179",
+      "title": "ACCEPTANCE CRITERIA — DEADLOCK PROTECTION",
       "classification": "acceptance",
       "artifacts": [
-        ".ai/rules/38-no-repetitive-planning.md"
+        ".ai/rules/38-no-repetitive-planning.md",
+        ".ai/executive-function/state-machine.json"
       ]
     },
     "180": {
-      "title": "Master prompt section 180",
+      "title": "ACCEPTANCE CRITERIA — MACHINE REPRESENTATIONS",
       "classification": "acceptance",
       "artifacts": [
-        ".ai/rules/39-uncertainty-control.md"
+        ".ai/rules/39-uncertainty-control.md",
+        ".ai/executive-function/executive-function.json",
+        ".ai/executive-function/executive-function.toon",
+        ".ai/executive-function/executive-function.sjon"
       ]
     },
     "181": {
-      "title": "Master prompt section 181",
+      "title": "ACCEPTANCE CRITERIA — SELF TESTING",
       "classification": "acceptance",
       "artifacts": [
-        ".ai/rules/39-uncertainty-control.md"
+        ".ai/rules/39-uncertainty-control.md",
+        ".ai/tests/executive-function-cases.md"
       ]
     },
     "182": {
-      "title": "Master prompt section 182",
+      "title": "VALIDATION COMMANDS",
       "classification": "acceptance",
       "artifacts": [
-        ".ai/rules/39-uncertainty-control.md"
+        ".ai/rules/39-uncertainty-control.md",
+        "scripts/validate_framework.py"
       ]
     },
     "183": {
-      "title": "Master prompt section 183",
+      "title": "KNOWLEDGE VALIDATION REPORT",
       "classification": "acceptance",
       "artifacts": [
-        ".ai/rules/39-uncertainty-control.md"
+        ".ai/rules/39-uncertainty-control.md",
+        "scripts/validate_framework.py"
       ]
     },
     "184": {
-      "title": "Master prompt section 184",
-      "classification": "acceptance",
+      "title": "MAIN EXECUTION PRINCIPLE",
+      "classification": "operational",
       "artifacts": [
         ".ai/rules/39-uncertainty-control.md"
       ]
     },
     "185": {
-      "title": "Master prompt section 185",
-      "classification": "acceptance",
+      "title": "CORE HUMAN-UNDERSTANDABLE PRINCIPLE",
+      "classification": "operational",
       "artifacts": [
         ".ai/rules/40-change-strategy.md"
       ]
     },
     "186": {
-      "title": "Master prompt section 186",
-      "classification": "acceptance",
+      "title": "FINAL META-RULE",
+      "classification": "operational",
       "artifacts": [
         ".ai/rules/40-change-strategy.md"
       ]
     },
     "187": {
-      "title": "Master prompt section 187",
-      "classification": "acceptance",
+      "title": "PRESERVATION REQUIREMENT",
+      "classification": "operational",
       "artifacts": [
         ".ai/rules/40-change-strategy.md"
       ]
     },
     "188": {
-      "title": "Master prompt section 188",
-      "classification": "acceptance",
+      "title": "IMPLEMENT NOW",
+      "classification": "operational",
       "artifacts": [
-        ".ai/rules/40-change-strategy.md"
+        ".ai/rules/40-change-strategy.md",
+        "skills/install-framework/SKILL.md",
+        ".ai/manifests/install.json"
       ]
     },
     "189": {
-      "title": "Master prompt section 189",
-      "classification": "acceptance",
+      "title": "REQUIRED FINAL OUTPUT",
+      "classification": "operational",
       "artifacts": [
-        ".ai/rules/40-change-strategy.md"
+        ".ai/rules/40-change-strategy.md",
+        "skills/install-framework/SKILL.md"
       ]
     }
   }
 }
-

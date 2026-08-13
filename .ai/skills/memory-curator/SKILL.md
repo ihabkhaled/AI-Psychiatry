@@ -1,35 +1,36 @@
 ---
 name: memory-curator
-description: Use memory curator when the task needs bounded memory curator control while preserving the locked objective.
+description: Use when deciding whether task discoveries, decisions, preferences, architecture, failures, or lessons deserve durable repository memory.
 ---
 
 # Memory Curator
 
-## Trigger
+## Core principle
 
-Use when observable task state calls for this control. Do not invoke it speculatively.
-
-## Inputs
-
-Locked objective, constraints, current evidence, attempts, and completion proof.
+Durable memory must be stable, evidenced, reusable, expensive to rediscover, and save future tokens.
 
 ## Procedure
 
-1. Restate the objective in one line.
-2. Inspect only relevant evidence and classify the issue.
-3. Take the smallest action that can change or prove state.
-4. Record result, information gained, and the next valid action.
-5. Respect WIP 1, retry 3, verification 2, critic 1, and nested depth 2.
+1. Classify the candidate as temporary state or durable knowledge.
+2. Verify it against an authoritative source.
+3. Test whether it is stable and repeatedly useful.
+4. Choose preferences, architecture, decisions, recurring problems, lessons, or failure patterns.
+5. Record source, scope, replacement condition, and concise value.
+6. Reject raw reasoning, one-off errors, and speculation.
 
-## Output
+## Required output
 
-Return status, evidence, result, blocker if any, and one next recommendation. Never return hidden reasoning.
+Promotion decision, destination, evidence, scope, and replacement condition.
 
-## Escalation
+## Limits
 
-If repeated work adds no information, narrow scope, change strategy, or report the exact blocker.
+Promote only when future rediscovery cost exceeds future reading cost.
+
+## Common mistakes
+
+Do not use memory to override current user intent or preserve session noise.
 
 ## Stop condition
 
-Stop when the requested control is proven, the main Definition of Done is met, or progress requires external input.
+Stop when the candidate is promoted concisely or explicitly left temporary.
 

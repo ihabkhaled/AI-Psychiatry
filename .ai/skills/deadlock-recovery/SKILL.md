@@ -1,35 +1,36 @@
 ---
 name: deadlock-recovery
-description: Use deadlock recovery when the task needs bounded deadlock recovery control while preserving the locked objective.
+description: Use when no productive next action can be selected because dependencies, authority, contradictory constraints, missing access, or unresolved evidence block progress.
 ---
 
 # Deadlock Recovery
 
-## Trigger
+## Core principle
 
-Use when observable task state calls for this control. Do not invoke it speculatively.
-
-## Inputs
-
-Locked objective, constraints, current evidence, attempts, and completion proof.
+Deadlock recovery identifies the actual blocking condition and narrows the problem before declaring blocked.
 
 ## Procedure
 
-1. Restate the objective in one line.
-2. Inspect only relevant evidence and classify the issue.
-3. Take the smallest action that can change or prove state.
-4. Record result, information gained, and the next valid action.
-5. Respect WIP 1, retry 3, verification 2, critic 1, and nested depth 2.
+1. Stop reasoning on speculative branches.
+2. Restate goal, DoD, and established evidence.
+3. Remove assumptions and optional work.
+4. Identify the smallest condition preventing every valid action.
+5. Test one bounded alternative source or isolation if available.
+6. Report Blocked, Evidence, and Needed when external input is truly required.
 
-## Output
+## Required output
 
-Return status, evidence, result, blocker if any, and one next recommendation. Never return hidden reasoning.
+Exact blocker, proof, attempted bounded recovery, and required unblocking input.
 
-## Escalation
+## Limits
 
-If repeated work adds no information, narrow scope, change strategy, or report the exact blocker.
+Use L1 through L4 before L5 blocked; same strategy maximum 3.
+
+## Common mistakes
+
+Do not call ordinary difficulty, one failed test, unfamiliar code, or a large file deadlock.
 
 ## Stop condition
 
-Stop when the requested control is proven, the main Definition of Done is met, or progress requires external input.
+Stop when a valid action exists or an evidenced external blocker is reported.
 

@@ -1,35 +1,36 @@
 ---
 name: multi-agent-coordinator
-description: Use multi agent coordinator when the task needs bounded multi agent coordinator control while preserving the locked objective.
+description: Use when two or more agents work concurrently, delegation may recurse, responsibilities overlap, dependencies can deadlock, or a coordinator must preserve scope and termination.
 ---
 
 # Multi Agent Coordinator
 
-## Trigger
+## Core principle
 
-Use when observable task state calls for this control. Do not invoke it speculatively.
-
-## Inputs
-
-Locked objective, constraints, current evidence, attempts, and completion proof.
+The coordinator owns objective, scope, allocation, conflict resolution, progress, and stopping; children return bounded evidence.
 
 ## Procedure
 
-1. Restate the objective in one line.
-2. Inspect only relevant evidence and classify the issue.
-3. Take the smallest action that can change or prove state.
-4. Record result, information gained, and the next valid action.
-5. Respect WIP 1, retry 3, verification 2, critic 1, and nested depth 2.
+1. Define independent tasks and dependency order.
+2. Give each child parent objective, scope, expected output, evidence, and stop condition.
+3. Limit delegation depth to two.
+4. Assign one writer per overlapping area.
+5. Track circular waits and resolve one dependency first.
+6. Collect Result, Evidence, Unresolved blocker, and Deferred findings; integrate centrally.
 
-## Output
+## Required output
 
-Return status, evidence, result, blocker if any, and one next recommendation. Never return hidden reasoning.
+Assignments, ownership, dependencies, child return contracts, and integration decision.
 
-## Escalation
+## Limits
 
-If repeated work adds no information, narrow scope, change strategy, or report the exact blocker.
+Delegation depth 2; parallel WIP only for genuine independence.
+
+## Common mistakes
+
+Do not use agent count as progress, allow children to expand scope, or let critics become product owners.
 
 ## Stop condition
 
-Stop when the requested control is proven, the main Definition of Done is met, or progress requires external input.
+Stop coordination when results are integrated, blockers are explicit, and the parent DoD is complete.
 

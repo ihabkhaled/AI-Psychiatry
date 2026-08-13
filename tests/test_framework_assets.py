@@ -7,7 +7,9 @@ class RuntimeTests(unittest.TestCase):
     def test_state_machine_has_bounded_recovery(self):
         machine = load_json(REPO / ".ai/executive-function/state-machine.json")
         self.assertEqual(machine["limits"]["same_strategy_attempts"], 3)
-        self.assertEqual(machine["limits"]["nested_job_depth"], 2)
+        self.assertEqual(machine["limits"]["nested_job_depth"], 3)
+        self.assertEqual(machine["limits"]["agent_delegation_depth"], 2)
+        self.assertEqual(machine["limits"]["critic_rounds"], 2)
         self.assertEqual(set(machine["terminal_states"]), {"blocked", "complete"})
 
     def test_versioned_state_never_fakes_activity(self):

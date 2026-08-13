@@ -1,35 +1,36 @@
 ---
 name: targeted-testing
-description: Use targeted testing when the task needs bounded targeted testing control while preserving the locked objective.
+description: Use when selecting development and final validation commands so evidence is sufficient without repeatedly running expensive or irrelevant suites.
 ---
 
 # Targeted Testing
 
-## Trigger
+## Core principle
 
-Use when observable task state calls for this control. Do not invoke it speculatively.
-
-## Inputs
-
-Locked objective, constraints, current evidence, attempts, and completion proof.
+Test from smallest relevant proof to required global gate; schedule quality intelligently without lowering it.
 
 ## Procedure
 
-1. Restate the objective in one line.
-2. Inspect only relevant evidence and classify the issue.
-3. Take the smallest action that can change or prove state.
-4. Record result, information gained, and the next valid action.
-5. Respect WIP 1, retry 3, verification 2, critic 1, and nested depth 2.
+1. Map the change to its closest unit or focused test.
+2. Run the failing or targeted proof first.
+3. Expand to relevant integration and E2E only as risk requires.
+4. Run lint, typecheck, build, and repository gates at the appropriate checkpoint.
+5. Classify failures as introduced, pre-existing, environmental, flaky, or unknown.
+6. Record what each command proves.
 
-## Output
+## Required output
 
-Return status, evidence, result, blocker if any, and one next recommendation. Never return hidden reasoning.
+Test sequence, results, failure classification, and remaining mandatory gate.
 
-## Escalation
+## Limits
 
-If repeated work adds no information, narrow scope, change strategy, or report the exact blocker.
+Do not rerun full suites after every small edit unless policy requires it.
+
+## Common mistakes
+
+Do not skip security or regression gates, or run commands without knowing the evidence sought.
 
 ## Stop condition
 
-Stop when the requested control is proven, the main Definition of Done is met, or progress requires external input.
+Stop when the current checkpoint has sufficient proof and continue to the next unmet requirement.
 

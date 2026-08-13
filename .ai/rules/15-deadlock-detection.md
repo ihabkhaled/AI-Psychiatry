@@ -1,18 +1,43 @@
 # Deadlock Detection
 
-**Purpose:** Deadlock means no valid next action because dependencies or authority are unavailable. Escalate with the exact blocker and needed input.
+**Purpose:** Detect when no productive next action exists because dependencies, authority, access, evidence, or contradictory constraints truly block all bounded paths.
 
-**Trigger:** Load when the manifest condition matches the current task.
+Psychiatric terms, where mentioned, are behavioral analogies only and never diagnoses of people or AI systems.
 
-**Required behavior:** Preserve repository constraints and canonical sources. Classify side findings before acting.
+## Trigger
 
-**Budget:** WIP 1; same-strategy attempts 3; verification passes 2; critic rounds 1; nested depth 2.
+Reasoning continues but every valid next action depends on unavailable external input or an unresolved contradiction.
 
-**Evidence:** Record commands, source locations, test output, or explicitly labeled inference.
+## Mandatory control
 
-**Escalation:** If the next action is invalid or repeated work adds no information, reset strategy or report the exact blocker.
+1. Stop speculation and restate objective and DoD.
+2. Summarize established evidence and constraints.
+3. Remove optional branches and invalid assumptions.
+4. Identify the smallest condition blocking every valid action.
+5. Try one materially different bounded source or isolation if available.
+6. Escalate through recovery levels and report Blocked, Evidence, and Needed at L5.
 
-**Stop condition:** The rule's required outcome is proven or a blocker is declared.
+## Limits
 
-**Master prompt:** sections 69–73.
+Use attention reset, strategy reset, and isolation before declaring blocked; same strategy maximum three.
+
+## Evidence
+
+Use observable repository sources, command or test output, task-state counters, completed requirements, and last meaningful progress. Store conclusions and results, never chain-of-thought.
+
+## Escalation
+
+Escalate only when the current controller cannot restore progress: attention reset, materially different strategy, minimal isolation, then an exact blocker. Recovery must reduce branches and assumptions.
+
+## Forbidden behavior
+
+Do not call one failed test, unfamiliar code, ordinary difficulty, or a large file deadlock.
+
+## Deep guidance
+
+Read [Deadlock Detection guide](../guides/deadlock-livelock.md) only when this rule triggers. Keep ordinary boot context small.
+
+## Stop condition
+
+A valid bounded action exists or an evidenced external blocker is reported.
 

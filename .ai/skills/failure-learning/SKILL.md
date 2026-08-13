@@ -1,35 +1,36 @@
 ---
 name: failure-learning
-description: Use failure learning when the task needs bounded failure learning control while preserving the locked objective.
+description: Use after a non-trivial, recurring, or expensive failure when a concise evidenced lesson could prevent future repeated investigation.
 ---
 
 # Failure Learning
 
-## Trigger
+## Core principle
 
-Use when observable task state calls for this control. Do not invoke it speculatively.
-
-## Inputs
-
-Locked objective, constraints, current evidence, attempts, and completion proof.
+Save reusable conclusions and recovery, never full debugging transcripts or hidden reasoning.
 
 ## Procedure
 
-1. Restate the objective in one line.
-2. Inspect only relevant evidence and classify the issue.
-3. Take the smallest action that can change or prove state.
-4. Record result, information gained, and the next valid action.
-5. Respect WIP 1, retry 3, verification 2, critic 1, and nested depth 2.
+1. Name the observable symptom.
+2. State the evidenced root cause.
+3. Record the evidence source and successful recovery.
+4. Describe how to detect the pattern earlier.
+5. Check stability, reuse value, and future token savings.
+6. Store it in failure-patterns or lessons, or reject promotion.
 
-## Output
+## Required output
 
-Return status, evidence, result, blocker if any, and one next recommendation. Never return hidden reasoning.
+Symptom, root cause, evidence, recovery, early signal, and memory destination.
 
-## Escalation
+## Limits
 
-If repeated work adds no information, narrow scope, change strategy, or report the exact blocker.
+One concise entry per reusable pattern.
+
+## Common mistakes
+
+Do not save temporary errors, speculative diagnoses, giant output, or raw chain-of-thought.
 
 ## Stop condition
 
-Stop when the requested control is proven, the main Definition of Done is met, or progress requires external input.
+Stop when the reusable lesson is stored concisely or judged too temporary.
 

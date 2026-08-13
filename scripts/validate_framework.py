@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import re
 from dataclasses import dataclass
@@ -15,6 +16,33 @@ class Issue:
 
 
 LINK = re.compile(r"(?<!!)\[[^]]+\]\(([^)]+)\)")
+
+
+def validate_traceability(root: Path) -> list[Issue]:
+    root = Path(root).resolve()
+    prompt_path = root / "skills/install-framework/references/master-prompt.md"
+    trace_path = root / ".ai/manifests/prompt-traceability.json"
+    if not prompt_path.exists() or not trace_path.exists():
+        return [Issue("traceability-missing", str(trace_path.relative_to(root)), "canonical prompt or traceability manifest missing")]
+    prompt_bytes = prompt_path.read_bytes()
+    prompt = prompt_bytes.decode("utf-8")
+    headings = {number: title.rstrip("\r") for number, title in re.findall(r"^# (\d+)\. (.+)$", prompt, flags=re.MULTILINE)}
+    trace = json.loads(trace_path.read_text(encoding="utf-8"))
+    issues: list[Issue] = []
+    digest = hashlib.sha256(prompt_bytes).hexdigest().upper()
+    if trace.get("canonical_sha256") != digest:
+        issues.append(Issue("traceability-hash", str(trace_path.relative_to(root)), "canonical prompt hash is stale"))
+    sections = trace.get("sections", {})
+    if set(sections) != set(headings):
+        issues.append(Issue("traceability-gap", str(trace_path.relative_to(root)), "section IDs do not match canonical prompt"))
+    for number, title in headings.items():
+        entry = sections.get(number, {})
+        if entry.get("title") != title:
+            issues.append(Issue("traceability-stale", str(trace_path.relative_to(root)), f"section {number} title differs"))
+        for artifact in entry.get("artifacts", []):
+            if not (root / artifact).exists():
+                issues.append(Issue("traceability-artifact", artifact, f"declared by section {number}"))
+    return issues
 
 
 def validate(root: Path, package_required: bool = True) -> list[Issue]:
@@ -52,6 +80,7 @@ def validate(root: Path, package_required: bool = True) -> list[Issue]:
     for item in required:
         if not (root / item).exists():
             issues.append(Issue("missing-required", item, "required package artifact"))
+    issues.extend(validate_traceability(root))
     try:
         rules = json.loads((root / ".ai/manifests/rules.json").read_text(encoding="utf-8"))["rules"]
         ids = [item["id"] for item in rules]
@@ -60,13 +89,6 @@ def validate(root: Path, package_required: bool = True) -> list[Issue]:
         for item in rules:
             if not (root / item["path"]).exists():
                 issues.append(Issue("missing-declared-path", item["path"], item["id"]))
-    except (OSError, KeyError, json.JSONDecodeError):
-        pass
-    try:
-        trace = json.loads((root / ".ai/manifests/prompt-traceability.json").read_text(encoding="utf-8"))["sections"]
-        for n in range(190):
-            if str(n) not in trace or not trace[str(n)].get("artifacts"):
-                issues.append(Issue("traceability-gap", ".ai/manifests/prompt-traceability.json", str(n)))
     except (OSError, KeyError, json.JSONDecodeError):
         pass
     try:

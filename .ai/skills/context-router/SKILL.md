@@ -1,35 +1,36 @@
 ---
 name: context-router
-description: Use context router when the task needs bounded context router control while preserving the locked objective.
+description: Use when choosing which repository instructions, architecture, domain knowledge, files, tests, or deep guidance to load for a task without reading everything.
 ---
 
 # Context Router
 
-## Trigger
+## Core principle
 
-Use when observable task state calls for this control. Do not invoke it speculatively.
-
-## Inputs
-
-Locked objective, constraints, current evidence, attempts, and completion proof.
+Load minimal sufficient context in layers: boot, task index, domain, exact rules and files, then deep architecture only when required.
 
 ## Procedure
 
-1. Restate the objective in one line.
-2. Inspect only relevant evidence and classify the issue.
-3. Take the smallest action that can change or prove state.
-4. Record result, information gained, and the next valid action.
-5. Respect WIP 1, retry 3, verification 2, critic 1, and nested depth 2.
+1. Classify the task type and required decision.
+2. Load the tiny bootstrap and task index.
+3. Select one relevant domain and its test commands.
+4. Load exact rules and sources needed for the active work item.
+5. Escalate to deep architecture only for a proven dependency.
+6. Record the route and avoid duplicate sources.
 
-## Output
+## Required output
 
-Return status, evidence, result, blocker if any, and one next recommendation. Never return hidden reasoning.
+Task type, context layers loaded, canonical sources, and freshness.
 
-## Escalation
+## Limits
 
-If repeated work adds no information, narrow scope, change strategy, or report the exact blocker.
+Ordinary tasks should rarely use deep layer L4.
+
+## Common mistakes
+
+Do not read every AI or architecture document before locating the relevant source.
 
 ## Stop condition
 
-Stop when the requested control is proven, the main Definition of Done is met, or progress requires external input.
+Stop when context is sufficient for reliable action and additional reading has no completion value.
 

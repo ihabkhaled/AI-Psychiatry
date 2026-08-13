@@ -35,11 +35,33 @@ Install **AI Psychiatry** from the Plugins Directory, then invoke:
 $install-framework
 ```
 
+## Use the controls directly
+
+The plugin exposes focused skills in both platforms. Claude uses `/ai-psychiatry:<skill>`; Codex uses `$<skill>`.
+
+| Behavior | Skill |
+|---|---|
+| Select the correct controller | `executive-control` |
+| ADHD-like attention drift analogy | `attention-reset` |
+| Analysis paralysis and rabbit holes | `stop-overthinking` |
+| OCD-like repetitive checking analogy | `stop-compulsive-verification` |
+| Box-inside-box tasks and nested agents | `flatten-recursive-investigation` |
+| Unsupported repository claims | `evidence-gate` |
+| Repeating activity or no valid action | `recover-from-deadlock-livelock` |
+| Perfectionism and refusal to finish | `completion-gate` |
+
+Example:
+
+```text
+/ai-psychiatry:flatten-recursive-investigation
+$stop-compulsive-verification
+```
+
 ## What it installs
 
 The shared installer preserves repository-specific instructions and adds a compact `.ai/` runtime with 41 focused rules, 28 operational skills, thin agent adapters, context and durable memory, JSON/TOON/SJON state, schemas, manifests, and scenario tests. The complete master prompt is progressively disclosed from `skills/install-framework/references/master-prompt.md`.
 
-Coverage includes hallucination, attention drift, ADHD-style distraction analogy, OCD-style compulsive-checking analogy, recursive thinking, nested jobs, rabbit holes, retry and critic loops, deadlock, livelock, context reload loops, fake progress, perfectionism, scope drift, and completion avoidance.
+Coverage includes hallucination, attention drift, ADHD-style distraction analogy, OCD-style compulsive-checking analogy, recursive thinking, nested jobs, rabbit holes, retry and critic loops, deadlock, livelock, context reload loops, fake progress, perfectionism, scope drift, and completion avoidance. The substantive intervention files are indexed in [AI framework guidance](docs/ai/README.md); the complete 25-mode catalog is [here](.ai/guides/failure-mode-catalog.md).
 
 ## Validate
 

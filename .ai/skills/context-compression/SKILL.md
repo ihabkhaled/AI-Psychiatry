@@ -1,35 +1,36 @@
 ---
 name: context-compression
-description: Use context compression when the task needs bounded context compression control while preserving the locked objective.
+description: Use when a long session, large tool output, repeated discussion, or handoff needs a compact state that preserves decisions and enables continuation.
 ---
 
 # Context Compression
 
-## Trigger
+## Core principle
 
-Use when observable task state calls for this control. Do not invoke it speculatively.
-
-## Inputs
-
-Locked objective, constraints, current evidence, attempts, and completion proof.
+Preserve actionable truth; drop raw reasoning, abandoned speculation, duplicate output, and outdated hypotheses.
 
 ## Procedure
 
-1. Restate the objective in one line.
-2. Inspect only relevant evidence and classify the issue.
-3. Take the smallest action that can change or prove state.
-4. Record result, information gained, and the next valid action.
-5. Respect WIP 1, retry 3, verification 2, critic 1, and nested depth 2.
+1. Capture Goal, Completed, Remaining, Decisions, Evidence, Blocker, Deferred, and Next action.
+2. Keep exact errors, counts, paths, and commands only when material.
+3. Remove repeated explanations and obsolete hypotheses.
+4. Separate temporary state from durable knowledge.
+5. Validate important facts against current source.
+6. Write the compact state to the task context.
 
-## Output
+## Required output
 
-Return status, evidence, result, blocker if any, and one next recommendation. Never return hidden reasoning.
+A short structured resume record with the eight required fields.
 
-## Escalation
+## Limits
 
-If repeated work adds no information, narrow scope, change strategy, or report the exact blocker.
+Use the smallest state that supports reliable continuation.
+
+## Common mistakes
+
+Do not store chain-of-thought, giant logs, or promote temporary debugging to memory.
 
 ## Stop condition
 
-Stop when the requested control is proven, the main Definition of Done is met, or progress requires external input.
+Stop when a future agent can resume without rereading the whole repository.
 

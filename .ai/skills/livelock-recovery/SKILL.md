@@ -1,35 +1,36 @@
 ---
 name: livelock-recovery
-description: Use livelock recovery when the task needs bounded livelock recovery control while preserving the locked objective.
+description: Use when activity is high but requirements, blockers, tests, and deliverables remain unchanged across repeated edit, search, test, review, or planning cycles.
 ---
 
 # Livelock Recovery
 
-## Trigger
+## Core principle
 
-Use when observable task state calls for this control. Do not invoke it speculatively.
-
-## Inputs
-
-Locked objective, constraints, current evidence, attempts, and completion proof.
+Stop repeated activity, identify the unchanged outcome, change strategy materially, and reduce the search space.
 
 ## Procedure
 
-1. Restate the objective in one line.
-2. Inspect only relevant evidence and classify the issue.
-3. Take the smallest action that can change or prove state.
-4. Record result, information gained, and the next valid action.
-5. Respect WIP 1, retry 3, verification 2, critic 1, and nested depth 2.
+1. Freeze the repeating action.
+2. Compare recent actions semantically.
+3. Name the outcome that did not change.
+4. Remove speculative branches and invalid assumptions.
+5. Choose a new hypothesis, evidence source, isolation, or layer.
+6. Reduce scope, retry once, then escalate or block if still unchanged.
 
-## Output
+## Required output
 
-Return status, evidence, result, blocker if any, and one next recommendation. Never return hidden reasoning.
+Repeated cycle, unchanged metric, new strategy, reduced scope, and retry result.
 
-## Escalation
+## Limits
 
-If repeated work adds no information, narrow scope, change strategy, or report the exact blocker.
+Reset after 4 stalled cycles or 3 same-strategy attempts.
+
+## Common mistakes
+
+Do not make recovery generate more hypotheses or perform a fourth equivalent attempt.
 
 ## Stop condition
 
-Stop when the requested control is proven, the main Definition of Done is met, or progress requires external input.
+Stop when measurable progress resumes or an exact blocker is proven.
 

@@ -1,35 +1,36 @@
 ---
 name: goal-lock
-description: Use goal lock when the task needs bounded goal lock control while preserving the locked objective.
+description: Use when the requested outcome is unclear, silently changing, being reinterpreted by discoveries, or disconnected from the active implementation.
 ---
 
 # Goal Lock
 
-## Trigger
+## Core principle
 
-Use when observable task state calls for this control. Do not invoke it speculatively.
-
-## Inputs
-
-Locked objective, constraints, current evidence, attempts, and completion proof.
+Discoveries do not mutate the user’s objective; only explicit user direction or a proven blocker or required condition may change execution.
 
 ## Procedure
 
-1. Restate the objective in one line.
-2. Inspect only relevant evidence and classify the issue.
-3. Take the smallest action that can change or prove state.
-4. Record result, information gained, and the next valid action.
-5. Respect WIP 1, retry 3, verification 2, critic 1, and nested depth 2.
+1. Quote or precisely restate the requested outcome.
+2. Define observable success and the minimum DoD.
+3. List included and excluded scope.
+4. Connect the active work item to one DoD condition.
+5. Compare every proposed branch with the locked goal.
+6. Request direction only when a real conflict cannot be resolved from evidence.
 
-## Output
+## Required output
 
-Return status, evidence, result, blocker if any, and one next recommendation. Never return hidden reasoning.
+Objective, success, DoD, scope, out-of-scope, and the active requirement.
 
-## Escalation
+## Limits
 
-If repeated work adds no information, narrow scope, change strategy, or report the exact blocker.
+One primary objective; local plan updates may not redefine it.
+
+## Common mistakes
+
+Do not promote an interesting defect, architecture concern, or optional improvement into the goal.
 
 ## Stop condition
 
-Stop when the requested control is proven, the main Definition of Done is met, or progress requires external input.
+Stop when the objective is stable and every active action maps to a required outcome.
 

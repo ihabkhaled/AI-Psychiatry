@@ -1,35 +1,36 @@
 ---
 name: evidence-gate
-description: Use evidence gate when the task needs bounded evidence gate control while preserving the locked objective.
+description: Use when files, services, commands, tests, APIs, configuration, architecture, publication, or runtime results are assumed without an authoritative repository or tool source.
 ---
 
 # Evidence Gate
 
-## Trigger
+## Core principle
 
-Use when observable task state calls for this control. Do not invoke it speculatively.
-
-## Inputs
-
-Locked objective, constraints, current evidence, attempts, and completion proof.
+Unknown remains unknown until observed; assertiveness never permits fabricated certainty.
 
 ## Procedure
 
-1. Restate the objective in one line.
-2. Inspect only relevant evidence and classify the issue.
-3. Take the smallest action that can change or prove state.
-4. Record result, information gained, and the next valid action.
-5. Respect WIP 1, retry 3, verification 2, critic 1, and nested depth 2.
+1. Freeze work that depends on the claim.
+2. Classify it as fact, inference, assumption, or unknown.
+3. Name the cheapest authoritative source.
+4. Search and read the smallest relevant evidence.
+5. Record path, output, result, and freshness.
+6. Proceed with proof or state Not confirmed and remove the dependency.
 
-## Output
+## Required output
 
-Return status, evidence, result, blocker if any, and one next recommendation. Never return hidden reasoning.
+Claim classification, evidence source, finding, and permitted next action.
 
-## Escalation
+## Limits
 
-If repeated work adds no information, narrow scope, change strategy, or report the exact blocker.
+After 3 equivalent searches change evidence source or stop.
+
+## Common mistakes
+
+Do not treat conventions, stale memory, or plausible architecture as repository facts.
 
 ## Stop condition
 
-Stop when the requested control is proven, the main Definition of Done is met, or progress requires external input.
+Stop when the claim is proven, safely bounded as inference, or excluded as unconfirmed.
 

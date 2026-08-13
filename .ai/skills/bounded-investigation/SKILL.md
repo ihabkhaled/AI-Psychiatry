@@ -1,35 +1,36 @@
 ---
 name: bounded-investigation
-description: Use bounded investigation when the task needs bounded bounded investigation control while preserving the locked objective.
+description: Use when debugging, architecture inspection, research, or repository exploration risks becoming open-ended, recursive, speculative, or disconnected from a decision.
 ---
 
 # Bounded Investigation
 
-## Trigger
+## Core principle
 
-Use when observable task state calls for this control. Do not invoke it speculatively.
-
-## Inputs
-
-Locked objective, constraints, current evidence, attempts, and completion proof.
+An investigation exists to answer one decision-enabling question, not to understand everything.
 
 ## Procedure
 
-1. Restate the objective in one line.
-2. Inspect only relevant evidence and classify the issue.
-3. Take the smallest action that can change or prove state.
-4. Record result, information gained, and the next valid action.
-5. Respect WIP 1, retry 3, verification 2, critic 1, and nested depth 2.
+1. State the exact question.
+2. Name the evidence source and expected decision.
+3. Set maximum depth, time or attempt budget, and stop condition.
+4. Search first, then read the smallest relevant source.
+5. Record what the evidence proved or disproved.
+6. Return the decision to the parent task; park anything else.
 
-## Output
+## Required output
 
-Return status, evidence, result, blocker if any, and one next recommendation. Never return hidden reasoning.
+Question, evidence, conclusion, parent impact, and next recommendation.
 
-## Escalation
+## Limits
 
-If repeated work adds no information, narrow scope, change strategy, or report the exact blocker.
+Nesting at most 3; same strategy at most 3 attempts.
+
+## Common mistakes
+
+Do not replace the question with a broad audit or preserve a failed hypothesis because of sunk cost.
 
 ## Stop condition
 
-Stop when the requested control is proven, the main Definition of Done is met, or progress requires external input.
+Stop when the decision is possible, the budget is reached, or required evidence is externally unavailable.
 

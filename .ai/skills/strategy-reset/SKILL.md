@@ -1,35 +1,36 @@
 ---
 name: strategy-reset
-description: Use strategy reset when the task needs bounded strategy reset control while preserving the locked objective.
+description: Use when three same-strategy attempts fail, two approaches oscillate without evidence, or the current abstraction and evidence source cannot resolve the blocker.
 ---
 
 # Strategy Reset
 
-## Trigger
+## Core principle
 
-Use when observable task state calls for this control. Do not invoke it speculatively.
-
-## Inputs
-
-Locked objective, constraints, current evidence, attempts, and completion proof.
+A reset must introduce real novelty: a new hypothesis, source, isolation, layer, or execution strategy.
 
 ## Procedure
 
-1. Restate the objective in one line.
-2. Inspect only relevant evidence and classify the issue.
-3. Take the smallest action that can change or prove state.
-4. Record result, information gained, and the next valid action.
-5. Respect WIP 1, retry 3, verification 2, critic 1, and nested depth 2.
+1. Freeze the failed and oscillating approaches.
+2. Summarize evidence and invalidated assumptions.
+3. Name what all attempts had in common.
+4. Select a materially different strategy using objective criteria.
+5. Reduce the problem to the smallest discriminating test.
+6. Execute once and update the parent task.
 
-## Output
+## Required output
 
-Return status, evidence, result, blocker if any, and one next recommendation. Never return hidden reasoning.
+Failed strategy, information gained, new strategy, discriminating action, and result.
 
-## Escalation
+## Limits
 
-If repeated work adds no information, narrow scope, change strategy, or report the exact blocker.
+One reset action before reassessment; no fourth equivalent retry.
+
+## Common mistakes
+
+Do not change only command syntax, tool brand, or wording while preserving the same hypothesis.
 
 ## Stop condition
 
-Stop when the requested control is proven, the main Definition of Done is met, or progress requires external input.
+Stop when the new strategy produces evidence or proves a real blocker.
 

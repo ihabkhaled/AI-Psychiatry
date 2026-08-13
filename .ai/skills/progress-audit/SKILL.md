@@ -1,35 +1,36 @@
 ---
 name: progress-audit
-description: Use progress audit when the task needs bounded progress audit control while preserving the locked objective.
+description: Use when status is unclear, activity is high, completion estimates feel unreliable, or the agent may be mistaking reading, reasoning, tools, or churn for progress.
 ---
 
 # Progress Audit
 
-## Trigger
+## Core principle
 
-Use when observable task state calls for this control. Do not invoke it speculatively.
-
-## Inputs
-
-Locked objective, constraints, current evidence, attempts, and completion proof.
+Progress is completed requirements, removed blockers, passing relevant tests, delivered artifacts, and verified acceptance conditions.
 
 ## Procedure
 
-1. Restate the objective in one line.
-2. Inspect only relevant evidence and classify the issue.
-3. Take the smallest action that can change or prove state.
-4. Record result, information gained, and the next valid action.
-5. Respect WIP 1, retry 3, verification 2, critic 1, and nested depth 2.
+1. Restate objective and finite DoD.
+2. List completed and remaining requirements.
+3. Name the last meaningful progress event.
+4. Count repeated failures, reverted work, redundant tools, rereads, and scope growth.
+5. Identify the actual blocker and highest-value next action.
+6. Trigger recovery if outcomes stayed flat.
 
-## Output
+## Required output
 
-Return status, evidence, result, blocker if any, and one next recommendation. Never return hidden reasoning.
+Completed, remaining, blocker, repetitive activity, progress state, and one next action.
 
-## Escalation
+## Limits
 
-If repeated work adds no information, narrow scope, change strategy, or report the exact blocker.
+Keep the audit concise; do not create a giant ledger.
+
+## Common mistakes
+
+Do not award progress for activity alone or fake precise percentages.
 
 ## Stop condition
 
-Stop when the requested control is proven, the main Definition of Done is met, or progress requires external input.
+Stop when the task is clearly advancing, stalled with recovery selected, blocked, or complete.
 

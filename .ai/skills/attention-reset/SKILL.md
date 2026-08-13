@@ -1,35 +1,36 @@
 ---
 name: attention-reset
-description: Use attention reset when the task needs bounded attention reset control while preserving the locked objective.
+description: Use when objective switching, novelty chasing, repeated context switching, optional branches, or ADHD-like distraction as a behavioral analogy interrupts delivery.
 ---
 
 # Attention Reset
 
-## Trigger
+## Core principle
 
-Use when observable task state calls for this control. Do not invoke it speculatively.
-
-## Inputs
-
-Locked objective, constraints, current evidence, attempts, and completion proof.
+Freeze, recall the goal, close irrelevant branches, choose the highest-value remaining action, and resume without making the reset another loop.
 
 ## Procedure
 
-1. Restate the objective in one line.
-2. Inspect only relevant evidence and classify the issue.
-3. Take the smallest action that can change or prove state.
-4. Record result, information gained, and the next valid action.
-5. Respect WIP 1, retry 3, verification 2, critic 1, and nested depth 2.
+1. Freeze new searches and edits.
+2. Restate objective, completed requirements, remaining requirements, and actual blocker.
+3. Classify the current branch.
+4. Park optional or unrelated branches with evidence.
+5. Reduce active work to one required item.
+6. Resume the shortest evidence-producing action.
 
-## Output
+## Required output
 
-Return status, evidence, result, blocker if any, and one next recommendation. Never return hidden reasoning.
+One-line goal, branch classification, parked findings, and one resumed action.
 
-## Escalation
+## Limits
 
-If repeated work adds no information, narrow scope, change strategy, or report the exact blocker.
+Keep the reset concise; WIP returns to 1.
+
+## Common mistakes
+
+Do not open more context during reset or regenerate the whole plan.
 
 ## Stop condition
 
-Stop when the requested control is proven, the main Definition of Done is met, or progress requires external input.
+Stop when one objective, one active item, and one direct next action remain.
 

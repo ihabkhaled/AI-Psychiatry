@@ -1,35 +1,36 @@
 ---
 name: task-bootstrap
-description: Use task bootstrap when the task needs bounded task bootstrap control while preserving the locked objective.
+description: Use when beginning any plan, audit, investigation, modification, review, test, or expensive tool action before the primary objective and completion conditions are explicit.
 ---
 
 # Task Bootstrap
 
-## Trigger
+## Core principle
 
-Use when observable task state calls for this control. Do not invoke it speculatively.
-
-## Inputs
-
-Locked objective, constraints, current evidence, attempts, and completion proof.
+Executive control loads before planning; planning without a locked objective can become the first overthinking loop.
 
 ## Procedure
 
-1. Restate the objective in one line.
-2. Inspect only relevant evidence and classify the issue.
-3. Take the smallest action that can change or prove state.
-4. Record result, information gained, and the next valid action.
-5. Respect WIP 1, retry 3, verification 2, critic 1, and nested depth 2.
+1. Read applicable platform and repository instructions.
+2. State the exact primary objective and observable success condition.
+3. Define the minimum finite Definition of Done, included scope, and excluded scope.
+4. Name the current blocker or none, one active work item, and the next deliverable.
+5. Route only task-relevant context and inspect the smallest evidence needed.
+6. Create a bounded executable plan and begin the first deliverable.
 
-## Output
+## Required output
 
-Return status, evidence, result, blocker if any, and one next recommendation. Never return hidden reasoning.
+Objective, success, DoD, scope, out-of-scope, blocker, active item, nesting depth, retry count, verification state, and next deliverable.
 
-## Escalation
+## Limits
 
-If repeated work adds no information, narrow scope, change strategy, or report the exact blocker.
+WIP 1; start at nesting depth 0; no broad audit unless required by the objective.
+
+## Common mistakes
+
+Do not write a giant plan before bootstrap or convert implementation into a repository-wide audit.
 
 ## Stop condition
 
-Stop when the requested control is proven, the main Definition of Done is met, or progress requires external input.
+Stop bootstrap when the agent can name exactly what done means and the first evidence-producing action.
 

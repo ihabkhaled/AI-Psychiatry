@@ -1,18 +1,43 @@
-# Anti Perfectionism
+# Anti-Perfectionism
 
-**Purpose:** Treat OCD-style compulsive checking as an analogy for repeated verification without new evidence. Use at most two targeted verification passes.
+**Purpose:** Prevent OCD-like checking as an analogy, infinite refinement, optional refactors, and subjective elegance from blocking a correct verified result.
 
-**Trigger:** Load when the manifest condition matches the current task.
+Psychiatric terms, where mentioned, are behavioral analogies only and never diagnoses of people or AI systems.
 
-**Required behavior:** Preserve repository constraints and canonical sources. Classify side findings before acting.
+## Trigger
 
-**Budget:** WIP 1; same-strategy attempts 3; verification passes 2; critic rounds 1; nested depth 2.
+Required behavior is satisfied but the agent continues polishing, redesigning, optimizing, or exploring hypothetical edge cases.
 
-**Evidence:** Record commands, source locations, test output, or explicitly labeled inference.
+## Mandatory control
 
-**Escalation:** If the next action is invalid or repeated work adds no information, reset strategy or report the exact blocker.
+1. Freeze new improvements and broad audits.
+2. List each finite DoD condition and its proof.
+3. Classify every remaining concern.
+4. Fix only blocker or required correctness, security, data-safety, regression, or explicit requirement issues.
+5. Record optional improvements without implementing them.
+6. Run completion gate and report proof.
 
-**Stop condition:** The rule's required outcome is proven or a blocker is declared.
+## Limits
 
-**Master prompt:** sections 37–40.
+Optional exploration becomes zero near completion; critics receive two rounds by default.
+
+## Evidence
+
+Use observable repository sources, command or test output, task-state counters, completed requirements, and last meaningful progress. Store conclusions and results, never chain-of-thought.
+
+## Escalation
+
+Escalate only when the current controller cannot restore progress: attention reset, materially different strategy, minimal isolation, then an exact blocker. Recovery must reduce branches and assumptions.
+
+## Forbidden behavior
+
+Do not replace a valid solution because another may be cleaner. Do not turn a local task into repository repair.
+
+## Deep guidance
+
+Read [Anti-Perfectionism guide](../guides/perfectionism-completion.md) only when this rule triggers. Keep ordinary boot context small.
+
+## Stop condition
+
+Objective, required quality, relevant tests, and mandatory gates are proven.
 

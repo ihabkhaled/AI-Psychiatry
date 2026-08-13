@@ -33,6 +33,18 @@
       "load_when": "on_demand"
     }
   ],
+  "guides": [
+    {"path": ".ai/guides/attention-drift.md", "load_when": "on-loop"},
+    {"path": ".ai/guides/compulsive-verification.md", "load_when": "on-finalization"},
+    {"path": ".ai/guides/overthinking-analysis-paralysis.md", "load_when": "on-loop"},
+    {"path": ".ai/guides/recursive-investigation.md", "load_when": "on-loop"},
+    {"path": ".ai/guides/nested-job-control.md", "load_when": "on-multi-agent"},
+    {"path": ".ai/guides/hallucination-evidence.md", "load_when": "on-uncertainty"},
+    {"path": ".ai/guides/perfectionism-completion.md", "load_when": "on-finalization"},
+    {"path": ".ai/guides/rabbit-holes-scope-drift.md", "load_when": "on-loop"},
+    {"path": ".ai/guides/deadlock-livelock.md", "load_when": "on-deadlock"},
+    {"path": ".ai/guides/failure-mode-catalog.md", "load_when": "on-diagnosis"}
+  ],
   "context": [
     {
       "path": ".ai/bootstrap/boot.md",
@@ -56,4 +68,3 @@
     }
   ]
 }
-

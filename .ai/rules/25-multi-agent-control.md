@@ -1,18 +1,43 @@
-# Multi Agent Control
+# Multi-Agent Control
 
-**Purpose:** Use one coordinator, one writer per file, WIP bounded by independent tasks, and nested delegation depth at most 2.
+**Purpose:** Prevent nested jobs, recursive delegation, overlapping writers, circular waits, critic ownership, and independent scope expansion.
 
-**Trigger:** Load when the manifest condition matches the current task.
+Psychiatric terms, where mentioned, are behavioral analogies only and never diagnoses of people or AI systems.
 
-**Required behavior:** Preserve repository constraints and canonical sources. Classify side findings before acting.
+## Trigger
 
-**Budget:** WIP 1; same-strategy attempts 3; verification passes 2; critic rounds 1; nested depth 2.
+Two or more agents work concurrently, children delegate, responsibilities overlap, or coordination activity exceeds useful delivery.
 
-**Evidence:** Record commands, source locations, test output, or explicitly labeled inference.
+## Mandatory control
 
-**Escalation:** If the next action is invalid or repeated work adds no information, reset strategy or report the exact blocker.
+1. Lock parent objective, scope, and termination with one coordinator.
+2. Assign each child bounded scope, expected output, evidence, and stop condition.
+3. Limit delegation depth to two.
+4. Enforce one writer per overlapping area.
+5. Break circular dependencies by selecting one dependency to resolve.
+6. Require Result, Evidence, Unresolved blocker, and Deferred findings; integrate centrally.
 
-**Stop condition:** The rule's required outcome is proven or a blocker is declared.
+## Limits
 
-**Master prompt:** sections 115–119.
+Delegation depth two; parallel WIP only for genuinely independent tasks.
+
+## Evidence
+
+Use observable repository sources, command or test output, task-state counters, completed requirements, and last meaningful progress. Store conclusions and results, never chain-of-thought.
+
+## Escalation
+
+Escalate only when the current controller cannot restore progress: attention reset, materially different strategy, minimal isolation, then an exact blocker. Recovery must reduce branches and assumptions.
+
+## Forbidden behavior
+
+Do not use agent count as progress, let children adopt discoveries, or let critics invent requirements.
+
+## Deep guidance
+
+Read [Multi-Agent Control guide](../guides/nested-job-control.md) only when this rule triggers. Keep ordinary boot context small.
+
+## Stop condition
+
+Ownership and dependencies are clear, child results are integrated, and the coordinator has one next action.
 

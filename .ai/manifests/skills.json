@@ -1,256 +1,517 @@
 {
+  "version": "0.2.0",
   "skills": [
     {
       "id": "skill-00",
       "name": "task-bootstrap",
       "path": ".ai/skills/task-bootstrap/SKILL.md",
-      "load_when": "on_demand",
+      "purpose": "Operational task bootstrap controller",
+      "priority": 100,
+      "scope": "repository",
+      "loadCondition": "task-start",
+      "load_when": "task-start",
       "canonical_rules": [
+        "rule-00",
         "rule-01"
-      ]
+      ],
+      "version": "0.2.0"
     },
     {
       "id": "skill-01",
       "name": "executive-function",
       "path": ".ai/skills/executive-function/SKILL.md",
-      "load_when": "on_demand",
+      "purpose": "Operational executive function controller",
+      "priority": 100,
+      "scope": "repository",
+      "loadCondition": "always",
+      "load_when": "always",
       "canonical_rules": [
-        "rule-02"
-      ]
+        "rule-00"
+      ],
+      "version": "0.2.0"
     },
     {
       "id": "skill-02",
       "name": "goal-lock",
       "path": ".ai/skills/goal-lock/SKILL.md",
-      "load_when": "on_demand",
+      "purpose": "Operational goal lock controller",
+      "priority": 100,
+      "scope": "repository",
+      "loadCondition": "task-start",
+      "load_when": "task-start",
       "canonical_rules": [
-        "rule-03"
-      ]
+        "rule-02"
+      ],
+      "version": "0.2.0"
     },
     {
       "id": "skill-03",
       "name": "scope-guard",
       "path": ".ai/skills/scope-guard/SKILL.md",
-      "load_when": "on_demand",
+      "purpose": "Operational scope guard controller",
+      "priority": 95,
+      "scope": "repository",
+      "loadCondition": "always",
+      "load_when": "always",
       "canonical_rules": [
-        "rule-04"
-      ]
+        "rule-03"
+      ],
+      "version": "0.2.0"
     },
     {
       "id": "skill-04",
       "name": "attention-reset",
       "path": ".ai/skills/attention-reset/SKILL.md",
-      "load_when": "on_demand",
+      "purpose": "Operational attention reset controller",
+      "priority": 95,
+      "scope": "repository",
+      "loadCondition": "on-loop",
+      "load_when": "on-loop",
       "canonical_rules": [
+        "rule-04",
         "rule-05"
-      ]
+      ],
+      "version": "0.2.0"
     },
     {
       "id": "skill-05",
       "name": "bounded-investigation",
       "path": ".ai/skills/bounded-investigation/SKILL.md",
-      "load_when": "on_demand",
+      "purpose": "Operational bounded investigation controller",
+      "priority": 80,
+      "scope": "repository",
+      "loadCondition": "on-debug",
+      "load_when": "on-debug",
       "canonical_rules": [
-        "rule-06"
-      ]
+        "rule-04",
+        "rule-06",
+        "rule-07"
+      ],
+      "version": "0.2.0"
     },
     {
       "id": "skill-06",
       "name": "anti-overthinking",
       "path": ".ai/skills/anti-overthinking/SKILL.md",
-      "load_when": "on_demand",
+      "purpose": "Operational anti overthinking controller",
+      "priority": 95,
+      "scope": "repository",
+      "loadCondition": "on-loop",
+      "load_when": "on-loop",
       "canonical_rules": [
-        "rule-07"
-      ]
+        "rule-06"
+      ],
+      "version": "0.2.0"
     },
     {
       "id": "skill-07",
       "name": "loop-detector",
       "path": ".ai/skills/loop-detector/SKILL.md",
-      "load_when": "on_demand",
+      "purpose": "Operational loop detector controller",
+      "priority": 95,
+      "scope": "repository",
+      "loadCondition": "on-loop",
+      "load_when": "on-loop",
       "canonical_rules": [
-        "rule-08"
-      ]
+        "rule-11",
+        "rule-15",
+        "rule-16",
+        "rule-20",
+        "rule-38"
+      ],
+      "version": "0.2.0"
     },
     {
       "id": "skill-08",
       "name": "deadlock-recovery",
       "path": ".ai/skills/deadlock-recovery/SKILL.md",
-      "load_when": "on_demand",
+      "purpose": "Operational deadlock recovery controller",
+      "priority": 95,
+      "scope": "repository",
+      "loadCondition": "on-deadlock",
+      "load_when": "on-deadlock",
       "canonical_rules": [
-        "rule-09"
-      ]
+        "rule-15",
+        "rule-17"
+      ],
+      "version": "0.2.0"
     },
     {
       "id": "skill-09",
       "name": "livelock-recovery",
       "path": ".ai/skills/livelock-recovery/SKILL.md",
-      "load_when": "on_demand",
+      "purpose": "Operational livelock recovery controller",
+      "priority": 95,
+      "scope": "repository",
+      "loadCondition": "on-loop",
+      "load_when": "on-loop",
       "canonical_rules": [
-        "rule-10"
-      ]
+        "rule-16",
+        "rule-17"
+      ],
+      "version": "0.2.0"
     },
     {
       "id": "skill-10",
       "name": "strategy-reset",
       "path": ".ai/skills/strategy-reset/SKILL.md",
-      "load_when": "on_demand",
+      "purpose": "Operational strategy reset controller",
+      "priority": 90,
+      "scope": "repository",
+      "loadCondition": "on-loop",
+      "load_when": "on-loop",
       "canonical_rules": [
-        "rule-11"
-      ]
+        "rule-17",
+        "rule-40"
+      ],
+      "version": "0.2.0"
     },
     {
       "id": "skill-11",
       "name": "progress-audit",
       "path": ".ai/skills/progress-audit/SKILL.md",
-      "load_when": "on_demand",
+      "purpose": "Operational progress audit controller",
+      "priority": 85,
+      "scope": "repository",
+      "loadCondition": "on-loop",
+      "load_when": "on-loop",
       "canonical_rules": [
-        "rule-12"
-      ]
+        "rule-10",
+        "rule-30"
+      ],
+      "version": "0.2.0"
     },
     {
       "id": "skill-12",
       "name": "evidence-gate",
       "path": ".ai/skills/evidence-gate/SKILL.md",
-      "load_when": "on_demand",
+      "purpose": "Operational evidence gate controller",
+      "priority": 100,
+      "scope": "repository",
+      "loadCondition": "always",
+      "load_when": "always",
       "canonical_rules": [
-        "rule-13"
-      ]
+        "rule-13",
+        "rule-14",
+        "rule-39"
+      ],
+      "version": "0.2.0"
     },
     {
       "id": "skill-13",
       "name": "context-router",
       "path": ".ai/skills/context-router/SKILL.md",
-      "load_when": "on_demand",
+      "purpose": "Operational context router controller",
+      "priority": 90,
+      "scope": "repository",
+      "loadCondition": "task-start",
+      "load_when": "task-start",
       "canonical_rules": [
-        "rule-14"
-      ]
+        "rule-18",
+        "rule-19"
+      ],
+      "version": "0.2.0"
     },
     {
       "id": "skill-14",
       "name": "context-refresh",
       "path": ".ai/skills/context-refresh/SKILL.md",
-      "load_when": "on_demand",
+      "purpose": "Operational context refresh controller",
+      "priority": 85,
+      "scope": "repository",
+      "loadCondition": "on-context-pressure",
+      "load_when": "on-context-pressure",
       "canonical_rules": [
-        "rule-15"
-      ]
+        "rule-20",
+        "rule-37"
+      ],
+      "version": "0.2.0"
     },
     {
       "id": "skill-15",
       "name": "context-compression",
       "path": ".ai/skills/context-compression/SKILL.md",
-      "load_when": "on_demand",
+      "purpose": "Operational context compression controller",
+      "priority": 85,
+      "scope": "repository",
+      "loadCondition": "on-context-pressure",
+      "load_when": "on-context-pressure",
       "canonical_rules": [
-        "rule-16"
-      ]
+        "rule-18",
+        "rule-20"
+      ],
+      "version": "0.2.0"
     },
     {
       "id": "skill-16",
       "name": "memory-curator",
       "path": ".ai/skills/memory-curator/SKILL.md",
-      "load_when": "on_demand",
+      "purpose": "Operational memory curator controller",
+      "priority": 75,
+      "scope": "repository",
+      "loadCondition": "on-memory-update",
+      "load_when": "on-memory-update",
       "canonical_rules": [
-        "rule-17"
-      ]
+        "rule-21",
+        "rule-35"
+      ],
+      "version": "0.2.0"
     },
     {
       "id": "skill-17",
       "name": "knowledge-maintainer",
       "path": ".ai/skills/knowledge-maintainer/SKILL.md",
-      "load_when": "on_demand",
+      "purpose": "Operational knowledge maintainer controller",
+      "priority": 75,
+      "scope": "repository",
+      "loadCondition": "on-memory-update",
+      "load_when": "on-memory-update",
       "canonical_rules": [
-        "rule-18"
-      ]
+        "rule-35",
+        "rule-36"
+      ],
+      "version": "0.2.0"
     },
     {
       "id": "skill-18",
       "name": "communicate-briefly",
       "path": ".ai/skills/communicate-briefly/SKILL.md",
-      "load_when": "on_demand",
+      "purpose": "Operational communicate briefly controller",
+      "priority": 90,
+      "scope": "repository",
+      "loadCondition": "always",
+      "load_when": "always",
       "canonical_rules": [
-        "rule-19"
-      ]
+        "rule-29",
+        "rule-30",
+        "rule-34"
+      ],
+      "version": "0.2.0"
     },
     {
       "id": "skill-19",
       "name": "targeted-testing",
       "path": ".ai/skills/targeted-testing/SKILL.md",
-      "load_when": "on_demand",
+      "purpose": "Operational targeted testing controller",
+      "priority": 85,
+      "scope": "repository",
+      "loadCondition": "on-debug",
+      "load_when": "on-debug",
       "canonical_rules": [
-        "rule-20"
-      ]
+        "rule-22",
+        "rule-23"
+      ],
+      "version": "0.2.0"
     },
     {
       "id": "skill-20",
       "name": "verification-controller",
       "path": ".ai/skills/verification-controller/SKILL.md",
-      "load_when": "on_demand",
+      "purpose": "Operational verification controller controller",
+      "priority": 95,
+      "scope": "repository",
+      "loadCondition": "on-finalization",
+      "load_when": "on-finalization",
       "canonical_rules": [
-        "rule-21"
-      ]
+        "rule-12"
+      ],
+      "version": "0.2.0"
     },
     {
       "id": "skill-21",
       "name": "critic-controller",
       "path": ".ai/skills/critic-controller/SKILL.md",
-      "load_when": "on_demand",
+      "purpose": "Operational critic controller controller",
+      "priority": 90,
+      "scope": "repository",
+      "loadCondition": "on-review",
+      "load_when": "on-review",
       "canonical_rules": [
-        "rule-22"
-      ]
+        "rule-24"
+      ],
+      "version": "0.2.0"
     },
     {
       "id": "skill-22",
       "name": "completion-gate",
       "path": ".ai/skills/completion-gate/SKILL.md",
-      "load_when": "on_demand",
+      "purpose": "Operational completion gate controller",
+      "priority": 100,
+      "scope": "repository",
+      "loadCondition": "on-finalization",
+      "load_when": "on-finalization",
       "canonical_rules": [
-        "rule-23"
-      ]
+        "rule-27",
+        "rule-28"
+      ],
+      "version": "0.2.0"
     },
     {
       "id": "skill-23",
       "name": "failure-learning",
       "path": ".ai/skills/failure-learning/SKILL.md",
-      "load_when": "on_demand",
+      "purpose": "Operational failure learning controller",
+      "priority": 70,
+      "scope": "repository",
+      "loadCondition": "on-memory-update",
+      "load_when": "on-memory-update",
       "canonical_rules": [
-        "rule-24"
-      ]
+        "rule-34",
+        "rule-35"
+      ],
+      "version": "0.2.0"
     },
     {
       "id": "skill-24",
       "name": "repository-map-update",
       "path": ".ai/skills/repository-map-update/SKILL.md",
-      "load_when": "on_demand",
+      "purpose": "Operational repository map update controller",
+      "priority": 65,
+      "scope": "repository",
+      "loadCondition": "on-memory-update",
+      "load_when": "on-memory-update",
       "canonical_rules": [
-        "rule-25"
-      ]
+        "rule-35"
+      ],
+      "version": "0.2.0"
     },
     {
       "id": "skill-25",
       "name": "multi-agent-coordinator",
       "path": ".ai/skills/multi-agent-coordinator/SKILL.md",
-      "load_when": "on_demand",
+      "purpose": "Operational multi agent coordinator controller",
+      "priority": 85,
+      "scope": "repository",
+      "loadCondition": "task-start",
+      "load_when": "task-start",
       "canonical_rules": [
-        "rule-26"
-      ]
+        "rule-25"
+      ],
+      "version": "0.2.0"
     },
     {
       "id": "skill-26",
       "name": "resume-task",
       "path": ".ai/skills/resume-task/SKILL.md",
-      "load_when": "on_demand",
+      "purpose": "Operational resume task controller",
+      "priority": 80,
+      "scope": "repository",
+      "loadCondition": "task-start",
+      "load_when": "task-start",
       "canonical_rules": [
-        "rule-27"
-      ]
+        "rule-18",
+        "rule-20",
+        "rule-21"
+      ],
+      "version": "0.2.0"
     },
     {
       "id": "skill-27",
       "name": "handoff-task",
       "path": ".ai/skills/handoff-task/SKILL.md",
-      "load_when": "on_demand",
+      "purpose": "Operational handoff task controller",
+      "priority": 80,
+      "scope": "repository",
+      "loadCondition": "on-finalization",
+      "load_when": "on-finalization",
       "canonical_rules": [
-        "rule-28"
-      ]
+        "rule-18",
+        "rule-21",
+        "rule-29"
+      ],
+      "version": "0.2.0"
+    }
+  ],
+  "plugin_skills": [
+    {
+      "id": "plugin-skill-00",
+      "name": "install-framework",
+      "path": "skills/install-framework/SKILL.md",
+      "purpose": "Install or upgrade the complete framework",
+      "priority": 100,
+      "scope": "plugin",
+      "loadCondition": "on_demand",
+      "version": "0.2.0"
+    },
+    {
+      "id": "plugin-skill-01",
+      "name": "executive-control",
+      "path": "skills/executive-control/SKILL.md",
+      "purpose": "Apply a focused executive-control intervention",
+      "priority": 95,
+      "scope": "plugin",
+      "loadCondition": "on_demand",
+      "version": "0.2.0"
+    },
+    {
+      "id": "plugin-skill-02",
+      "name": "attention-reset",
+      "path": "skills/attention-reset/SKILL.md",
+      "purpose": "Apply a focused executive-control intervention",
+      "priority": 95,
+      "scope": "plugin",
+      "loadCondition": "on_demand",
+      "version": "0.2.0"
+    },
+    {
+      "id": "plugin-skill-03",
+      "name": "stop-overthinking",
+      "path": "skills/stop-overthinking/SKILL.md",
+      "purpose": "Apply a focused executive-control intervention",
+      "priority": 95,
+      "scope": "plugin",
+      "loadCondition": "on_demand",
+      "version": "0.2.0"
+    },
+    {
+      "id": "plugin-skill-04",
+      "name": "stop-compulsive-verification",
+      "path": "skills/stop-compulsive-verification/SKILL.md",
+      "purpose": "Apply a focused executive-control intervention",
+      "priority": 95,
+      "scope": "plugin",
+      "loadCondition": "on_demand",
+      "version": "0.2.0"
+    },
+    {
+      "id": "plugin-skill-05",
+      "name": "flatten-recursive-investigation",
+      "path": "skills/flatten-recursive-investigation/SKILL.md",
+      "purpose": "Apply a focused executive-control intervention",
+      "priority": 95,
+      "scope": "plugin",
+      "loadCondition": "on_demand",
+      "version": "0.2.0"
+    },
+    {
+      "id": "plugin-skill-06",
+      "name": "evidence-gate",
+      "path": "skills/evidence-gate/SKILL.md",
+      "purpose": "Apply a focused executive-control intervention",
+      "priority": 95,
+      "scope": "plugin",
+      "loadCondition": "on_demand",
+      "version": "0.2.0"
+    },
+    {
+      "id": "plugin-skill-07",
+      "name": "recover-from-deadlock-livelock",
+      "path": "skills/recover-from-deadlock-livelock/SKILL.md",
+      "purpose": "Apply a focused executive-control intervention",
+      "priority": 95,
+      "scope": "plugin",
+      "loadCondition": "on_demand",
+      "version": "0.2.0"
+    },
+    {
+      "id": "plugin-skill-08",
+      "name": "completion-gate",
+      "path": "skills/completion-gate/SKILL.md",
+      "purpose": "Apply a focused executive-control intervention",
+      "priority": 95,
+      "scope": "plugin",
+      "loadCondition": "on_demand",
+      "version": "0.2.0"
     }
   ]
 }

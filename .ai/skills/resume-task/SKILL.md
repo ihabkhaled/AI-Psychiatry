@@ -1,35 +1,36 @@
 ---
 name: resume-task
-description: Use resume task when the task needs bounded resume task control while preserving the locked objective.
+description: Use when continuing work from saved task state, a compacted session, a handoff, or a new agent without rereading the entire repository.
 ---
 
 # Resume Task
 
-## Trigger
+## Core principle
 
-Use when observable task state calls for this control. Do not invoke it speculatively.
-
-## Inputs
-
-Locked objective, constraints, current evidence, attempts, and completion proof.
+Resume from compact state, validate freshness, load only changed relevant sources, and continue the recorded next action.
 
 ## Procedure
 
-1. Restate the objective in one line.
-2. Inspect only relevant evidence and classify the issue.
-3. Take the smallest action that can change or prove state.
-4. Record result, information gained, and the next valid action.
-5. Respect WIP 1, retry 3, verification 2, critic 1, and nested depth 2.
+1. Load objective, DoD, completed, remaining, blocker, decisions, evidence, and next action.
+2. Check source freshness and repository status.
+3. Reload only relevant files changed since the checkpoint.
+4. Resolve stale memory in favor of source.
+5. Confirm the next action still advances an unmet requirement.
+6. Continue and update temporary state after progress.
 
-## Output
+## Required output
 
-Return status, evidence, result, blocker if any, and one next recommendation. Never return hidden reasoning.
+Freshness verdict, restored state, reloaded sources, and resumed action.
 
-## Escalation
+## Limits
 
-If repeated work adds no information, narrow scope, change strategy, or report the exact blocker.
+Do not reconstruct the whole repository when compact state is current.
+
+## Common mistakes
+
+Do not trust fake memory, stale summaries, or preserve abandoned speculation.
 
 ## Stop condition
 
-Stop when the requested control is proven, the main Definition of Done is met, or progress requires external input.
+Stop resume setup when state is current and one valid action is executing.
 

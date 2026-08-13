@@ -18,8 +18,9 @@
   "limits": {
     "same_strategy_attempts": 3,
     "verification_passes": 2,
-    "critic_rounds": 1,
-    "nested_job_depth": 2,
+    "critic_rounds": 2,
+    "nested_job_depth": 3,
+    "agent_delegation_depth": 2,
     "work_in_progress": 1
   },
   "transitions": [
@@ -60,4 +61,3 @@
     }
   ]
 }
-

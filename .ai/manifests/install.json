@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "canonical_prompt": "skills/install-framework/references/master-prompt.md",
+  "canonical_prompt_sha256": "32AAB10548A9B1808BE5051207EA2732A72274081933AC8F87B5F57B9DBE1075",
+  "public_skill_root": "skills/",
+  "target_runtime_root": ".ai/",
+  "public_skills": [
+    "install-framework",
+    "executive-control",
+    "attention-reset",
+    "stop-overthinking",
+    "stop-compulsive-verification",
+    "flatten-recursive-investigation",
+    "evidence-gate",
+    "recover-from-deadlock-livelock",
+    "completion-gate"
+  ],
+  "observable_state_assessor": "scripts/executive_control.py",
+  "layers": [
+    "rules",
+    "skills",
+    "guides",
+    "context",
+    "memory",
+    "state",
+    "telemetry",
+    "manifests",
+    "tests"
+  ],
+  "merge_policy": "inspect-preserve-merge-resolve-route",
+  "adapters": [
+    "CLAUDE.md",
+    "CODEX.md",
+    "AGENTS.md",
+    ".claude/rules/ai-psychiatry.md",
+    ".codex/instructions/ai-psychiatry.md"
+  ],
+  "validation": [
+    "python scripts/validate_framework.py",
+    "platform plugin validator",
+    "repository-required tests"
+  ]
+}

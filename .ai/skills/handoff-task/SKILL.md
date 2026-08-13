@@ -1,35 +1,36 @@
 ---
 name: handoff-task
-description: Use handoff task when the task needs bounded handoff task control while preserving the locked objective.
+description: Use when work moves to another agent, session, person, or environment and the recipient needs enough state to continue without a sprawling narrative.
 ---
 
 # Handoff Task
 
-## Trigger
+## Core principle
 
-Use when observable task state calls for this control. Do not invoke it speculatively.
-
-## Inputs
-
-Locked objective, constraints, current evidence, attempts, and completion proof.
+A handoff transfers objective, proof, state, blockers, and next action—not the entire reasoning history.
 
 ## Procedure
 
-1. Restate the objective in one line.
-2. Inspect only relevant evidence and classify the issue.
-3. Take the smallest action that can change or prove state.
-4. Record result, information gained, and the next valid action.
-5. Respect WIP 1, retry 3, verification 2, critic 1, and nested depth 2.
+1. State objective and finite DoD.
+2. List completed and remaining requirements.
+3. Name blockers and important evidence.
+4. List files touched and validation already run.
+5. Record decisions and deferred findings.
+6. Give one required next action and freshness warning if applicable.
 
-## Output
+## Required output
 
-Return status, evidence, result, blocker if any, and one next recommendation. Never return hidden reasoning.
+Objective, DoD, Completed, Remaining, Blockers, Evidence, Files touched, Deferred, and Required next action.
 
-## Escalation
+## Limits
 
-If repeated work adds no information, narrow scope, change strategy, or report the exact blocker.
+Keep the handoff compact and factual.
+
+## Common mistakes
+
+Do not include raw chain-of-thought, repeated tool output, outdated hypotheses, or a new sprawling plan.
 
 ## Stop condition
 
-Stop when the requested control is proven, the main Definition of Done is met, or progress requires external input.
+Stop when a recipient can continue safely from one next action without rereading the whole repository.
 
