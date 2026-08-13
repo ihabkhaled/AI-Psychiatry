@@ -1,0 +1,456 @@
+{
+  "rules": [
+    {
+      "id": "rule-00",
+      "path": ".ai/rules/00-master-rules.md",
+      "priority": 100,
+      "load_when": "always",
+      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "prompt_sections": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "rule-01",
+      "path": ".ai/rules/01-pre-action-gate.md",
+      "priority": 99,
+      "load_when": "always",
+      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "prompt_sections": [
+        4,
+        8
+      ]
+    },
+    {
+      "id": "rule-02",
+      "path": ".ai/rules/02-goal-preservation.md",
+      "priority": 98,
+      "load_when": "always",
+      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "prompt_sections": [
+        9,
+        12
+      ]
+    },
+    {
+      "id": "rule-03",
+      "path": ".ai/rules/03-scope-control.md",
+      "priority": 97,
+      "load_when": "always",
+      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "prompt_sections": [
+        13,
+        17
+      ]
+    },
+    {
+      "id": "rule-04",
+      "path": ".ai/rules/04-attention-control.md",
+      "priority": 96,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "prompt_sections": [
+        18,
+        22
+      ]
+    },
+    {
+      "id": "rule-05",
+      "path": ".ai/rules/05-anti-distraction.md",
+      "priority": 95,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "prompt_sections": [
+        23,
+        26
+      ]
+    },
+    {
+      "id": "rule-06",
+      "path": ".ai/rules/06-anti-overthinking.md",
+      "priority": 94,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "prompt_sections": [
+        27,
+        31
+      ]
+    },
+    {
+      "id": "rule-07",
+      "path": ".ai/rules/07-anti-recursion.md",
+      "priority": 93,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "prompt_sections": [
+        32,
+        36
+      ]
+    },
+    {
+      "id": "rule-08",
+      "path": ".ai/rules/08-anti-perfectionism.md",
+      "priority": 92,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "prompt_sections": [
+        37,
+        40
+      ]
+    },
+    {
+      "id": "rule-09",
+      "path": ".ai/rules/09-work-in-progress.md",
+      "priority": 91,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "prompt_sections": [
+        41,
+        45
+      ]
+    },
+    {
+      "id": "rule-10",
+      "path": ".ai/rules/10-progress-control.md",
+      "priority": 90,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "prompt_sections": [
+        46,
+        49
+      ]
+    },
+    {
+      "id": "rule-11",
+      "path": ".ai/rules/11-retry-budget.md",
+      "priority": 89,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "prompt_sections": [
+        50,
+        54
+      ]
+    },
+    {
+      "id": "rule-12",
+      "path": ".ai/rules/12-verification-budget.md",
+      "priority": 88,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "prompt_sections": [
+        55,
+        59
+      ]
+    },
+    {
+      "id": "rule-13",
+      "path": ".ai/rules/13-evidence-gate.md",
+      "priority": 87,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "prompt_sections": [
+        60,
+        63
+      ]
+    },
+    {
+      "id": "rule-14",
+      "path": ".ai/rules/14-hallucination-control.md",
+      "priority": 86,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "prompt_sections": [
+        64,
+        68
+      ]
+    },
+    {
+      "id": "rule-15",
+      "path": ".ai/rules/15-deadlock-detection.md",
+      "priority": 85,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "prompt_sections": [
+        69,
+        73
+      ]
+    },
+    {
+      "id": "rule-16",
+      "path": ".ai/rules/16-livelock-detection.md",
+      "priority": 84,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "prompt_sections": [
+        74,
+        77
+      ]
+    },
+    {
+      "id": "rule-17",
+      "path": ".ai/rules/17-recovery.md",
+      "priority": 83,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "prompt_sections": [
+        78,
+        82
+      ]
+    },
+    {
+      "id": "rule-18",
+      "path": ".ai/rules/18-context-efficiency.md",
+      "priority": 82,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "prompt_sections": [
+        83,
+        87
+      ]
+    },
+    {
+      "id": "rule-19",
+      "path": ".ai/rules/19-context-routing.md",
+      "priority": 81,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "prompt_sections": [
+        88,
+        91
+      ]
+    },
+    {
+      "id": "rule-20",
+      "path": ".ai/rules/20-context-refresh.md",
+      "priority": 80,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "prompt_sections": [
+        92,
+        96
+      ]
+    },
+    {
+      "id": "rule-21",
+      "path": ".ai/rules/21-memory-policy.md",
+      "priority": 79,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "prompt_sections": [
+        97,
+        100
+      ]
+    },
+    {
+      "id": "rule-22",
+      "path": ".ai/rules/22-testing-strategy.md",
+      "priority": 78,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "prompt_sections": [
+        101,
+        105
+      ]
+    },
+    {
+      "id": "rule-23",
+      "path": ".ai/rules/23-precommit-strategy.md",
+      "priority": 77,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "prompt_sections": [
+        106,
+        110
+      ]
+    },
+    {
+      "id": "rule-24",
+      "path": ".ai/rules/24-critic-control.md",
+      "priority": 76,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "prompt_sections": [
+        111,
+        114
+      ]
+    },
+    {
+      "id": "rule-25",
+      "path": ".ai/rules/25-multi-agent-control.md",
+      "priority": 75,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "prompt_sections": [
+        115,
+        119
+      ]
+    },
+    {
+      "id": "rule-26",
+      "path": ".ai/rules/26-delivery-first.md",
+      "priority": 74,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "prompt_sections": [
+        120,
+        124
+      ]
+    },
+    {
+      "id": "rule-27",
+      "path": ".ai/rules/27-definition-of-done.md",
+      "priority": 73,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "prompt_sections": [
+        125,
+        128
+      ]
+    },
+    {
+      "id": "rule-28",
+      "path": ".ai/rules/28-termination.md",
+      "priority": 72,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "prompt_sections": [
+        129,
+        133
+      ]
+    },
+    {
+      "id": "rule-29",
+      "path": ".ai/rules/29-communication-style.md",
+      "priority": 71,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "prompt_sections": [
+        134,
+        138
+      ]
+    },
+    {
+      "id": "rule-30",
+      "path": ".ai/rules/30-progress-reporting.md",
+      "priority": 70,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "prompt_sections": [
+        139,
+        142
+      ]
+    },
+    {
+      "id": "rule-31",
+      "path": ".ai/rules/31-tool-discipline.md",
+      "priority": 69,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "prompt_sections": [
+        143,
+        147
+      ]
+    },
+    {
+      "id": "rule-32",
+      "path": ".ai/rules/32-search-before-read.md",
+      "priority": 68,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "prompt_sections": [
+        148,
+        151
+      ]
+    },
+    {
+      "id": "rule-33",
+      "path": ".ai/rules/33-no-fake-background-work.md",
+      "priority": 67,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "prompt_sections": [
+        152,
+        156
+      ]
+    },
+    {
+      "id": "rule-34",
+      "path": ".ai/rules/34-failure-communication.md",
+      "priority": 66,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "prompt_sections": [
+        157,
+        161
+      ]
+    },
+    {
+      "id": "rule-35",
+      "path": ".ai/rules/35-knowledge-maintenance.md",
+      "priority": 65,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "prompt_sections": [
+        162,
+        165
+      ]
+    },
+    {
+      "id": "rule-36",
+      "path": ".ai/rules/36-instruction-priority.md",
+      "priority": 64,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "prompt_sections": [
+        166,
+        170
+      ]
+    },
+    {
+      "id": "rule-37",
+      "path": ".ai/rules/37-context-freshness.md",
+      "priority": 63,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "prompt_sections": [
+        171,
+        175
+      ]
+    },
+    {
+      "id": "rule-38",
+      "path": ".ai/rules/38-no-repetitive-planning.md",
+      "priority": 62,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "prompt_sections": [
+        176,
+        179
+      ]
+    },
+    {
+      "id": "rule-39",
+      "path": ".ai/rules/39-uncertainty-control.md",
+      "priority": 61,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "prompt_sections": [
+        180,
+        184
+      ]
+    },
+    {
+      "id": "rule-40",
+      "path": ".ai/rules/40-change-strategy.md",
+      "priority": 60,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "prompt_sections": [
+        185,
+        189
+      ]
+    }
+  ]
+}
+

@@ -1,0 +1,3 @@
+source: .ai/executive-function/executive-function.json
+principles[6]: objective_lock,wip_one,evidence_before_claims,bounded_control_loops,delivery_first,proof_then_stop
+

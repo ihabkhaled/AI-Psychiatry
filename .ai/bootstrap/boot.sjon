@@ -1,0 +1,2 @@
+canonical_source=.ai/bootstrap/boot.json; required_before=[plan,audit,modify]; status=ready
+

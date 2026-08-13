@@ -1,0 +1,17 @@
+{
+  "canonical_source": ".ai/bootstrap/boot.md",
+  "sequence": [
+    "lock_objective",
+    "load_constraints",
+    "gather_evidence",
+    "choose_next_action",
+    "define_completion_proof"
+  ],
+  "required_before": [
+    "plan",
+    "audit",
+    "modify"
+  ],
+  "status": "ready"
+}
+

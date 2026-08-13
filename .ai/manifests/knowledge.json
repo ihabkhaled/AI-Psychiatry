@@ -1,0 +1,59 @@
+{
+  "durable_memory": [
+    {
+      "path": ".ai/memory/README.md",
+      "load_when": "on_demand"
+    },
+    {
+      "path": ".ai/memory/index.md",
+      "load_when": "on_demand"
+    },
+    {
+      "path": ".ai/memory/preferences.md",
+      "load_when": "on_demand"
+    },
+    {
+      "path": ".ai/memory/architecture.md",
+      "load_when": "on_demand"
+    },
+    {
+      "path": ".ai/memory/decisions.md",
+      "load_when": "on_demand"
+    },
+    {
+      "path": ".ai/memory/recurring-problems.md",
+      "load_when": "on_demand"
+    },
+    {
+      "path": ".ai/memory/lessons.md",
+      "load_when": "on_demand"
+    },
+    {
+      "path": ".ai/memory/failure-patterns.md",
+      "load_when": "on_demand"
+    }
+  ],
+  "context": [
+    {
+      "path": ".ai/bootstrap/boot.md",
+      "load": "always",
+      "purpose": "bootstrap"
+    },
+    {
+      "path": ".ai/context/current-task.md",
+      "load": "task",
+      "purpose": "temporary task"
+    },
+    {
+      "path": ".ai/context/domains/",
+      "load": "domain",
+      "purpose": "domain knowledge"
+    },
+    {
+      "path": ".ai/memory/index.md",
+      "load": "on_demand",
+      "purpose": "durable memory"
+    }
+  ]
+}
+

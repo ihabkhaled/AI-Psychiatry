@@ -1,0 +1,1336 @@
+{
+  "canonical_source": "skills/install-framework/references/master-prompt.md",
+  "sections": {
+    "0": {
+      "title": "Master prompt section 0",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/00-master-rules.md"
+      ]
+    },
+    "1": {
+      "title": "Master prompt section 1",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/00-master-rules.md"
+      ]
+    },
+    "2": {
+      "title": "Master prompt section 2",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/00-master-rules.md"
+      ]
+    },
+    "3": {
+      "title": "Master prompt section 3",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/00-master-rules.md"
+      ]
+    },
+    "4": {
+      "title": "Master prompt section 4",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/01-pre-action-gate.md"
+      ]
+    },
+    "5": {
+      "title": "Master prompt section 5",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/01-pre-action-gate.md"
+      ]
+    },
+    "6": {
+      "title": "Master prompt section 6",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/01-pre-action-gate.md"
+      ]
+    },
+    "7": {
+      "title": "Master prompt section 7",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/01-pre-action-gate.md"
+      ]
+    },
+    "8": {
+      "title": "Master prompt section 8",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/01-pre-action-gate.md"
+      ]
+    },
+    "9": {
+      "title": "Master prompt section 9",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/02-goal-preservation.md"
+      ]
+    },
+    "10": {
+      "title": "Master prompt section 10",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/02-goal-preservation.md"
+      ]
+    },
+    "11": {
+      "title": "Master prompt section 11",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/02-goal-preservation.md"
+      ]
+    },
+    "12": {
+      "title": "Master prompt section 12",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/02-goal-preservation.md"
+      ]
+    },
+    "13": {
+      "title": "Master prompt section 13",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/03-scope-control.md"
+      ]
+    },
+    "14": {
+      "title": "Master prompt section 14",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/03-scope-control.md"
+      ]
+    },
+    "15": {
+      "title": "Master prompt section 15",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/03-scope-control.md"
+      ]
+    },
+    "16": {
+      "title": "Master prompt section 16",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/03-scope-control.md"
+      ]
+    },
+    "17": {
+      "title": "Master prompt section 17",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/03-scope-control.md"
+      ]
+    },
+    "18": {
+      "title": "Master prompt section 18",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/04-attention-control.md"
+      ]
+    },
+    "19": {
+      "title": "Master prompt section 19",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/04-attention-control.md"
+      ]
+    },
+    "20": {
+      "title": "Master prompt section 20",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/04-attention-control.md"
+      ]
+    },
+    "21": {
+      "title": "Master prompt section 21",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/04-attention-control.md"
+      ]
+    },
+    "22": {
+      "title": "Master prompt section 22",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/04-attention-control.md"
+      ]
+    },
+    "23": {
+      "title": "Master prompt section 23",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/05-anti-distraction.md"
+      ]
+    },
+    "24": {
+      "title": "Master prompt section 24",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/05-anti-distraction.md"
+      ]
+    },
+    "25": {
+      "title": "Master prompt section 25",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/05-anti-distraction.md"
+      ]
+    },
+    "26": {
+      "title": "Master prompt section 26",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/05-anti-distraction.md"
+      ]
+    },
+    "27": {
+      "title": "Master prompt section 27",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/06-anti-overthinking.md"
+      ]
+    },
+    "28": {
+      "title": "Master prompt section 28",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/06-anti-overthinking.md"
+      ]
+    },
+    "29": {
+      "title": "Master prompt section 29",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/06-anti-overthinking.md"
+      ]
+    },
+    "30": {
+      "title": "Master prompt section 30",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/06-anti-overthinking.md"
+      ]
+    },
+    "31": {
+      "title": "Master prompt section 31",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/06-anti-overthinking.md"
+      ]
+    },
+    "32": {
+      "title": "Master prompt section 32",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/07-anti-recursion.md"
+      ]
+    },
+    "33": {
+      "title": "Master prompt section 33",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/07-anti-recursion.md"
+      ]
+    },
+    "34": {
+      "title": "Master prompt section 34",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/07-anti-recursion.md"
+      ]
+    },
+    "35": {
+      "title": "Master prompt section 35",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/07-anti-recursion.md"
+      ]
+    },
+    "36": {
+      "title": "Master prompt section 36",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/07-anti-recursion.md"
+      ]
+    },
+    "37": {
+      "title": "Master prompt section 37",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/08-anti-perfectionism.md"
+      ]
+    },
+    "38": {
+      "title": "Master prompt section 38",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/08-anti-perfectionism.md"
+      ]
+    },
+    "39": {
+      "title": "Master prompt section 39",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/08-anti-perfectionism.md"
+      ]
+    },
+    "40": {
+      "title": "Master prompt section 40",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/08-anti-perfectionism.md"
+      ]
+    },
+    "41": {
+      "title": "Master prompt section 41",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/09-work-in-progress.md"
+      ]
+    },
+    "42": {
+      "title": "Master prompt section 42",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/09-work-in-progress.md"
+      ]
+    },
+    "43": {
+      "title": "Master prompt section 43",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/09-work-in-progress.md"
+      ]
+    },
+    "44": {
+      "title": "Master prompt section 44",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/09-work-in-progress.md"
+      ]
+    },
+    "45": {
+      "title": "Master prompt section 45",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/09-work-in-progress.md"
+      ]
+    },
+    "46": {
+      "title": "Master prompt section 46",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/10-progress-control.md"
+      ]
+    },
+    "47": {
+      "title": "Master prompt section 47",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/10-progress-control.md"
+      ]
+    },
+    "48": {
+      "title": "Master prompt section 48",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/10-progress-control.md"
+      ]
+    },
+    "49": {
+      "title": "Master prompt section 49",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/10-progress-control.md"
+      ]
+    },
+    "50": {
+      "title": "Master prompt section 50",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/11-retry-budget.md"
+      ]
+    },
+    "51": {
+      "title": "Master prompt section 51",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/11-retry-budget.md"
+      ]
+    },
+    "52": {
+      "title": "Master prompt section 52",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/11-retry-budget.md"
+      ]
+    },
+    "53": {
+      "title": "Master prompt section 53",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/11-retry-budget.md"
+      ]
+    },
+    "54": {
+      "title": "Master prompt section 54",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/11-retry-budget.md"
+      ]
+    },
+    "55": {
+      "title": "Master prompt section 55",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/12-verification-budget.md"
+      ]
+    },
+    "56": {
+      "title": "Master prompt section 56",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/12-verification-budget.md"
+      ]
+    },
+    "57": {
+      "title": "Master prompt section 57",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/12-verification-budget.md"
+      ]
+    },
+    "58": {
+      "title": "Master prompt section 58",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/12-verification-budget.md"
+      ]
+    },
+    "59": {
+      "title": "Master prompt section 59",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/12-verification-budget.md"
+      ]
+    },
+    "60": {
+      "title": "Master prompt section 60",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/13-evidence-gate.md"
+      ]
+    },
+    "61": {
+      "title": "Master prompt section 61",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/13-evidence-gate.md"
+      ]
+    },
+    "62": {
+      "title": "Master prompt section 62",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/13-evidence-gate.md"
+      ]
+    },
+    "63": {
+      "title": "Master prompt section 63",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/13-evidence-gate.md"
+      ]
+    },
+    "64": {
+      "title": "Master prompt section 64",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/14-hallucination-control.md"
+      ]
+    },
+    "65": {
+      "title": "Master prompt section 65",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/14-hallucination-control.md"
+      ]
+    },
+    "66": {
+      "title": "Master prompt section 66",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/14-hallucination-control.md"
+      ]
+    },
+    "67": {
+      "title": "Master prompt section 67",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/14-hallucination-control.md"
+      ]
+    },
+    "68": {
+      "title": "Master prompt section 68",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/14-hallucination-control.md"
+      ]
+    },
+    "69": {
+      "title": "Master prompt section 69",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/15-deadlock-detection.md"
+      ]
+    },
+    "70": {
+      "title": "Master prompt section 70",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/15-deadlock-detection.md"
+      ]
+    },
+    "71": {
+      "title": "Master prompt section 71",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/15-deadlock-detection.md"
+      ]
+    },
+    "72": {
+      "title": "Master prompt section 72",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/15-deadlock-detection.md"
+      ]
+    },
+    "73": {
+      "title": "Master prompt section 73",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/15-deadlock-detection.md"
+      ]
+    },
+    "74": {
+      "title": "Master prompt section 74",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/16-livelock-detection.md"
+      ]
+    },
+    "75": {
+      "title": "Master prompt section 75",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/16-livelock-detection.md"
+      ]
+    },
+    "76": {
+      "title": "Master prompt section 76",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/16-livelock-detection.md"
+      ]
+    },
+    "77": {
+      "title": "Master prompt section 77",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/16-livelock-detection.md"
+      ]
+    },
+    "78": {
+      "title": "Master prompt section 78",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/17-recovery.md"
+      ]
+    },
+    "79": {
+      "title": "Master prompt section 79",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/17-recovery.md"
+      ]
+    },
+    "80": {
+      "title": "Master prompt section 80",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/17-recovery.md"
+      ]
+    },
+    "81": {
+      "title": "Master prompt section 81",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/17-recovery.md"
+      ]
+    },
+    "82": {
+      "title": "Master prompt section 82",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/17-recovery.md"
+      ]
+    },
+    "83": {
+      "title": "Master prompt section 83",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/18-context-efficiency.md"
+      ]
+    },
+    "84": {
+      "title": "Master prompt section 84",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/18-context-efficiency.md"
+      ]
+    },
+    "85": {
+      "title": "Master prompt section 85",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/18-context-efficiency.md"
+      ]
+    },
+    "86": {
+      "title": "Master prompt section 86",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/18-context-efficiency.md"
+      ]
+    },
+    "87": {
+      "title": "Master prompt section 87",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/18-context-efficiency.md"
+      ]
+    },
+    "88": {
+      "title": "Master prompt section 88",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/19-context-routing.md"
+      ]
+    },
+    "89": {
+      "title": "Master prompt section 89",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/19-context-routing.md"
+      ]
+    },
+    "90": {
+      "title": "Master prompt section 90",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/19-context-routing.md"
+      ]
+    },
+    "91": {
+      "title": "Master prompt section 91",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/19-context-routing.md"
+      ]
+    },
+    "92": {
+      "title": "Master prompt section 92",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/20-context-refresh.md"
+      ]
+    },
+    "93": {
+      "title": "Master prompt section 93",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/20-context-refresh.md"
+      ]
+    },
+    "94": {
+      "title": "Master prompt section 94",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/20-context-refresh.md"
+      ]
+    },
+    "95": {
+      "title": "Master prompt section 95",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/20-context-refresh.md"
+      ]
+    },
+    "96": {
+      "title": "Master prompt section 96",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/20-context-refresh.md"
+      ]
+    },
+    "97": {
+      "title": "Master prompt section 97",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/21-memory-policy.md"
+      ]
+    },
+    "98": {
+      "title": "Master prompt section 98",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/21-memory-policy.md"
+      ]
+    },
+    "99": {
+      "title": "Master prompt section 99",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/21-memory-policy.md"
+      ]
+    },
+    "100": {
+      "title": "Master prompt section 100",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/21-memory-policy.md"
+      ]
+    },
+    "101": {
+      "title": "Master prompt section 101",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/22-testing-strategy.md"
+      ]
+    },
+    "102": {
+      "title": "Master prompt section 102",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/22-testing-strategy.md"
+      ]
+    },
+    "103": {
+      "title": "Master prompt section 103",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/22-testing-strategy.md"
+      ]
+    },
+    "104": {
+      "title": "Master prompt section 104",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/22-testing-strategy.md"
+      ]
+    },
+    "105": {
+      "title": "Master prompt section 105",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/22-testing-strategy.md"
+      ]
+    },
+    "106": {
+      "title": "Master prompt section 106",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/23-precommit-strategy.md"
+      ]
+    },
+    "107": {
+      "title": "Master prompt section 107",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/23-precommit-strategy.md"
+      ]
+    },
+    "108": {
+      "title": "Master prompt section 108",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/23-precommit-strategy.md"
+      ]
+    },
+    "109": {
+      "title": "Master prompt section 109",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/23-precommit-strategy.md"
+      ]
+    },
+    "110": {
+      "title": "Master prompt section 110",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/23-precommit-strategy.md"
+      ]
+    },
+    "111": {
+      "title": "Master prompt section 111",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/24-critic-control.md"
+      ]
+    },
+    "112": {
+      "title": "Master prompt section 112",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/24-critic-control.md"
+      ]
+    },
+    "113": {
+      "title": "Master prompt section 113",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/24-critic-control.md"
+      ]
+    },
+    "114": {
+      "title": "Master prompt section 114",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/24-critic-control.md"
+      ]
+    },
+    "115": {
+      "title": "Master prompt section 115",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/25-multi-agent-control.md"
+      ]
+    },
+    "116": {
+      "title": "Master prompt section 116",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/25-multi-agent-control.md"
+      ]
+    },
+    "117": {
+      "title": "Master prompt section 117",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/25-multi-agent-control.md"
+      ]
+    },
+    "118": {
+      "title": "Master prompt section 118",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/25-multi-agent-control.md"
+      ]
+    },
+    "119": {
+      "title": "Master prompt section 119",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/25-multi-agent-control.md"
+      ]
+    },
+    "120": {
+      "title": "Master prompt section 120",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/26-delivery-first.md"
+      ]
+    },
+    "121": {
+      "title": "Master prompt section 121",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/26-delivery-first.md"
+      ]
+    },
+    "122": {
+      "title": "Master prompt section 122",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/26-delivery-first.md"
+      ]
+    },
+    "123": {
+      "title": "Master prompt section 123",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/26-delivery-first.md"
+      ]
+    },
+    "124": {
+      "title": "Master prompt section 124",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/26-delivery-first.md"
+      ]
+    },
+    "125": {
+      "title": "Master prompt section 125",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/27-definition-of-done.md"
+      ]
+    },
+    "126": {
+      "title": "Master prompt section 126",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/27-definition-of-done.md"
+      ]
+    },
+    "127": {
+      "title": "Master prompt section 127",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/27-definition-of-done.md"
+      ]
+    },
+    "128": {
+      "title": "Master prompt section 128",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/27-definition-of-done.md"
+      ]
+    },
+    "129": {
+      "title": "Master prompt section 129",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/28-termination.md"
+      ]
+    },
+    "130": {
+      "title": "Master prompt section 130",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/28-termination.md"
+      ]
+    },
+    "131": {
+      "title": "Master prompt section 131",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/28-termination.md"
+      ]
+    },
+    "132": {
+      "title": "Master prompt section 132",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/28-termination.md"
+      ]
+    },
+    "133": {
+      "title": "Master prompt section 133",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/28-termination.md"
+      ]
+    },
+    "134": {
+      "title": "Master prompt section 134",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/29-communication-style.md"
+      ]
+    },
+    "135": {
+      "title": "Master prompt section 135",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/29-communication-style.md"
+      ]
+    },
+    "136": {
+      "title": "Master prompt section 136",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/29-communication-style.md"
+      ]
+    },
+    "137": {
+      "title": "Master prompt section 137",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/29-communication-style.md"
+      ]
+    },
+    "138": {
+      "title": "Master prompt section 138",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/29-communication-style.md"
+      ]
+    },
+    "139": {
+      "title": "Master prompt section 139",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/30-progress-reporting.md"
+      ]
+    },
+    "140": {
+      "title": "Master prompt section 140",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/30-progress-reporting.md"
+      ]
+    },
+    "141": {
+      "title": "Master prompt section 141",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/30-progress-reporting.md"
+      ]
+    },
+    "142": {
+      "title": "Master prompt section 142",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/30-progress-reporting.md"
+      ]
+    },
+    "143": {
+      "title": "Master prompt section 143",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/31-tool-discipline.md"
+      ]
+    },
+    "144": {
+      "title": "Master prompt section 144",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/31-tool-discipline.md"
+      ]
+    },
+    "145": {
+      "title": "Master prompt section 145",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/31-tool-discipline.md"
+      ]
+    },
+    "146": {
+      "title": "Master prompt section 146",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/31-tool-discipline.md"
+      ]
+    },
+    "147": {
+      "title": "Master prompt section 147",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/31-tool-discipline.md"
+      ]
+    },
+    "148": {
+      "title": "Master prompt section 148",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/32-search-before-read.md"
+      ]
+    },
+    "149": {
+      "title": "Master prompt section 149",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/32-search-before-read.md"
+      ]
+    },
+    "150": {
+      "title": "Master prompt section 150",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/32-search-before-read.md"
+      ]
+    },
+    "151": {
+      "title": "Master prompt section 151",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/32-search-before-read.md"
+      ]
+    },
+    "152": {
+      "title": "Master prompt section 152",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/33-no-fake-background-work.md"
+      ]
+    },
+    "153": {
+      "title": "Master prompt section 153",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/33-no-fake-background-work.md"
+      ]
+    },
+    "154": {
+      "title": "Master prompt section 154",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/33-no-fake-background-work.md"
+      ]
+    },
+    "155": {
+      "title": "Master prompt section 155",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/33-no-fake-background-work.md"
+      ]
+    },
+    "156": {
+      "title": "Master prompt section 156",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/33-no-fake-background-work.md"
+      ]
+    },
+    "157": {
+      "title": "Master prompt section 157",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/34-failure-communication.md"
+      ]
+    },
+    "158": {
+      "title": "Master prompt section 158",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/34-failure-communication.md"
+      ]
+    },
+    "159": {
+      "title": "Master prompt section 159",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/34-failure-communication.md"
+      ]
+    },
+    "160": {
+      "title": "Master prompt section 160",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/34-failure-communication.md"
+      ]
+    },
+    "161": {
+      "title": "Master prompt section 161",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/34-failure-communication.md"
+      ]
+    },
+    "162": {
+      "title": "Master prompt section 162",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/35-knowledge-maintenance.md"
+      ]
+    },
+    "163": {
+      "title": "Master prompt section 163",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/35-knowledge-maintenance.md"
+      ]
+    },
+    "164": {
+      "title": "Master prompt section 164",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/35-knowledge-maintenance.md"
+      ]
+    },
+    "165": {
+      "title": "Master prompt section 165",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/35-knowledge-maintenance.md"
+      ]
+    },
+    "166": {
+      "title": "Master prompt section 166",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/36-instruction-priority.md"
+      ]
+    },
+    "167": {
+      "title": "Master prompt section 167",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/36-instruction-priority.md"
+      ]
+    },
+    "168": {
+      "title": "Master prompt section 168",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/36-instruction-priority.md"
+      ]
+    },
+    "169": {
+      "title": "Master prompt section 169",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/36-instruction-priority.md"
+      ]
+    },
+    "170": {
+      "title": "Master prompt section 170",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/36-instruction-priority.md"
+      ]
+    },
+    "171": {
+      "title": "Master prompt section 171",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/37-context-freshness.md"
+      ]
+    },
+    "172": {
+      "title": "Master prompt section 172",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/37-context-freshness.md"
+      ]
+    },
+    "173": {
+      "title": "Master prompt section 173",
+      "classification": "operational",
+      "artifacts": [
+        ".ai/rules/37-context-freshness.md"
+      ]
+    },
+    "174": {
+      "title": "Master prompt section 174",
+      "classification": "acceptance",
+      "artifacts": [
+        ".ai/rules/37-context-freshness.md"
+      ]
+    },
+    "175": {
+      "title": "Master prompt section 175",
+      "classification": "acceptance",
+      "artifacts": [
+        ".ai/rules/37-context-freshness.md"
+      ]
+    },
+    "176": {
+      "title": "Master prompt section 176",
+      "classification": "acceptance",
+      "artifacts": [
+        ".ai/rules/38-no-repetitive-planning.md"
+      ]
+    },
+    "177": {
+      "title": "Master prompt section 177",
+      "classification": "acceptance",
+      "artifacts": [
+        ".ai/rules/38-no-repetitive-planning.md"
+      ]
+    },
+    "178": {
+      "title": "Master prompt section 178",
+      "classification": "acceptance",
+      "artifacts": [
+        ".ai/rules/38-no-repetitive-planning.md"
+      ]
+    },
+    "179": {
+      "title": "Master prompt section 179",
+      "classification": "acceptance",
+      "artifacts": [
+        ".ai/rules/38-no-repetitive-planning.md"
+      ]
+    },
+    "180": {
+      "title": "Master prompt section 180",
+      "classification": "acceptance",
+      "artifacts": [
+        ".ai/rules/39-uncertainty-control.md"
+      ]
+    },
+    "181": {
+      "title": "Master prompt section 181",
+      "classification": "acceptance",
+      "artifacts": [
+        ".ai/rules/39-uncertainty-control.md"
+      ]
+    },
+    "182": {
+      "title": "Master prompt section 182",
+      "classification": "acceptance",
+      "artifacts": [
+        ".ai/rules/39-uncertainty-control.md"
+      ]
+    },
+    "183": {
+      "title": "Master prompt section 183",
+      "classification": "acceptance",
+      "artifacts": [
+        ".ai/rules/39-uncertainty-control.md"
+      ]
+    },
+    "184": {
+      "title": "Master prompt section 184",
+      "classification": "acceptance",
+      "artifacts": [
+        ".ai/rules/39-uncertainty-control.md"
+      ]
+    },
+    "185": {
+      "title": "Master prompt section 185",
+      "classification": "acceptance",
+      "artifacts": [
+        ".ai/rules/40-change-strategy.md"
+      ]
+    },
+    "186": {
+      "title": "Master prompt section 186",
+      "classification": "acceptance",
+      "artifacts": [
+        ".ai/rules/40-change-strategy.md"
+      ]
+    },
+    "187": {
+      "title": "Master prompt section 187",
+      "classification": "acceptance",
+      "artifacts": [
+        ".ai/rules/40-change-strategy.md"
+      ]
+    },
+    "188": {
+      "title": "Master prompt section 188",
+      "classification": "acceptance",
+      "artifacts": [
+        ".ai/rules/40-change-strategy.md"
+      ]
+    },
+    "189": {
+      "title": "Master prompt section 189",
+      "classification": "acceptance",
+      "artifacts": [
+        ".ai/rules/40-change-strategy.md"
+      ]
+    }
+  }
+}
+

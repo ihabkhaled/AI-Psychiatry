@@ -1,0 +1,101 @@
+{
+  "agents": [
+    {
+      "id": "agent-0",
+      "path": "CLAUDE.md",
+      "canonical_boot": ".ai/bootstrap/boot.md",
+      "canonical_rules": ".ai/rules/00-master-rules.md"
+    },
+    {
+      "id": "agent-1",
+      "path": "CODEX.md",
+      "canonical_boot": ".ai/bootstrap/boot.md",
+      "canonical_rules": ".ai/rules/00-master-rules.md"
+    },
+    {
+      "id": "agent-2",
+      "path": "AGENTS.md",
+      "canonical_boot": ".ai/bootstrap/boot.md",
+      "canonical_rules": ".ai/rules/00-master-rules.md"
+    },
+    {
+      "id": "agent-3",
+      "path": "GEMINI.md",
+      "canonical_boot": ".ai/bootstrap/boot.md",
+      "canonical_rules": ".ai/rules/00-master-rules.md"
+    },
+    {
+      "id": "agent-4",
+      "path": "KIMI.md",
+      "canonical_boot": ".ai/bootstrap/boot.md",
+      "canonical_rules": ".ai/rules/00-master-rules.md"
+    },
+    {
+      "id": "agent-5",
+      "path": "QWEN.md",
+      "canonical_boot": ".ai/bootstrap/boot.md",
+      "canonical_rules": ".ai/rules/00-master-rules.md"
+    },
+    {
+      "id": "agent-6",
+      "path": "DEEPSEEK.md",
+      "canonical_boot": ".ai/bootstrap/boot.md",
+      "canonical_rules": ".ai/rules/00-master-rules.md"
+    },
+    {
+      "id": "agent-7",
+      "path": "GLM.md",
+      "canonical_boot": ".ai/bootstrap/boot.md",
+      "canonical_rules": ".ai/rules/00-master-rules.md"
+    },
+    {
+      "id": "agent-8",
+      "path": "MISTRAL.md",
+      "canonical_boot": ".ai/bootstrap/boot.md",
+      "canonical_rules": ".ai/rules/00-master-rules.md"
+    },
+    {
+      "id": "agent-9",
+      "path": ".cursorrules",
+      "canonical_boot": ".ai/bootstrap/boot.md",
+      "canonical_rules": ".ai/rules/00-master-rules.md"
+    },
+    {
+      "id": "agent-10",
+      "path": ".github/copilot-instructions.md",
+      "canonical_boot": ".ai/bootstrap/boot.md",
+      "canonical_rules": ".ai/rules/00-master-rules.md"
+    },
+    {
+      "id": "agent-11",
+      "path": ".cursor/rules/ai-executive-function.mdc",
+      "canonical_boot": ".ai/bootstrap/boot.md",
+      "canonical_rules": ".ai/rules/00-master-rules.md"
+    },
+    {
+      "id": "agent-12",
+      "path": ".cursor/rules/communication.mdc",
+      "canonical_boot": ".ai/bootstrap/boot.md",
+      "canonical_rules": ".ai/rules/00-master-rules.md"
+    },
+    {
+      "id": "agent-13",
+      "path": ".cursor/rules/context-routing.mdc",
+      "canonical_boot": ".ai/bootstrap/boot.md",
+      "canonical_rules": ".ai/rules/00-master-rules.md"
+    },
+    {
+      "id": "agent-14",
+      "path": ".claude/rules/ai-psychiatry.md",
+      "canonical_boot": ".ai/bootstrap/boot.md",
+      "canonical_rules": ".ai/rules/00-master-rules.md"
+    },
+    {
+      "id": "agent-15",
+      "path": ".codex/instructions/ai-psychiatry.md",
+      "canonical_boot": ".ai/bootstrap/boot.md",
+      "canonical_rules": ".ai/rules/00-master-rules.md"
+    }
+  ]
+}
+

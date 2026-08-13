@@ -1,0 +1,2 @@
+sources[4]{path,load}: .ai/bootstrap/boot.md,always; .ai/context/current-task.md,task; .ai/context/domains/,domain; .ai/memory/index.md,on_demand
+

@@ -1,0 +1,257 @@
+{
+  "skills": [
+    {
+      "id": "skill-00",
+      "name": "task-bootstrap",
+      "path": ".ai/skills/task-bootstrap/SKILL.md",
+      "load_when": "on_demand",
+      "canonical_rules": [
+        "rule-01"
+      ]
+    },
+    {
+      "id": "skill-01",
+      "name": "executive-function",
+      "path": ".ai/skills/executive-function/SKILL.md",
+      "load_when": "on_demand",
+      "canonical_rules": [
+        "rule-02"
+      ]
+    },
+    {
+      "id": "skill-02",
+      "name": "goal-lock",
+      "path": ".ai/skills/goal-lock/SKILL.md",
+      "load_when": "on_demand",
+      "canonical_rules": [
+        "rule-03"
+      ]
+    },
+    {
+      "id": "skill-03",
+      "name": "scope-guard",
+      "path": ".ai/skills/scope-guard/SKILL.md",
+      "load_when": "on_demand",
+      "canonical_rules": [
+        "rule-04"
+      ]
+    },
+    {
+      "id": "skill-04",
+      "name": "attention-reset",
+      "path": ".ai/skills/attention-reset/SKILL.md",
+      "load_when": "on_demand",
+      "canonical_rules": [
+        "rule-05"
+      ]
+    },
+    {
+      "id": "skill-05",
+      "name": "bounded-investigation",
+      "path": ".ai/skills/bounded-investigation/SKILL.md",
+      "load_when": "on_demand",
+      "canonical_rules": [
+        "rule-06"
+      ]
+    },
+    {
+      "id": "skill-06",
+      "name": "anti-overthinking",
+      "path": ".ai/skills/anti-overthinking/SKILL.md",
+      "load_when": "on_demand",
+      "canonical_rules": [
+        "rule-07"
+      ]
+    },
+    {
+      "id": "skill-07",
+      "name": "loop-detector",
+      "path": ".ai/skills/loop-detector/SKILL.md",
+      "load_when": "on_demand",
+      "canonical_rules": [
+        "rule-08"
+      ]
+    },
+    {
+      "id": "skill-08",
+      "name": "deadlock-recovery",
+      "path": ".ai/skills/deadlock-recovery/SKILL.md",
+      "load_when": "on_demand",
+      "canonical_rules": [
+        "rule-09"
+      ]
+    },
+    {
+      "id": "skill-09",
+      "name": "livelock-recovery",
+      "path": ".ai/skills/livelock-recovery/SKILL.md",
+      "load_when": "on_demand",
+      "canonical_rules": [
+        "rule-10"
+      ]
+    },
+    {
+      "id": "skill-10",
+      "name": "strategy-reset",
+      "path": ".ai/skills/strategy-reset/SKILL.md",
+      "load_when": "on_demand",
+      "canonical_rules": [
+        "rule-11"
+      ]
+    },
+    {
+      "id": "skill-11",
+      "name": "progress-audit",
+      "path": ".ai/skills/progress-audit/SKILL.md",
+      "load_when": "on_demand",
+      "canonical_rules": [
+        "rule-12"
+      ]
+    },
+    {
+      "id": "skill-12",
+      "name": "evidence-gate",
+      "path": ".ai/skills/evidence-gate/SKILL.md",
+      "load_when": "on_demand",
+      "canonical_rules": [
+        "rule-13"
+      ]
+    },
+    {
+      "id": "skill-13",
+      "name": "context-router",
+      "path": ".ai/skills/context-router/SKILL.md",
+      "load_when": "on_demand",
+      "canonical_rules": [
+        "rule-14"
+      ]
+    },
+    {
+      "id": "skill-14",
+      "name": "context-refresh",
+      "path": ".ai/skills/context-refresh/SKILL.md",
+      "load_when": "on_demand",
+      "canonical_rules": [
+        "rule-15"
+      ]
+    },
+    {
+      "id": "skill-15",
+      "name": "context-compression",
+      "path": ".ai/skills/context-compression/SKILL.md",
+      "load_when": "on_demand",
+      "canonical_rules": [
+        "rule-16"
+      ]
+    },
+    {
+      "id": "skill-16",
+      "name": "memory-curator",
+      "path": ".ai/skills/memory-curator/SKILL.md",
+      "load_when": "on_demand",
+      "canonical_rules": [
+        "rule-17"
+      ]
+    },
+    {
+      "id": "skill-17",
+      "name": "knowledge-maintainer",
+      "path": ".ai/skills/knowledge-maintainer/SKILL.md",
+      "load_when": "on_demand",
+      "canonical_rules": [
+        "rule-18"
+      ]
+    },
+    {
+      "id": "skill-18",
+      "name": "communicate-briefly",
+      "path": ".ai/skills/communicate-briefly/SKILL.md",
+      "load_when": "on_demand",
+      "canonical_rules": [
+        "rule-19"
+      ]
+    },
+    {
+      "id": "skill-19",
+      "name": "targeted-testing",
+      "path": ".ai/skills/targeted-testing/SKILL.md",
+      "load_when": "on_demand",
+      "canonical_rules": [
+        "rule-20"
+      ]
+    },
+    {
+      "id": "skill-20",
+      "name": "verification-controller",
+      "path": ".ai/skills/verification-controller/SKILL.md",
+      "load_when": "on_demand",
+      "canonical_rules": [
+        "rule-21"
+      ]
+    },
+    {
+      "id": "skill-21",
+      "name": "critic-controller",
+      "path": ".ai/skills/critic-controller/SKILL.md",
+      "load_when": "on_demand",
+      "canonical_rules": [
+        "rule-22"
+      ]
+    },
+    {
+      "id": "skill-22",
+      "name": "completion-gate",
+      "path": ".ai/skills/completion-gate/SKILL.md",
+      "load_when": "on_demand",
+      "canonical_rules": [
+        "rule-23"
+      ]
+    },
+    {
+      "id": "skill-23",
+      "name": "failure-learning",
+      "path": ".ai/skills/failure-learning/SKILL.md",
+      "load_when": "on_demand",
+      "canonical_rules": [
+        "rule-24"
+      ]
+    },
+    {
+      "id": "skill-24",
+      "name": "repository-map-update",
+      "path": ".ai/skills/repository-map-update/SKILL.md",
+      "load_when": "on_demand",
+      "canonical_rules": [
+        "rule-25"
+      ]
+    },
+    {
+      "id": "skill-25",
+      "name": "multi-agent-coordinator",
+      "path": ".ai/skills/multi-agent-coordinator/SKILL.md",
+      "load_when": "on_demand",
+      "canonical_rules": [
+        "rule-26"
+      ]
+    },
+    {
+      "id": "skill-26",
+      "name": "resume-task",
+      "path": ".ai/skills/resume-task/SKILL.md",
+      "load_when": "on_demand",
+      "canonical_rules": [
+        "rule-27"
+      ]
+    },
+    {
+      "id": "skill-27",
+      "name": "handoff-task",
+      "path": ".ai/skills/handoff-task/SKILL.md",
+      "load_when": "on_demand",
+      "canonical_rules": [
+        "rule-28"
+      ]
+    }
+  ]
+}
+

@@ -1,0 +1,25 @@
+{
+  "sources": [
+    {
+      "path": ".ai/bootstrap/boot.md",
+      "load": "always",
+      "purpose": "bootstrap"
+    },
+    {
+      "path": ".ai/context/current-task.md",
+      "load": "task",
+      "purpose": "temporary task"
+    },
+    {
+      "path": ".ai/context/domains/",
+      "load": "domain",
+      "purpose": "domain knowledge"
+    },
+    {
+      "path": ".ai/memory/index.md",
+      "load": "on_demand",
+      "purpose": "durable memory"
+    }
+  ]
+}
+

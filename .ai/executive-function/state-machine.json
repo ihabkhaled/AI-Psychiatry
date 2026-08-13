@@ -1,0 +1,63 @@
+{
+  "canonical_source": ".ai/executive-function/state-machine.md",
+  "states": [
+    "idle",
+    "focused",
+    "drift_warning",
+    "attention_reset",
+    "strategy_reset",
+    "isolated",
+    "blocked",
+    "complete"
+  ],
+  "initial_state": "idle",
+  "terminal_states": [
+    "blocked",
+    "complete"
+  ],
+  "limits": {
+    "same_strategy_attempts": 3,
+    "verification_passes": 2,
+    "critic_rounds": 1,
+    "nested_job_depth": 2,
+    "work_in_progress": 1
+  },
+  "transitions": [
+    {
+      "from": "idle",
+      "event": "objective_locked",
+      "to": "focused"
+    },
+    {
+      "from": "focused",
+      "event": "drift_detected",
+      "to": "drift_warning"
+    },
+    {
+      "from": "drift_warning",
+      "event": "reset_attention",
+      "to": "attention_reset"
+    },
+    {
+      "from": "attention_reset",
+      "event": "same_strategy_failed",
+      "to": "strategy_reset"
+    },
+    {
+      "from": "strategy_reset",
+      "event": "scope_isolated",
+      "to": "isolated"
+    },
+    {
+      "from": "isolated",
+      "event": "cannot_progress",
+      "to": "blocked"
+    },
+    {
+      "from": "focused",
+      "event": "proof_complete",
+      "to": "complete"
+    }
+  ]
+}
+

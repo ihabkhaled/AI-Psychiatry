@@ -1,0 +1,18 @@
+{
+  "promotion_requires": [
+    "reusable",
+    "evidenced",
+    "stable",
+    "saves_future_work"
+  ],
+  "entries": [
+    ".ai/memory/index.md",
+    ".ai/memory/preferences.md",
+    ".ai/memory/architecture.md",
+    ".ai/memory/decisions.md",
+    ".ai/memory/recurring-problems.md",
+    ".ai/memory/lessons.md",
+    ".ai/memory/failure-patterns.md"
+  ]
+}
+

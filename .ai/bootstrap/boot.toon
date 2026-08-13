@@ -1,0 +1,3 @@
+source: .ai/bootstrap/boot.json
+sequence[5]: lock_objective,load_constraints,gather_evidence,choose_next_action,define_completion_proof
+

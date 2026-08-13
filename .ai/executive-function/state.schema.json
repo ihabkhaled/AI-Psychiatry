@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "status",
+    "objective",
+    "history"
+  ],
+  "properties": {
+    "status": {
+      "enum": [
+        "idle",
+        "focused",
+        "drift_warning",
+        "attention_reset",
+        "strategy_reset",
+        "isolated",
+        "blocked",
+        "complete"
+      ]
+    },
+    "objective": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "history": {
+      "type": "array"
+    },
+    "attempts": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 3
+    }
+  },
+  "additionalProperties": true
+}
+
