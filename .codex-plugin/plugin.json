@@ -1,0 +1,36 @@
+{
+  "name": "ai-psychiatry",
+  "version": "0.1.0",
+  "description": "Repository-wide executive-function, focus, anti-overthinking, context, memory, evidence, progress, recovery, and delivery controls for AI coding agents.",
+  "author": {
+    "name": "Ihab Khaled"
+  },
+  "homepage": "https://github.com/ihabkhaled/AI-Psychiatry",
+  "repository": "https://github.com/ihabkhaled/AI-Psychiatry",
+  "keywords": [
+    "ai-agents",
+    "coding-agents",
+    "executive-function",
+    "context-management",
+    "anti-overthinking",
+    "agent-skills"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "AI Psychiatry",
+    "shortDescription": "Executive control for coding agents",
+    "longDescription": "Installs and maintains a repository-wide AI executive-control framework focused on goal preservation, scope control, context efficiency, evidence, bounded verification, recovery, concise communication, and stopping when done.",
+    "developerName": "Ihab Khaled",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/ihabkhaled/AI-Psychiatry",
+    "defaultPrompt": [
+      "Install the AI Psychiatry framework in this repository.",
+      "Upgrade the repository AI executive-control framework using AI Psychiatry.",
+      "Audit this repository's AI-agent instructions for focus, scope drift, retry loops, context waste, and completion discipline."
+    ]
+  }
+}
