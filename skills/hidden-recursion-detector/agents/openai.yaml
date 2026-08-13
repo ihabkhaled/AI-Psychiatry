@@ -1,0 +1,4 @@
+interface:
+  display_name: "Hidden Recursion Detector"
+  short_description: "Apply Hidden Recursion Detector controls"
+  default_prompt: "Use $hidden-recursion-detector to evaluate this task."

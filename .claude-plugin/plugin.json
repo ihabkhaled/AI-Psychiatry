@@ -1,7 +1,7 @@
 {
   "name": "ai-psychiatry",
-  "version": "0.2.0",
-  "description": "Operational executive control for attention drift, compulsive verification, overthinking, recursive tasks, hallucination, loops, context, memory, and delivery.",
+  "version": "0.3.0",
+  "description": "Semantic executive control for loopholes, underthinking, overthinking, evidence, recursion, context, memory, and reliable delivery.",
   "author": {
     "name": "Ihab Khaled"
   },
@@ -16,6 +16,9 @@
     "agent-skills",
     "attention-control",
     "hallucination-control",
-    "recursive-tasks"
+    "recursive-tasks",
+    "semantic-compliance",
+    "underthinking",
+    "anti-gaming"
   ]
 }

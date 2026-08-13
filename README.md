@@ -1,6 +1,6 @@
 # AI Psychiatry
 
-AI Psychiatry is a cross-platform executive-control plugin for Claude Code and OpenAI Codex. It installs the complete prompt-derived system: goal locking, attention and scope control, anti-overthinking, evidence and hallucination control, bounded retries and verification, nested-job limits, deadlock/livelock recovery, context, memory, concise communication, testing, and proof-based completion.
+AI Psychiatry is a cross-platform executive-control plugin for Claude Code and OpenAI Codex. It adds semantic anti-bypass enforcement and balances underthinking against overthinking so agents investigate enough, execute, prove the outcome, and stop.
 
 > “Psychiatry” is branding and behavioral analogy. ADHD, OCD, executive dysfunction, and related human terms describe analogous observable failure patterns; they are not diagnoses of AI systems or claims about consciousness.
 
@@ -49,6 +49,18 @@ The plugin exposes focused skills in both platforms. Claude uses `/ai-psychiatry
 | Unsupported repository claims | `evidence-gate` |
 | Repeating activity or no valid action | `recover-from-deadlock-livelock` |
 | Perfectionism and refusal to finish | `completion-gate` |
+| Literal-compliance loopholes | `loophole-hunter`, `anti-gaming` |
+| Fake activity presented as progress | `false-progress-detector` |
+| False DONE or BLOCKED claims | `completion-evidence`, `blocker-validator` |
+| Hidden causal nesting | `hidden-recursion-detector` |
+| Renamed equivalent retries | `strategy-laundering-detector` |
+| Disguised scope expansion or parking | `scope-laundering-detector` |
+| Memory poisoning and context starvation | `memory-validator`, `context-balance` |
+| Premature action and shallow reasoning | `underthinking-detector`, `investigation-floor` |
+| Sufficient-reasoning decision control | `reasoning-balance`, `decision-readiness`, `evidence-floor` |
+| Root-cause and debugging evidence | `root-cause-validator` |
+| Controlled budget exception | `executive-override` |
+| Conflicting instruction sources | `rule-conflict-resolver` |
 
 Example:
 
@@ -59,9 +71,9 @@ $stop-compulsive-verification
 
 ## What it installs
 
-The shared installer preserves repository-specific instructions and adds a compact `.ai/` runtime with 41 focused rules, 28 operational skills, thin agent adapters, context and durable memory, JSON/TOON/SJON state, schemas, manifests, and scenario tests. The complete master prompt is progressively disclosed from `skills/install-framework/references/master-prompt.md`.
+The shared installer preserves repository-specific instructions and adds a compact `.ai/` runtime with 56 focused rules, 47 operational skills, 28 public plugin skills, semantic policies, thin agent adapters, context and durable memory, JSON/TOON/SJON state, schemas, manifests, and scenario tests. The original master prompt and complementary loophole/underthinking prompts are progressively disclosed from `skills/install-framework/references/`.
 
-Coverage includes hallucination, attention drift, ADHD-style distraction analogy, OCD-style compulsive-checking analogy, recursive thinking, nested jobs, rabbit holes, retry and critic loops, deadlock, livelock, context reload loops, fake progress, perfectionism, scope drift, and completion avoidance. The substantive intervention files are indexed in [AI framework guidance](docs/ai/README.md); the complete 25-mode catalog is [here](.ai/guides/failure-mode-catalog.md).
+Coverage includes hallucination, attention drift, ADHD-style distraction analogy, OCD-style compulsive-checking analogy, underthinking, overthinking, hidden recursion, strategy and scope laundering, false progress/completion/blockers, memory poisoning, context starvation, critic suppression, deadlock, livelock, and completion avoidance. Guidance is indexed in [AI framework guidance](docs/ai/README.md); semantic loopholes are cataloged [here](.ai/guides/loophole-catalog.md).
 
 ## Validate
 
@@ -72,7 +84,7 @@ claude plugin validate .
 python C:\\Users\\Ihab\\.codex\\skills\\.system\\plugin-creator\\scripts\\validate_plugin.py .
 ```
 
-See [architecture](docs/ai/architecture.md), [publishing](docs/publishing.md), and [release notes](docs/listing/release-notes.md).
+See [architecture](docs/ai/architecture.md), [publishing](docs/publishing.md), [privacy](PRIVACY.md), [terms](TERMS.md), [support](SUPPORT.md), and [release notes](docs/listing/release-notes.md).
 
 ## Privacy
 

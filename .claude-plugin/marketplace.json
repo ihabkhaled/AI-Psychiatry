@@ -12,15 +12,18 @@
         "url": "https://github.com/ihabkhaled/AI-Psychiatry.git",
         "ref": "main"
       },
-      "description": "Executive-function and delivery controls for AI coding agents.",
-      "version": "0.2.0",
+      "description": "Semantic anti-bypass and sufficient-reasoning controls for coding agents.",
+      "version": "0.3.0",
       "category": "Productivity",
       "tags": [
         "ai-agents",
         "coding",
         "productivity",
         "context",
-        "focus"
+        "focus",
+        "semantic-compliance",
+        "underthinking",
+        "anti-gaming"
       ]
     }
   ]

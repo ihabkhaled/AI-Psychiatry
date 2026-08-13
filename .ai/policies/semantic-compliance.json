@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "principle": "semantic-compliance-over-literal-compliance",
+  "strategyIdentity": ["hypothesis", "expectedEvidence", "targetFailure", "intendedOutcome"],
+  "acceptedProgress": [
+    "requirement-completed",
+    "blocker-removed",
+    "acceptance-verified",
+    "relevant-test-fixed",
+    "deliverable-completed",
+    "uncertainty-reduced"
+  ],
+  "activityOnly": ["file-read", "tool-call", "plan", "documentation", "test-rerun", "file-touch", "commit", "subagent-spawn"],
+  "causalDepth": {
+    "follows": ["parent", "causedBy", "delegatedFrom"],
+    "ignores": ["label", "agent", "counterReset"]
+  },
+  "completionRequires": ["mandatoryEvidence", "requiredTests", "resolvedRequiredFindings"],
+  "blockerRequires": ["condition", "evidence", "boundedRecovery", "exhaustedAlternatives", "missingInput"],
+  "contextMustPreserve": ["objective", "requirements", "architectureConstraints", "securityConstraints", "evidence", "decisions", "blockers", "remainingWork"],
+  "conflictPriority": ["system-platform", "user", "repository", "domain", "ai-psychiatry", "skill", "memory", "temporary-state"],
+  "overrideRequires": ["reason", "evidence", "limit", "scope", "exitCondition"],
+  "overrideForbiddenSources": ["system", "platform", "user", "repository", "domain"]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Underthinking Detector"
+  short_description: "Apply Underthinking Detector controls"
+  default_prompt: "Use $underthinking-detector to evaluate this task."

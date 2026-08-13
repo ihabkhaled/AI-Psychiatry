@@ -7,5 +7,9 @@
   "maxFullReplansWithoutNewEvidence": 2,
   "maxAgentDelegationDepth": 2,
   "stalledProgressCyclesBeforeReset": 4,
-  "maxContextReloadsWithoutSourceChange": 2
+  "maxContextReloadsWithoutSourceChange": 2,
+  "minimumRequiredInvestigationQuestions": 5,
+  "minimumRequiredVerificationPasses": 1,
+  "criticalUnknownsAllowedBeforeDecision": 0,
+  "maximumSelfCheckPasses": 1
 }

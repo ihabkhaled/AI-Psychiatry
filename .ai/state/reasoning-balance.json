@@ -1,0 +1,8 @@
+{
+  "reasoningState": "insufficient",
+  "critical_unknowns": ["primary requirement not yet recorded"],
+  "required_evidence_missing": ["acceptance evidence"],
+  "repetition_detected": false,
+  "decision_ready": false,
+  "recommendedAction": "investigate"
+}

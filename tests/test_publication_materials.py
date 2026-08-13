@@ -15,6 +15,24 @@ class PublicationTests(unittest.TestCase):
         self.assertEqual(text.count("## Positive"), 5)
         self.assertEqual(text.count("## Negative"), 3)
 
+    def test_publication_policy_and_support_materials_exist(self):
+        for name in ["PRIVACY.md", "TERMS.md", "SUPPORT.md"]:
+            text = read(REPO / name)
+            self.assertGreaterEqual(len(text.split()), 80, name)
+        self.assertTrue((REPO / "assets/ai-psychiatry-logo.png").exists())
+
+    def test_submission_archive_has_portable_root(self):
+        import zipfile
+
+        archive = REPO / "dist/ai-psychiatry-0.3.0.zip"
+        self.assertTrue(archive.exists())
+        with zipfile.ZipFile(archive) as bundle:
+            names = set(bundle.namelist())
+        self.assertIn(".claude-plugin/plugin.json", names)
+        self.assertIn(".codex-plugin/plugin.json", names)
+        self.assertIn("skills/underthinking-detector/SKILL.md", names)
+        self.assertIn("skills/reasoning-balance/SKILL.md", names)
+
 
 if __name__ == "__main__":
     unittest.main()

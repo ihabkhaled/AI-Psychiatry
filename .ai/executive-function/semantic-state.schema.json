@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ihabkhaled/AI-Psychiatry/.ai/executive-function/semantic-state.schema.json",
+  "title": "AI-Psychiatry Semantic Execution State",
+  "type": "object",
+  "properties": {
+    "reasoningState": {"enum": ["insufficient", "sufficient", "excessive"]},
+    "criticalUnknowns": {"type": "array", "items": {"type": "string"}},
+    "requiredEvidenceMissing": {"type": "array", "items": {"type": "string"}},
+    "repetitionDetected": {"type": "boolean"},
+    "decisionReady": {"type": "boolean"},
+    "recommendedAction": {"enum": ["investigate", "execute", "verify", "stop"]},
+    "causalDepth": {"type": "integer", "minimum": 0},
+    "equivalentAttempts": {"type": "integer", "minimum": 0},
+    "unverifiedRequirementCount": {"type": "integer", "minimum": 0},
+    "unsupportedAssumptionCount": {"type": "integer", "minimum": 0},
+    "rootCauseConfirmed": {"type": "boolean"},
+    "contextStarvationRisk": {"type": "boolean"},
+    "prematureCompletionRisk": {"type": "boolean"}
+  },
+  "required": ["reasoningState", "criticalUnknowns", "requiredEvidenceMissing", "recommendedAction"],
+  "additionalProperties": true
+}

@@ -93,7 +93,7 @@ class PluginInterventionAssetTests(unittest.TestCase):
 
     def test_install_manifest_includes_rules_skills_guides_and_machine_runtime(self):
         manifest = load_json(REPO / ".ai/manifests/install.json")
-        self.assertEqual(set(manifest["layers"]), {"rules", "skills", "guides", "context", "memory", "state", "telemetry", "manifests", "tests"})
+        self.assertEqual(set(manifest["layers"]), {"rules", "skills", "guides", "policies", "context", "memory", "state", "telemetry", "manifests", "tests"})
         self.assertEqual(manifest["public_skill_root"], "skills/")
         self.assertEqual(manifest["target_runtime_root"], ".ai/")
 

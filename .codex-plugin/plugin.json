@@ -1,12 +1,13 @@
 {
   "name": "ai-psychiatry",
-  "version": "0.2.0",
-  "description": "Operational executive control for attention drift, compulsive verification, overthinking, recursive tasks, hallucination, loops, context, memory, and delivery.",
+  "version": "0.3.0",
+  "description": "Semantic executive control for loopholes, underthinking, overthinking, evidence, recursion, context, memory, and reliable delivery.",
   "author": {
     "name": "Ihab Khaled"
   },
   "homepage": "https://github.com/ihabkhaled/AI-Psychiatry",
   "repository": "https://github.com/ihabkhaled/AI-Psychiatry",
+  "license": "MIT",
   "keywords": [
     "ai-agents",
     "coding-agents",
@@ -16,13 +17,16 @@
     "agent-skills",
     "attention-control",
     "hallucination-control",
-    "recursive-tasks"
+    "recursive-tasks",
+    "semantic-compliance",
+    "underthinking",
+    "anti-gaming"
   ],
   "skills": "./skills/",
   "interface": {
     "displayName": "AI Psychiatry",
     "shortDescription": "Executive control for coding agents",
-    "longDescription": "Installs and applies a repository-wide AI executive-control framework for attention drift, compulsive checking, overthinking, recursive tasks, hallucination, scope, context, memory, recovery, and stopping when done.",
+    "longDescription": "Detects semantic bypasses, false progress/completion/blockers, hidden recursion, strategy and scope laundering, memory/context corruption, underthinking, overthinking, and missing evidence.",
     "developerName": "Ihab Khaled",
     "category": "Productivity",
     "capabilities": [
@@ -30,10 +34,14 @@
       "Write"
     ],
     "websiteURL": "https://github.com/ihabkhaled/AI-Psychiatry",
+    "privacyPolicyURL": "https://github.com/ihabkhaled/AI-Psychiatry/blob/main/PRIVACY.md",
+    "termsOfServiceURL": "https://github.com/ihabkhaled/AI-Psychiatry/blob/main/TERMS.md",
+    "brandColor": "#071A3D",
+    "logo": "assets/ai-psychiatry-logo.png",
     "defaultPrompt": [
-      "Install the complete AI Psychiatry framework.",
-      "Stop this agent's overthinking and recursive task loop.",
-      "Audit attention drift, hallucination, and repeated checking."
+      "Audit this task for AI-Psychiatry loopholes and semantic bypasses.",
+      "Balance underthinking and overthinking using sufficient reasoning.",
+      "Validate completion evidence, blockers, recursion, scope, and progress."
     ]
   }
 }

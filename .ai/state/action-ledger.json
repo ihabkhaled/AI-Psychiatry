@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "appendOnly": true,
+  "actions": [],
+  "identityFields": ["hypothesis", "expectedEvidence", "targetFailure", "intendedOutcome"],
+  "note": "Command, task label, agent identity, and reported counters never define strategy identity."
+}

@@ -1,0 +1,10 @@
+semanticCompliance:
+  version: 1
+  principle: semantic-compliance-over-literal-compliance
+  strategyIdentity: hypothesis, expectedEvidence, targetFailure, intendedOutcome
+  progress: requirement-completed, blocker-removed, acceptance-verified, relevant-test-fixed, deliverable-completed, uncertainty-reduced
+  depthFollows: parent, causedBy, delegatedFrom
+  depthIgnores: label, agent, counterReset
+  completion: mandatoryEvidence, requiredTests, resolvedRequiredFindings
+  blocker: condition, evidence, boundedRecovery, exhaustedAlternatives, missingInput
+  override: reason, evidence, limit, scope, exitCondition

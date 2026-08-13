@@ -1,0 +1,4 @@
+interface:
+  display_name: "Blocker Validator"
+  short_description: "Apply Blocker Validator controls"
+  default_prompt: "Use $blocker-validator to evaluate this task."

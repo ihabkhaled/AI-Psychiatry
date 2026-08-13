@@ -1,0 +1,4 @@
+interface:
+  display_name: "Evidence Floor"
+  short_description: "Apply Evidence Floor controls"
+  default_prompt: "Use $evidence-floor to evaluate this task."

@@ -18,13 +18,21 @@ class PluginPackageTests(unittest.TestCase):
         master = REPO / "skills/install-framework/references/master-prompt.md"
         self.assertGreater(master.stat().st_size, 60000)
 
-    def test_release_versions_match_intervention_release(self):
+    def test_release_versions_match_semantic_compliance_release(self):
         claude = load_json(REPO / ".claude-plugin/plugin.json")
         codex = load_json(REPO / ".codex-plugin/plugin.json")
         marketplace = load_json(REPO / ".claude-plugin/marketplace.json")
-        self.assertEqual(claude["version"], "0.2.0")
-        self.assertEqual(codex["version"], "0.2.0")
-        self.assertEqual(marketplace["plugins"][0]["version"], "0.2.0")
+        self.assertEqual(claude["version"], "0.3.0")
+        self.assertEqual(codex["version"], "0.3.0")
+        self.assertEqual(marketplace["plugins"][0]["version"], "0.3.0")
+
+    def test_semantic_skills_and_policies_are_installable(self):
+        install = load_json(REPO / ".ai/manifests/install.json")
+        self.assertIn("policies", install["layers"])
+        self.assertIn("reasoning-balance", install["public_skills"])
+        skills = load_json(REPO / ".ai/manifests/skills.json")
+        self.assertEqual(len(skills["skills"]), 47)
+        self.assertEqual(len(skills["plugin_skills"]), 28)
 
 
 if __name__ == "__main__":

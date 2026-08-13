@@ -1,0 +1,4 @@
+interface:
+  display_name: "Completion Evidence"
+  short_description: "Apply Completion Evidence controls"
+  default_prompt: "Use $completion-evidence to evaluate this task."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Strategy Laundering Detector"
+  short_description: "Apply Strategy Laundering Detector controls"
+  default_prompt: "Use $strategy-laundering-detector to evaluate this task."

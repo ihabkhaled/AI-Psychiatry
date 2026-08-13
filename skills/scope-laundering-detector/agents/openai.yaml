@@ -1,0 +1,4 @@
+interface:
+  display_name: "Scope Laundering Detector"
+  short_description: "Apply Scope Laundering Detector controls"
+  default_prompt: "Use $scope-laundering-detector to evaluate this task."

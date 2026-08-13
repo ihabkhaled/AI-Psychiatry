@@ -1,0 +1,4 @@
+interface:
+  display_name: "False Progress Detector"
+  short_description: "Apply False Progress Detector controls"
+  default_prompt: "Use $false-progress-detector to evaluate this task."

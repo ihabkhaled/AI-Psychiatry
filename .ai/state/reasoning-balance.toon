@@ -1,0 +1,7 @@
+reasoningBalance:
+  state: insufficient
+  criticalUnknowns: primary requirement not yet recorded
+  requiredEvidenceMissing: acceptance evidence
+  repetitionDetected: false
+  decisionReady: false
+  recommendedAction: investigate

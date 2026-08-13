@@ -1,0 +1,4 @@
+interface:
+  display_name: "Reasoning Balance"
+  short_description: "Apply Reasoning Balance controls"
+  default_prompt: "Use $reasoning-balance to evaluate this task."

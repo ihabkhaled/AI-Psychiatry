@@ -1,0 +1,4 @@
+interface:
+  display_name: "Executive Override"
+  short_description: "Apply Executive Override controls"
+  default_prompt: "Use $executive-override to evaluate this task."

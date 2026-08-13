@@ -13,5 +13,12 @@ Focused interventions:
 - [Perfectionism and completion avoidance](../../.ai/guides/perfectionism-completion.md)
 - [Rabbit holes and scope drift](../../.ai/guides/rabbit-holes-scope-drift.md)
 - [Deadlock, livelock, and strategy oscillation](../../.ai/guides/deadlock-livelock.md)
+- [Semantic compliance and anti-gaming](../../.ai/guides/semantic-compliance.md)
+- [Loophole catalog](../../.ai/guides/loophole-catalog.md)
+- [Underthinking detection](underthinking.md)
+- [Reasoning balance](reasoning-balance.md)
+- [Context starvation](context-starvation.md)
+- [Sufficient reasoning](sufficient-reasoning.md)
+- [Executive overrides and rule conflicts](../../.ai/guides/executive-override-conflicts.md)
 
 Operational authority remains in the canonical master prompt, focused `.ai/rules/`, and callable skills. Load deep guidance only when its observable trigger occurs.

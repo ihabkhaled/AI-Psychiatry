@@ -1,0 +1,4 @@
+interface:
+  display_name: "Rule Conflict Resolver"
+  short_description: "Apply Rule Conflict Resolver controls"
+  default_prompt: "Use $rule-conflict-resolver to evaluate this task."

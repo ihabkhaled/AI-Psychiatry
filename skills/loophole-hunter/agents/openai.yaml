@@ -1,0 +1,4 @@
+interface:
+  display_name: "Loophole Hunter"
+  short_description: "Apply Loophole Hunter controls"
+  default_prompt: "Use $loophole-hunter to evaluate this task."

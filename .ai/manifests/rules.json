@@ -450,7 +450,126 @@
         185,
         189
       ]
+    },
+    {
+      "id": "rule-41",
+      "path": ".ai/rules/41-semantic-compliance.md",
+      "priority": 59,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/loophole-enhancement-prompts.md",
+      "prompt_sections": []
+    },
+    {
+      "id": "rule-42",
+      "path": ".ai/rules/42-false-progress.md",
+      "priority": 58,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/loophole-enhancement-prompts.md",
+      "prompt_sections": []
+    },
+    {
+      "id": "rule-43",
+      "path": ".ai/rules/43-completion-evidence.md",
+      "priority": 57,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/loophole-enhancement-prompts.md",
+      "prompt_sections": []
+    },
+    {
+      "id": "rule-44",
+      "path": ".ai/rules/44-blocker-validation.md",
+      "priority": 56,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/loophole-enhancement-prompts.md",
+      "prompt_sections": []
+    },
+    {
+      "id": "rule-45",
+      "path": ".ai/rules/45-hidden-recursion.md",
+      "priority": 55,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/loophole-enhancement-prompts.md",
+      "prompt_sections": []
+    },
+    {
+      "id": "rule-46",
+      "path": ".ai/rules/46-strategy-laundering.md",
+      "priority": 54,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/loophole-enhancement-prompts.md",
+      "prompt_sections": []
+    },
+    {
+      "id": "rule-47",
+      "path": ".ai/rules/47-scope-laundering.md",
+      "priority": 53,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/loophole-enhancement-prompts.md",
+      "prompt_sections": []
+    },
+    {
+      "id": "rule-48",
+      "path": ".ai/rules/48-memory-integrity.md",
+      "priority": 52,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/loophole-enhancement-prompts.md",
+      "prompt_sections": []
+    },
+    {
+      "id": "rule-49",
+      "path": ".ai/rules/49-context-balance.md",
+      "priority": 51,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/loophole-enhancement-prompts.md",
+      "prompt_sections": []
+    },
+    {
+      "id": "rule-50",
+      "path": ".ai/rules/50-underthinking.md",
+      "priority": 50,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/loophole-enhancement-prompts.md",
+      "prompt_sections": []
+    },
+    {
+      "id": "rule-51",
+      "path": ".ai/rules/51-investigation-evidence-floor.md",
+      "priority": 49,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/loophole-enhancement-prompts.md",
+      "prompt_sections": []
+    },
+    {
+      "id": "rule-52",
+      "path": ".ai/rules/52-reasoning-balance.md",
+      "priority": 48,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/loophole-enhancement-prompts.md",
+      "prompt_sections": []
+    },
+    {
+      "id": "rule-53",
+      "path": ".ai/rules/53-executive-override.md",
+      "priority": 47,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/loophole-enhancement-prompts.md",
+      "prompt_sections": []
+    },
+    {
+      "id": "rule-54",
+      "path": ".ai/rules/54-rule-conflict.md",
+      "priority": 46,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/loophole-enhancement-prompts.md",
+      "prompt_sections": []
+    },
+    {
+      "id": "rule-55",
+      "path": ".ai/rules/55-self-check.md",
+      "priority": 45,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/loophole-enhancement-prompts.md",
+      "prompt_sections": []
     }
   ]
 }
-

@@ -1,0 +1,9 @@
+{
+  "active": false,
+  "reason": null,
+  "evidence": [],
+  "limit": null,
+  "scope": null,
+  "exit_condition": null,
+  "target_rule_source": "ai-psychiatry"
+}
