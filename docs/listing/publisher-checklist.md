@@ -14,7 +14,7 @@ Evidence recorded 2026-08-14:
 - Installed Claude and Codex CLIs expose validation/install/marketplace commands but no vendor submission command.
 - Git remote is `git@github.com:ihabkhaled/AI-Psychiatry.git`.
 
-- [ ] Push the validated `0.2.0` release to `ihabkhaled/AI-Psychiatry`.
+- [x] Push the validated `0.2.0` release to `ihabkhaled/AI-Psychiatry` (`2e34cca`).
 - [ ] Claude local smoke test completed.
 - [ ] Claude marketplace submission completed and identifier recorded.
 - [ ] Codex local marketplace smoke test completed.
