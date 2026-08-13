@@ -1,6 +1,6 @@
 # Publisher Checklist
 
-Status: release `0.3.0` is being finalized directly on `main`; vendor submission and approval must remain unclaimed until authenticated receipts exist.
+Status: release `0.3.0` is published through the repository-hosted Claude/Codex marketplace and installed successfully on both CLIs. Community-directory submissions remain blocked by unauthenticated vendor portal sessions; approval must remain unclaimed until authenticated receipts exist.
 
 Evidence recorded 2026-08-14:
 
@@ -14,13 +14,17 @@ Evidence recorded 2026-08-14:
 - Baseline pressure tests found the existing framework already resisted core command/label laundering, false completion/blockers, and hidden-recursion pressure; release 0.3.0 adds deterministic, portable contracts and regression coverage.
 - Official Claude and OpenAI publication requirements were reviewed against the 0.3.0 package.
 - Git remote is `git@github.com:ihabkhaled/AI-Psychiatry.git`.
+- Claude hosted-marketplace receipt: `ihabkhaled-ai` added at user scope; `ai-psychiatry@ihabkhaled-ai` installed successfully.
+- Codex hosted-marketplace receipt: `ihabkhaled-ai` added from `main`; `ai-psychiatry@ihabkhaled-ai` version `0.3.0` installed successfully.
+- Claude community submission portal redirected to `platform.claude.com/login?returnTo=%2Fplugins%2Fsubmit`.
+- OpenAI Plugins Directory portal redirected to `platform.openai.com/login?next=%2Fplugins`.
 
-- [ ] Push the validated `0.3.0` release to `ihabkhaled/AI-Psychiatry` main.
+- [x] Push the validated `0.3.0` release to `ihabkhaled/AI-Psychiatry` main (`cf2b84f`).
 - [x] Add support, privacy, terms, listing copy, logo, and release notes.
 - [x] Build and validate `dist/ai-psychiatry-0.3.0.zip`.
-- [ ] Claude local smoke test completed.
+- [x] Claude hosted marketplace smoke test completed.
 - [ ] Claude marketplace submission completed and identifier recorded.
-- [ ] Codex local marketplace smoke test completed.
+- [x] Codex hosted marketplace smoke test completed.
 - [ ] Codex Plugins Directory submission completed and identifier recorded.
 - [ ] Publisher identity verified.
 - [x] Support, privacy, and terms URLs prepared.
