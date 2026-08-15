@@ -32,7 +32,9 @@
     "root-cause-validator",
     "evidence-floor",
     "executive-override",
-    "rule-conflict-resolver"
+    "rule-conflict-resolver",
+    "never-stop",
+    "all-the-medicine"
   ],
   "observable_state_assessor": "scripts/executive_control.py",
   "layers": [
@@ -60,7 +62,7 @@
     "platform plugin validator",
     "repository-required tests"
   ],
-  "release": "0.3.0",
+  "release": "0.4.0",
   "supplemental_prompts": [
     {
       "path": "skills/install-framework/references/loophole-enhancement-prompts.md",
@@ -69,6 +71,10 @@
     {
       "path": "skills/install-framework/references/underthinking-reasoning-balance-prompt.md",
       "sha256": "EFF147FE72AD744B8905DA5F529EE4E7A127833A8727907961DA7786B393203A"
+    },
+    {
+      "path": "skills/install-framework/references/autonomous-execution-all-the-medicine-prompt.md",
+      "sha256": "6BC7F60555FFE590902A340BECE1AB73CC5831DEA1D30D7512A05553088DEF8A"
     }
   ]
 }

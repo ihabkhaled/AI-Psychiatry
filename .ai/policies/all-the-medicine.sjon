@@ -1,0 +1,11 @@
+allTheMedicine = {
+  version: 1,
+  principle: "load-every-medicine-activate-only-applicable-treatments-resolve-conflicts-execute-relentlessly-prove-completion-stop",
+  dynamicInventorySource: ".ai/manifests/skills.json",
+  includes: ["every-registered-public-skill", "never-stop"],
+  excludes: ["all-the-medicine"],
+  selfRecursionAllowed: false,
+  statusValues: ["PENDING", "CHECKED", "ACTIVE", "SATISFIED", "NOT_APPLICABLE", "BLOCKED_BY_HIGHER_PRIORITY_RULE"],
+  oneControlAtATime: true,
+  superpower: { tier: "god-mode", type: "meta-superpower", composesAllRegisteredSkills: true, selfRecursionAllowed: false }
+}

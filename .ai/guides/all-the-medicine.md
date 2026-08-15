@@ -1,0 +1,15 @@
+# All the medicine orchestration
+
+All the medicine is a dispatcher, not a blender: it loads awareness of every applicable AI-Psychiatry control and applies exactly one of them at a time, in a deterministic phase order, instead of running every intervention simultaneously and letting their incompatible demands collide.
+
+## Observable signals
+
+A task would otherwise require the user to manually select among 20 or more individual skills, or the agent is guessing which control applies instead of building a full status map first. Two controls with incompatible required actions are both "active" at the same observable moment — for example `never-stop` pushing to continue while `completion-gate` is already satisfied, `investigation-floor` demanding more evidence while `stop-overthinking` says the evidence is already sufficient, or a critic's style comment trying to block completion the way a correctness finding would. A skill already marked `SATISFIED` is about to be re-run with no new observable state to justify it. `install-framework` is marked `ACTIVE` for an ordinary coding task that never touches installation, upgrade, or packaging audit. The compiled inventory under `skills/all-the-medicine/references/` disagrees with the current `.ai/manifests/skills.json`, or `all-the-medicine` appears inside its own compiled skill list.
+
+## Intervention
+
+Build the complete skill status map from the dynamic manifest before selecting anything: every applicable skill gets exactly one status (`PENDING`, `CHECKED`, `ACTIVE`, `SATISFIED`, `NOT_APPLICABLE`, `BLOCKED_BY_HIGHER_PRIORITY_RULE`). Walk the fixed execution-phase order — instruction and permission resolution, task bootstrap, autonomous execution activation, evidence and reality control, attention and scope control, reasoning balance, loop and recovery control, adversarial semantic control when relevant, execution and verification, completion, then context and memory maintenance — and select the single highest-priority control whose status is `ACTIVE`. Apply it, take the productive action it implies, capture observable evidence, and update the completion matrix from that evidence alone. When two controls would otherwise fire together, resolve by the fixed conflict table (NeverStop before proof, Completion Gate after; Investigation Floor on missing evidence, Stop Overthinking on sufficient evidence plus repetition; correctness/security critic findings can block, style findings cannot) rather than running both. Regenerate the compiled references with `scripts/build_all_the_medicine.py` whenever a skill, rule, or manifest entry changes, and treat a `--check` failure — staleness, a missing file, a duplicate, or self-recursion — as a defect, not a warning.
+
+## Stop condition
+
+Stop selecting new controls once every applicable skill's status is `SATISFIED` or `NOT_APPLICABLE`, the completion matrix shows every mandatory requirement `VERIFIED`, and no unresolved hard gate remains with independent work still available. Report the proof and terminate; do not keep cycling through already-satisfied controls looking for more work to do.

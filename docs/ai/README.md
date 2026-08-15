@@ -21,4 +21,10 @@ Focused interventions:
 - [Sufficient reasoning](sufficient-reasoning.md)
 - [Executive overrides and rule conflicts](../../.ai/guides/executive-override-conflicts.md)
 
+Explicit-invocation superpowers:
+
+- [Relentless execution](relentless-execution.md) and [autonomous decision-making](autonomous-decision-making.md), backing [`never-stop`](../../.ai/guides/relentless-execution.md).
+- [Approval boundaries](approval-boundaries.md) — what proceeds automatically and what requires authorization.
+- [All the medicine](all-the-medicine.md), backing [`all-the-medicine`](../../.ai/guides/all-the-medicine.md).
+
 Operational authority remains in the canonical master prompt, focused `.ai/rules/`, and callable skills. Load deep guidance only when its observable trigger occurs.

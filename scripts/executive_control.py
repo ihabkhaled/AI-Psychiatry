@@ -29,6 +29,31 @@ RULE_PRIORITY = {
     "memory": 200,
     "temporary-state": 100,
 }
+HARD_GATE_CONDITIONS = {
+    "destructive-or-irreversible-operation",
+    "irreversible-user-data-migration-or-deletion",
+    "production-deployment",
+    "public-release-or-marketplace-submission",
+    "git-push-merge-or-pr-creation-when-not-already-authorized",
+    "sending-external-messages",
+    "payment-or-financial-commitment",
+    "permission-or-access-control-change",
+    "exposing-secrets-or-credentials",
+    "production-infrastructure-change",
+    "legal-or-regulatory-decision",
+    "security-trade-off-with-no-safe-inferable-answer",
+    "materially-different-product-behavior-with-no-evidence-of-intent",
+    "platform-enforced-permission-prompt",
+    "genuinely-missing-credential-or-input",
+}
+SKILL_STATUSES = {
+    "PENDING",
+    "CHECKED",
+    "ACTIVE",
+    "SATISFIED",
+    "NOT_APPLICABLE",
+    "BLOCKED_BY_HIGHER_PRIORITY_RULE",
+}
 
 
 def _normalized(value: Any) -> str:
@@ -175,6 +200,127 @@ def validate_override(override: dict[str, Any]) -> dict[str, Any]:
     source = override.get("target_rule_source", "ai-psychiatry")
     forbidden = source in {"system", "platform", "user", "repository", "domain"}
     return {"valid": not missing and not forbidden, "missing_fields": missing, "forbidden_source": source if forbidden else None}
+
+
+def classify_question(question: dict[str, Any]) -> dict[str, Any]:
+    """Suppress a question the repository, tests, tools, or a safe default can already answer."""
+    answerable_via = list(question.get("answerable_via", []))
+    suppress = bool(answerable_via) or bool(question.get("safe_reversible_default_available", False))
+    return {
+        "suppress": suppress,
+        "action": "investigate-or-decide" if suppress else "ask-minimum-required",
+    }
+
+
+def classify_decision(decision: dict[str, Any]) -> dict[str, Any]:
+    """Classify a decision as routine, material, or a hard approval gate."""
+    if decision.get("hard_gate_condition") in HARD_GATE_CONDITIONS:
+        return {"class": "C", "action": "hard-gate-request-approval"}
+    reversible = decision.get("reversible", True)
+    blast_radius = decision.get("blast_radius", "small")
+    if not reversible or blast_radius == "large":
+        return {"class": "C", "action": "hard-gate-request-approval"}
+    if blast_radius == "medium" or decision.get("architectural", False):
+        return {"class": "B", "action": "record-decision-and-continue"}
+    return {"class": "A", "action": "choose-default-and-execute"}
+
+
+def validate_hard_gate(gate: dict[str, Any]) -> dict[str, Any]:
+    """Validate a proposed hard gate and decide whether to act on it now."""
+    condition = gate.get("condition")
+    valid = condition in HARD_GATE_CONDITIONS
+    independent_work_remaining = list(gate.get("independent_work_remaining", []))
+    if not valid:
+        return {"valid": False, "actionable_now": False, "action": "resume-execution"}
+    if independent_work_remaining:
+        return {"valid": True, "actionable_now": False, "action": "continue-independent-work"}
+    return {"valid": True, "actionable_now": True, "action": "request-minimum-approval"}
+
+
+def validate_streaming_liveness(state: dict[str, Any]) -> dict[str, Any]:
+    """Reject fabricated or silent background-execution claims; require observable progress."""
+    claims_background = state.get("claims_background_execution", False)
+    mechanism_present = state.get("mechanism_present", False)
+    if claims_background and not mechanism_present:
+        return {"live": False, "issue": "fabricated-background-claim", "action": "stop-claiming-and-report-actual-state"}
+    if state.get("background_task_active", False):
+        stale_after = state.get("stale_after_seconds", 120)
+        since_progress = state.get("seconds_since_progress", 0)
+        if since_progress > stale_after:
+            return {"live": False, "issue": "stale-background-progress", "action": "check-and-report-status"}
+    return {"live": True, "issue": None, "action": "continue"}
+
+
+def next_relentless_action(state: dict[str, Any]) -> dict[str, Any]:
+    """Select the single highest-priority NeverStop action from observable state."""
+    if state.get("dod_proven", False):
+        return {"action": "report-and-stop", "reason": "definition-of-done-proven"}
+
+    gate = state.get("hard_gate")
+    if gate:
+        result = validate_hard_gate(gate)
+        if result["valid"] and result["actionable_now"]:
+            return {"action": "request-minimum-approval", "reason": "valid-hard-gate-no-independent-work"}
+
+    independent_work = list(state.get("independent_work_remaining", []))
+    if independent_work and (state.get("hard_gate") or state.get("blocked_branch")):
+        return {"action": "continue-independent-work", "reason": "blocked-branch-with-independent-work"}
+
+    blocker = state.get("blocker")
+    if blocker and not validate_blocker(blocker)["valid"]:
+        return {"action": "resume-execution", "reason": "invalid-blocker-rejected"}
+
+    if state.get("recoverable_failure", False):
+        return {"action": "recovery", "reason": "ordinary-recoverable-failure"}
+
+    decision = state.get("decision")
+    if decision:
+        classified = classify_decision(decision)
+        if classified["class"] in {"A", "B"}:
+            return {"action": "choose-default-and-execute", "reason": f"class-{classified['class']}-decision"}
+
+    question = state.get("question")
+    if question and classify_question(question)["suppress"]:
+        return {"action": "inspect-or-decide", "reason": "answerable-question-suppressed"}
+
+    return {"action": "execute", "reason": "smallest-evidence-producing-action"}
+
+
+def build_skill_status_map(skill_names: list[str], task_context: dict[str, Any]) -> dict[str, str]:
+    """Assign exactly one status to every applicable skill; never include all-the-medicine."""
+    satisfied = set(task_context.get("satisfied_skills", []))
+    active = set(task_context.get("active_skills", []))
+    not_applicable = set(task_context.get("not_applicable_skills", []))
+    blocked = set(task_context.get("blocked_skills", []))
+    is_framework_task = task_context.get("is_framework_task", False)
+
+    statuses: dict[str, str] = {}
+    for name in skill_names:
+        if name == "all-the-medicine":
+            continue
+        if name == "install-framework" and not is_framework_task:
+            statuses[name] = "NOT_APPLICABLE"
+        elif name in blocked:
+            statuses[name] = "BLOCKED_BY_HIGHER_PRIORITY_RULE"
+        elif name in satisfied:
+            statuses[name] = "SATISFIED"
+        elif name in active:
+            statuses[name] = "ACTIVE"
+        elif name in not_applicable:
+            statuses[name] = "NOT_APPLICABLE"
+        else:
+            statuses[name] = "PENDING"
+    return statuses
+
+
+def select_all_the_medicine_control(status_map: dict[str, str], priority_order: list[str]) -> str | None:
+    """Select the single highest-priority ACTIVE control; refuse to include self-recursion."""
+    if "all-the-medicine" in status_map:
+        raise ValueError("all-the-medicine must not appear in its own status map")
+    for name in priority_order:
+        if status_map.get(name) == "ACTIVE":
+            return name
+    return None
 
 
 def resolve_rule_conflict(rules: list[dict[str, Any]]) -> dict[str, Any]:

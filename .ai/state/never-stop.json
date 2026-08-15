@@ -1,0 +1,18 @@
+{
+  "autonomyMode": "maximum-within-permission",
+  "effortMode": "maximum-sufficient",
+  "questionCandidate": null,
+  "questionAnswerableWithoutUser": true,
+  "decisionReversibility": "reversible",
+  "decisionBlastRadius": "small",
+  "hardGate": false,
+  "hardGateReason": null,
+  "independentWorkRemaining": ["write unit tests", "update documentation"],
+  "mandatoryRequirementsTotal": 5,
+  "mandatoryRequirementsVerified": 3,
+  "completionPercentage": 60,
+  "recoveryLevel": 1,
+  "backgroundTaskActive": true,
+  "backgroundLastProgressAt": "2026-08-15T00:00:00Z",
+  "backgroundStreamingStale": false
+}

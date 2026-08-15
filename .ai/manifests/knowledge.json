@@ -101,6 +101,14 @@
     {
       "path": ".ai/guides/executive-override-conflicts.md",
       "load_when": "on-semantic-risk"
+    },
+    {
+      "path": ".ai/guides/relentless-execution.md",
+      "load_when": "on-explicit-invocation"
+    },
+    {
+      "path": ".ai/guides/all-the-medicine.md",
+      "load_when": "on-explicit-invocation"
     }
   ],
   "context": [

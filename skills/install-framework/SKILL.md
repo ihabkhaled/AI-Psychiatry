@@ -12,10 +12,11 @@ Apply the framework to the repository currently being worked on.
 Read [references/master-prompt.md](references/master-prompt.md) before implementation.
 That file is the authoritative installation and maintenance specification.
 
-For the `0.3.0` complementary layers, also read only when relevant:
+For the `0.3.0` and `0.4.0` complementary layers, also read only when relevant:
 
 - [loophole enhancement prompts](references/loophole-enhancement-prompts.md) for semantic anti-gaming.
 - [underthinking and reasoning balance](references/underthinking-reasoning-balance-prompt.md) for sufficient reasoning.
+- [relentless execution and all-in-one orchestration](references/autonomous-execution-all-the-medicine-prompt.md) for `never-stop` and `all-the-medicine`.
 
 ## Packaged implementation
 

@@ -27,4 +27,6 @@ Starter prompts:
 - Use `$install-framework` to install AI Psychiatry without overwriting repository instructions.
 - Use `$anti-gaming` to audit semantic bypasses in this task.
 - Use `$reasoning-balance` to decide whether to investigate, execute, verify, or stop.
+- Use `$never-stop` for maximum autonomous execution until the Definition of Done is proven.
+- Use `$all-the-medicine` to load and orchestrate the complete framework in one command.
 

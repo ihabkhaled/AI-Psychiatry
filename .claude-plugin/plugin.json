@@ -1,7 +1,7 @@
 {
   "name": "ai-psychiatry",
-  "version": "0.3.0",
-  "description": "Semantic executive control for loopholes, underthinking, overthinking, evidence, recursion, context, memory, and reliable delivery.",
+  "version": "0.4.0",
+  "description": "Semantic executive control for loopholes, underthinking, overthinking, evidence, recursion, context, memory, relentless execution, and reliable delivery.",
   "author": {
     "name": "Ihab Khaled"
   },
@@ -19,6 +19,9 @@
     "recursive-tasks",
     "semantic-compliance",
     "underthinking",
-    "anti-gaming"
+    "anti-gaming",
+    "relentless-execution",
+    "autonomous-execution",
+    "all-the-medicine"
   ]
 }

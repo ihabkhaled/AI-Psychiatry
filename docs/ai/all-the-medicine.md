@@ -1,0 +1,9 @@
+# All the medicine
+
+`all-the-medicine` is one explicit command that applies the complete AI-Psychiatry framework, so a user does not need to manually invoke 20-30 individual skills. It reads its inventory dynamically from [`.ai/manifests/skills.json`](../../.ai/manifests/skills.json) — never a hand-maintained duplicate list — so every future public skill is included automatically after regeneration. It always includes [`never-stop`](../../skills/never-stop/SKILL.md) and always excludes itself.
+
+For every applicable skill it tracks exactly one status (`PENDING`, `CHECKED`, `ACTIVE`, `SATISFIED`, `NOT_APPLICABLE`, `BLOCKED_BY_HIGHER_PRIORITY_RULE`), walks a fixed execution-phase order (permission resolution, task bootstrap, autonomous-execution activation, evidence and reality control, attention and scope control, reasoning balance, loop and recovery control, adversarial semantic control when relevant, execution and verification, completion, then context and memory maintenance), and applies exactly one highest-priority control at a time rather than running conflicting interventions simultaneously — see the fixed conflict table in [`skills/all-the-medicine/SKILL.md`](../../skills/all-the-medicine/SKILL.md).
+
+## Compiled artifacts
+
+`python scripts/build_all_the_medicine.py` compiles every public skill and canonical rule into `skills/all-the-medicine/references/all-skills-compiled.md` and `all-rules-compiled.md`, rewriting each embedded relative link so it still resolves from the compiled file's location, and records a `skill-index.json` and `source-hashes.json`. These files are generated — edit the canonical skill, rule, or generator instead. `python scripts/build_all_the_medicine.py --check` fails on staleness, a missing file, a duplicate name or id, a changed source hash, or `all-the-medicine` appearing in its own compiled inventory.

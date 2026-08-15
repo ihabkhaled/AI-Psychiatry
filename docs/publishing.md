@@ -11,7 +11,7 @@
 ## OpenAI Codex
 
 1. Run the full test suite and Codex plugin validator.
-2. Build `dist/ai-psychiatry-0.3.0.zip` with the plugin manifests and `skills/` at the archive root.
+2. Build `dist/ai-psychiatry-0.4.0.zip` with the plugin manifests and `skills/` at the archive root.
 3. Upload the archive as a skills-only plugin in the OpenAI Plugins Directory publisher portal.
 4. Supply listing details, the positive and negative test cases, availability, and release notes; complete scans and authenticated publisher attestations.
 

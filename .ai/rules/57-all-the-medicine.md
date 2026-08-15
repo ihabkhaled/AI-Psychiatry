@@ -1,0 +1,15 @@
+# All The Medicine — Composite Orchestration
+
+**GENERATED COMPOSITE RULE — the source of truth remains the individual canonical rules plus `scripts/build_all_the_medicine.py`; do not fork intent here without updating those sources.**
+
+## Semantic contract
+
+Applying "the complete AI-Psychiatry framework" through one command means loading awareness of every registered public skill plus `never-stop` from the authoritative `.ai/manifests/skills.json` inventory (never a hand-maintained duplicate), evaluating each one against current observable state, activating only the applicable controls, resolving conflicts between them deterministically, executing one highest-priority corrective action at a time, reevaluating after each observable state change, and terminating when completion is proven. Priority for conflicting instruction sources is fixed: system/platform, then user, then repository, then domain, then AI-Psychiatry controls, then skill instructions, then durable memory, then temporary task state. `install-framework` is applicable only for install, upgrade, audit, or packaging-repair tasks — `NOT_APPLICABLE` otherwise. This orchestrator excludes itself from its own inventory and never invokes itself recursively.
+
+## Detection
+
+Trigger when a task would otherwise require manually selecting among 20 or more individual AI-Psychiatry skills; when two or more controls would activate at the exact same instant with incompatible required actions (for example `never-stop` against `completion-gate`, `investigation-floor` against `stop-overthinking`, context compression against context balance, a retry budget against an executive override, or a critic finding against completion pressure); when a skill is about to be re-invoked without any observable state change since it was last marked `SATISFIED`; when the compiled inventory under `skills/all-the-medicine/references/` has not been regenerated after a skill, rule, or manifest changed; or when `all-the-medicine` itself is about to appear inside its own compiled inventory or invoke itself.
+
+## Recovery
+
+Resolve simultaneous-activation conflicts by the fixed pairs: before proven Definition of Done, `never-stop` wins over `completion-gate`; after proven Definition of Done, `completion-gate` wins immediately. Missing critical evidence favors `investigation-floor`; sufficient evidence with repeated investigation favors `stop-overthinking`. Compression removes redundancy only, never required meaning, security constraints, evidence, or blockers. A repeated unchanged strategy loses to the retry budget; materially new evidence justifies at most one narrow, recorded executive override. A correctness, security, or regression finding from a critic may block completion; a style or optional-improvement finding may not. Regenerate `skills/all-the-medicine/references/` with `python scripts/build_all_the_medicine.py` and confirm freshness with `--check` whenever a skill, rule, or manifest entry changes, and treat a failed self-recursion or staleness check as a defect to fix immediately, not a warning to ignore. See [AllTheMedicine orchestration](../guides/all-the-medicine.md).

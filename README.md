@@ -61,6 +61,8 @@ The plugin exposes focused skills in both platforms. Claude uses `/ai-psychiatry
 | Root-cause and debugging evidence | `root-cause-validator` |
 | Controlled budget exception | `executive-override` |
 | Conflicting instruction sources | `rule-conflict-resolver` |
+| Maximum autonomous execution until proven completion | `never-stop` |
+| Complete all-in-one AI-Psychiatry orchestration | `all-the-medicine` |
 
 Example:
 
@@ -69,9 +71,25 @@ Example:
 $stop-compulsive-verification
 ```
 
+### Superpowers
+
+`never-stop` and `all-the-medicine` are explicit-invocation-only "superpowers," not part of ordinary always-loaded behavior:
+
+```text
+/ai-psychiatry:never-stop
+/ai-psychiatry:all-the-medicine
+
+$never-stop
+$all-the-medicine
+```
+
+**NeverStop** — maximum persistence and decision autonomy within existing permissions: it decides routine and reversible questions from evidence instead of asking, recovers from ordinary failure instead of stopping, keeps independent work moving while one branch is blocked, and stops only at proven completion or a genuine hard approval gate.
+
+**All the medicine** — one command that loads, evaluates, and orchestrates every applicable AI-Psychiatry skill (including `never-stop`) instead of the user having to invoke them one by one, resolving conflicts deterministically and excluding itself from its own inventory. Its canonical command is `/ai-psychiatry:all-the-medicine`.
+
 ## What it installs
 
-The shared installer preserves repository-specific instructions and adds a compact `.ai/` runtime with 56 focused rules, 47 operational skills, 28 public plugin skills, semantic policies, thin agent adapters, context and durable memory, JSON/TOON/SJON state, schemas, manifests, and scenario tests. The original master prompt and complementary loophole/underthinking prompts are progressively disclosed from `skills/install-framework/references/`.
+The shared installer preserves repository-specific instructions and adds a compact `.ai/` runtime with 58 focused rules, 49 operational skills, 30 public plugin skills, semantic policies, thin agent adapters, context and durable memory, JSON/TOON/SJON state, schemas, manifests, and scenario tests. The original master prompt and complementary loophole/underthinking prompts are progressively disclosed from `skills/install-framework/references/`.
 
 Coverage includes hallucination, attention drift, ADHD-style distraction analogy, OCD-style compulsive-checking analogy, underthinking, overthinking, hidden recursion, strategy and scope laundering, false progress/completion/blockers, memory poisoning, context starvation, critic suppression, deadlock, livelock, and completion avoidance. Guidance is indexed in [AI framework guidance](docs/ai/README.md); semantic loopholes are cataloged [here](.ai/guides/loophole-catalog.md).
 

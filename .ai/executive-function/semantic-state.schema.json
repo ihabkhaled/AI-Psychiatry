@@ -16,7 +16,31 @@
     "unsupportedAssumptionCount": {"type": "integer", "minimum": 0},
     "rootCauseConfirmed": {"type": "boolean"},
     "contextStarvationRisk": {"type": "boolean"},
-    "prematureCompletionRisk": {"type": "boolean"}
+    "prematureCompletionRisk": {"type": "boolean"},
+    "autonomyMode": {"enum": ["maximum-within-permission", "standard"]},
+    "effortMode": {"enum": ["maximum-sufficient", "standard"]},
+    "questionCandidate": {"type": ["string", "null"]},
+    "questionAnswerableWithoutUser": {"type": "boolean"},
+    "decisionReversibility": {"enum": ["reversible", "irreversible"]},
+    "decisionBlastRadius": {"enum": ["small", "medium", "large"]},
+    "hardGate": {"type": "boolean"},
+    "hardGateReason": {"type": ["string", "null"]},
+    "independentWorkRemaining": {"type": "array", "items": {"type": "string"}},
+    "mandatoryRequirementsTotal": {"type": "integer", "minimum": 0},
+    "mandatoryRequirementsVerified": {"type": "integer", "minimum": 0},
+    "completionPercentage": {"type": "number", "minimum": 0, "maximum": 100},
+    "activeSkill": {"type": ["string", "null"]},
+    "skillStatuses": {
+      "type": "object",
+      "additionalProperties": {
+        "enum": ["PENDING", "CHECKED", "ACTIVE", "SATISFIED", "NOT_APPLICABLE", "BLOCKED_BY_HIGHER_PRIORITY_RULE"]
+      }
+    },
+    "recoveryLevel": {"type": "integer", "minimum": 0, "maximum": 7},
+    "allTheMedicineActive": {"type": "boolean"},
+    "backgroundTaskActive": {"type": "boolean"},
+    "backgroundLastProgressAt": {"type": ["string", "null"]},
+    "backgroundStreamingStale": {"type": "boolean"}
   },
   "required": ["reasoningState", "criticalUnknowns", "requiredEvidenceMissing", "recommendedAction"],
   "additionalProperties": true

@@ -34,21 +34,33 @@ class PluginPackageTests(unittest.TestCase):
         master = REPO / "skills/install-framework/references/master-prompt.md"
         self.assertGreater(master.stat().st_size, 60000)
 
-    def test_release_versions_match_semantic_compliance_release(self):
+    def test_release_versions_match_current_release(self):
+        install = load_json(REPO / ".ai/manifests/install.json")
         claude = load_json(REPO / ".claude-plugin/plugin.json")
         codex = load_json(REPO / ".codex-plugin/plugin.json")
         marketplace = load_json(REPO / ".claude-plugin/marketplace.json")
-        self.assertEqual(claude["version"], "0.3.0")
-        self.assertEqual(codex["version"], "0.3.0")
-        self.assertEqual(marketplace["plugins"][0]["version"], "0.3.0")
+        release = install["release"]
+        self.assertEqual(release, "0.4.0")
+        self.assertEqual(claude["version"], release)
+        self.assertEqual(codex["version"], release)
+        self.assertEqual(marketplace["plugins"][0]["version"], release)
 
     def test_semantic_skills_and_policies_are_installable(self):
         install = load_json(REPO / ".ai/manifests/install.json")
         self.assertIn("policies", install["layers"])
         self.assertIn("reasoning-balance", install["public_skills"])
         skills = load_json(REPO / ".ai/manifests/skills.json")
-        self.assertEqual(len(skills["skills"]), 47)
-        self.assertEqual(len(skills["plugin_skills"]), 28)
+        self.assertEqual(len(skills["skills"]), 49)
+        self.assertEqual(len(skills["plugin_skills"]), 30)
+
+    def test_superpowers_are_registered_as_public_skills_and_manifest_paths_resolve(self):
+        install = load_json(REPO / ".ai/manifests/install.json")
+        for name in ("never-stop", "all-the-medicine"):
+            self.assertIn(name, install["public_skills"])
+        skills = load_json(REPO / ".ai/manifests/skills.json")
+        for section in ("skills", "plugin_skills"):
+            for item in skills[section]:
+                self.assertTrue((REPO / item["path"]).exists(), item["path"])
 
 
 if __name__ == "__main__":

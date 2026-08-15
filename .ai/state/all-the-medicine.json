@@ -1,0 +1,18 @@
+{
+  "activeSkill": "evidence-gate",
+  "skillStatuses": {
+    "install-framework": "NOT_APPLICABLE",
+    "executive-control": "SATISFIED",
+    "never-stop": "ACTIVE",
+    "evidence-gate": "ACTIVE",
+    "completion-gate": "PENDING",
+    "all-the-medicine": "NOT_APPLICABLE"
+  },
+  "allTheMedicineActive": true,
+  "mandatoryRequirementsTotal": 8,
+  "mandatoryRequirementsVerified": 2,
+  "completionPercentage": 25,
+  "recoveryLevel": 0,
+  "hardGate": false,
+  "hardGateReason": null
+}

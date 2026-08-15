@@ -570,6 +570,22 @@
       "load_when": "on_demand",
       "canonical_source": "skills/install-framework/references/loophole-enhancement-prompts.md",
       "prompt_sections": []
+    },
+    {
+      "id": "rule-56",
+      "path": ".ai/rules/56-never-stop-relentless-execution.md",
+      "priority": 44,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/autonomous-execution-all-the-medicine-prompt.md",
+      "prompt_sections": []
+    },
+    {
+      "id": "rule-57",
+      "path": ".ai/rules/57-all-the-medicine.md",
+      "priority": 43,
+      "load_when": "on_demand",
+      "canonical_source": "skills/install-framework/references/autonomous-execution-all-the-medicine-prompt.md",
+      "prompt_sections": []
     }
   ]
 }

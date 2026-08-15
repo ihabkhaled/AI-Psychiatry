@@ -1,0 +1,152 @@
+{
+  "generated_by": "scripts/build_all_the_medicine.py",
+  "self_excluded": "all-the-medicine",
+  "count": 29,
+  "skills": [
+    {
+      "id": "plugin-skill-00",
+      "name": "install-framework",
+      "path": "skills/install-framework/SKILL.md"
+    },
+    {
+      "id": "plugin-skill-01",
+      "name": "executive-control",
+      "path": "skills/executive-control/SKILL.md"
+    },
+    {
+      "id": "plugin-skill-02",
+      "name": "attention-reset",
+      "path": "skills/attention-reset/SKILL.md"
+    },
+    {
+      "id": "plugin-skill-03",
+      "name": "stop-overthinking",
+      "path": "skills/stop-overthinking/SKILL.md"
+    },
+    {
+      "id": "plugin-skill-04",
+      "name": "stop-compulsive-verification",
+      "path": "skills/stop-compulsive-verification/SKILL.md"
+    },
+    {
+      "id": "plugin-skill-05",
+      "name": "flatten-recursive-investigation",
+      "path": "skills/flatten-recursive-investigation/SKILL.md"
+    },
+    {
+      "id": "plugin-skill-06",
+      "name": "evidence-gate",
+      "path": "skills/evidence-gate/SKILL.md"
+    },
+    {
+      "id": "plugin-skill-07",
+      "name": "recover-from-deadlock-livelock",
+      "path": "skills/recover-from-deadlock-livelock/SKILL.md"
+    },
+    {
+      "id": "plugin-skill-08",
+      "name": "completion-gate",
+      "path": "skills/completion-gate/SKILL.md"
+    },
+    {
+      "id": "plugin-skill-09",
+      "name": "loophole-hunter",
+      "path": "skills/loophole-hunter/SKILL.md"
+    },
+    {
+      "id": "plugin-skill-10",
+      "name": "framework-red-team",
+      "path": "skills/framework-red-team/SKILL.md"
+    },
+    {
+      "id": "plugin-skill-11",
+      "name": "anti-gaming",
+      "path": "skills/anti-gaming/SKILL.md"
+    },
+    {
+      "id": "plugin-skill-12",
+      "name": "false-progress-detector",
+      "path": "skills/false-progress-detector/SKILL.md"
+    },
+    {
+      "id": "plugin-skill-13",
+      "name": "blocker-validator",
+      "path": "skills/blocker-validator/SKILL.md"
+    },
+    {
+      "id": "plugin-skill-14",
+      "name": "hidden-recursion-detector",
+      "path": "skills/hidden-recursion-detector/SKILL.md"
+    },
+    {
+      "id": "plugin-skill-15",
+      "name": "strategy-laundering-detector",
+      "path": "skills/strategy-laundering-detector/SKILL.md"
+    },
+    {
+      "id": "plugin-skill-16",
+      "name": "scope-laundering-detector",
+      "path": "skills/scope-laundering-detector/SKILL.md"
+    },
+    {
+      "id": "plugin-skill-17",
+      "name": "completion-evidence",
+      "path": "skills/completion-evidence/SKILL.md"
+    },
+    {
+      "id": "plugin-skill-18",
+      "name": "memory-validator",
+      "path": "skills/memory-validator/SKILL.md"
+    },
+    {
+      "id": "plugin-skill-19",
+      "name": "context-balance",
+      "path": "skills/context-balance/SKILL.md"
+    },
+    {
+      "id": "plugin-skill-20",
+      "name": "underthinking-detector",
+      "path": "skills/underthinking-detector/SKILL.md"
+    },
+    {
+      "id": "plugin-skill-21",
+      "name": "reasoning-balance",
+      "path": "skills/reasoning-balance/SKILL.md"
+    },
+    {
+      "id": "plugin-skill-22",
+      "name": "investigation-floor",
+      "path": "skills/investigation-floor/SKILL.md"
+    },
+    {
+      "id": "plugin-skill-23",
+      "name": "decision-readiness",
+      "path": "skills/decision-readiness/SKILL.md"
+    },
+    {
+      "id": "plugin-skill-24",
+      "name": "root-cause-validator",
+      "path": "skills/root-cause-validator/SKILL.md"
+    },
+    {
+      "id": "plugin-skill-25",
+      "name": "evidence-floor",
+      "path": "skills/evidence-floor/SKILL.md"
+    },
+    {
+      "id": "plugin-skill-26",
+      "name": "executive-override",
+      "path": "skills/executive-override/SKILL.md"
+    },
+    {
+      "id": "plugin-skill-27",
+      "name": "rule-conflict-resolver",
+      "path": "skills/rule-conflict-resolver/SKILL.md"
+    },
+    {
+      "id": "plugin-skill-28",
+      "name": "never-stop",
+      "path": "skills/never-stop/SKILL.md"
+    }
+  ]
+}

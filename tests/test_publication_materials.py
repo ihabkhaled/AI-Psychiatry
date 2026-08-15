@@ -24,7 +24,7 @@ class PublicationTests(unittest.TestCase):
     def test_submission_archive_has_portable_root(self):
         import zipfile
 
-        archive = REPO / "dist/ai-psychiatry-0.3.0.zip"
+        archive = REPO / "dist/ai-psychiatry-0.4.0.zip"
         self.assertTrue(archive.exists())
         with zipfile.ZipFile(archive) as bundle:
             names = set(bundle.namelist())
@@ -32,6 +32,9 @@ class PublicationTests(unittest.TestCase):
         self.assertIn(".codex-plugin/plugin.json", names)
         self.assertIn("skills/underthinking-detector/SKILL.md", names)
         self.assertIn("skills/reasoning-balance/SKILL.md", names)
+        self.assertIn("skills/never-stop/SKILL.md", names)
+        self.assertIn("skills/all-the-medicine/SKILL.md", names)
+        self.assertIn("skills/all-the-medicine/references/all-skills-compiled.md", names)
 
 
 if __name__ == "__main__":

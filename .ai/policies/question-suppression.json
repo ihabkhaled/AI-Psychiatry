@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "principle": "do-not-ask-what-evidence-can-establish",
+  "answerableSources": [
+    "current-conversation",
+    "repository-instructions",
+    "source-code",
+    "configuration",
+    "tests",
+    "existing-documentation",
+    "package-scripts",
+    "commit-history",
+    "established-project-convention",
+    "authoritative-external-documentation",
+    "available-tools",
+    "safe-reversible-default"
+  ],
+  "forbiddenQuestions": [
+    "which-test-command-to-run",
+    "which-repository-pattern-to-follow",
+    "where-the-relevant-service-is",
+    "whether-to-use-the-existing-abstraction",
+    "whether-to-fix-an-obvious-type-error",
+    "whether-to-run-relevant-tests",
+    "whether-to-preserve-existing-conventions",
+    "whether-to-choose-the-safest-reversible-option",
+    "whether-to-continue-after-recoverable-failure"
+  ],
+  "gate": "can-the-answer-be-found-through-an-answerable-source",
+  "onYes": "investigate-or-decide-then-continue",
+  "onNo": "ask-minimum-required-question"
+}

@@ -22,7 +22,7 @@ class RuntimeTests(unittest.TestCase):
 class CatalogTests(unittest.TestCase):
     def test_rule_manifest_is_complete(self):
         rules = load_json(REPO / ".ai/manifests/rules.json")["rules"]
-        self.assertEqual([r["id"] for r in rules], [f"rule-{n:02d}" for n in range(56)])
+        self.assertEqual([r["id"] for r in rules], [f"rule-{n:02d}" for n in range(58)])
         self.assertTrue(all((REPO / r["path"]).exists() for r in rules))
 
     def test_every_prompt_section_is_traced(self):
@@ -32,7 +32,9 @@ class CatalogTests(unittest.TestCase):
 
     def test_all_operational_skills_are_discoverable(self):
         skills = load_json(REPO / ".ai/manifests/skills.json")["skills"]
-        self.assertEqual(len(skills), 47)
+        self.assertEqual(len(skills), 49)
+        names = [item["name"] for item in skills]
+        self.assertEqual(len(names), len(set(names)), "duplicate operational skill names")
         for item in skills:
             text = read(REPO / item["path"])
             self.assertTrue(text.startswith("---\nname:"))

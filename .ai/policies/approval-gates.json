@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "permissionBypass": false,
+  "hardGateConditions": [
+    "destructive-or-irreversible-operation",
+    "irreversible-user-data-migration-or-deletion",
+    "production-deployment",
+    "public-release-or-marketplace-submission",
+    "git-push-merge-or-pr-creation-when-not-already-authorized",
+    "sending-external-messages",
+    "payment-or-financial-commitment",
+    "permission-or-access-control-change",
+    "exposing-secrets-or-credentials",
+    "production-infrastructure-change",
+    "legal-or-regulatory-decision",
+    "security-trade-off-with-no-safe-inferable-answer",
+    "materially-different-product-behavior-with-no-evidence-of-intent",
+    "platform-enforced-permission-prompt",
+    "genuinely-missing-credential-or-input"
+  ],
+  "notHardGates": [
+    "task-is-difficult",
+    "repository-is-unfamiliar",
+    "one-test-failed",
+    "one-command-failed",
+    "one-implementation-approach-failed",
+    "a-file-is-large",
+    "a-build-is-slow",
+    "agent-feels-uncertain",
+    "context-is-getting-long",
+    "retry-budget-reached-while-new-evidence-still-emerging"
+  ],
+  "onValidHardGate": "finish-independent-work-then-request-minimum-approval",
+  "onInvalidHardGate": "resume-execution",
+  "forbidden": [
+    "bypassing-system-platform-or-repository-rules",
+    "altering-own-permissions",
+    "enabling-permission-bypass-mode",
+    "using-permission-skipping-flags",
+    "silently-authorizing-destructive-or-production-actions",
+    "fabricating-missing-credentials",
+    "using-secrets-outside-authorized-purpose",
+    "treating-lack-of-permission-as-permission",
+    "redefining-a-hard-gate-as-routine",
+    "redefining-a-routine-decision-as-a-hard-gate"
+  ]
+}

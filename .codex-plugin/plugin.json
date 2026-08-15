@@ -1,7 +1,7 @@
 {
   "name": "ai-psychiatry",
-  "version": "0.3.0",
-  "description": "Semantic executive control for loopholes, underthinking, overthinking, evidence, recursion, context, memory, and reliable delivery.",
+  "version": "0.4.0",
+  "description": "Semantic executive control for loopholes, underthinking, overthinking, evidence, recursion, context, memory, relentless execution, and reliable delivery.",
   "author": {
     "name": "Ihab Khaled"
   },
@@ -20,13 +20,16 @@
     "recursive-tasks",
     "semantic-compliance",
     "underthinking",
-    "anti-gaming"
+    "anti-gaming",
+    "relentless-execution",
+    "autonomous-execution",
+    "all-the-medicine"
   ],
   "skills": "./skills/",
   "interface": {
     "displayName": "AI Psychiatry",
     "shortDescription": "Executive control for coding agents",
-    "longDescription": "Detects semantic bypasses, false progress/completion/blockers, hidden recursion, strategy and scope laundering, memory/context corruption, underthinking, overthinking, and missing evidence.",
+    "longDescription": "Detects semantic bypasses, false progress/completion/blockers, hidden recursion, strategy and scope laundering, memory/context corruption, underthinking, overthinking, and missing evidence. Adds explicit-invocation relentless execution and a single all-in-one orchestrator that loads and applies every control until completion is proven.",
     "developerName": "Ihab Khaled",
     "category": "Productivity",
     "capabilities": [
@@ -42,7 +45,8 @@
     "defaultPrompt": [
       "Audit this task for AI-Psychiatry loopholes and semantic bypasses.",
       "Balance underthinking and overthinking using sufficient reasoning.",
-      "Validate completion evidence, blockers, recursion, scope, and progress."
+      "Validate completion evidence, blockers, recursion, scope, and progress.",
+      "Use $never-stop or $all-the-medicine for maximum autonomous execution and complete orchestration."
     ]
   }
 }

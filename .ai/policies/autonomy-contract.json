@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "autonomyMode": "maximum-within-permission",
+  "reasoningMode": "maximum-sufficient",
+  "executionPersistence": "until-proven-done",
+  "questionPolicy": "ask-only-at-genuine-hard-gate",
+  "completionPolicy": "all-mandatory-requirements-evidenced",
+  "permissionBypass": false,
+  "independentWorkBeforeQuestion": true,
+  "selfRecursionAllowed": false,
+  "decisionHierarchy": [
+    "explicit-user-instruction",
+    "platform-system-developer-constraints",
+    "repository-instructions",
+    "explicit-requirements-and-acceptance-criteria",
+    "authoritative-source-and-configuration",
+    "established-subsystem-pattern",
+    "existing-architectural-convention",
+    "official-documentation",
+    "safest-minimal-reversible-option",
+    "most-conventional-low-surprise-implementation"
+  ],
+  "recoveryLadder": [
+    "continue",
+    "local-repair",
+    "alternative-strategy",
+    "isolation",
+    "context-refresh",
+    "executive-reset",
+    "independent-work",
+    "hard-gate"
+  ],
+  "streaming": {
+    "backgroundClaimsRequireMechanism": true,
+    "periodicProgressRequired": true,
+    "preferForegroundWhenNextActionDepends": true,
+    "silenceWithoutMechanismForbidden": true
+  },
+  "superpower": {
+    "tier": "superpower",
+    "riskLevel": "high",
+    "explicitInvocationOnly": true,
+    "maximumEffort": true
+  }
+}

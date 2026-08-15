@@ -4,6 +4,7 @@ import argparse
 import hashlib
 import json
 import re
+import sys
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -16,6 +17,11 @@ class Issue:
 
 
 LINK = re.compile(r"(?<!!)\[[^]]+\]\(([^)]+)\)")
+REPO_ROOT = Path(__file__).resolve().parents[1]
+COUNT_SENTENCE = re.compile(
+    r"(\d+) focused rules, (\d+) operational skills, (\d+) public plugin skills"
+)
+REQUIRED_NEW_SKILLS = ("never-stop", "all-the-medicine")
 
 
 def validate_traceability(root: Path) -> list[Issue]:
@@ -104,6 +110,115 @@ def validate(root: Path, package_required: bool = True) -> list[Issue]:
         data = json.loads(state.read_text(encoding="utf-8"))
         if data.get("status") != "idle" or data.get("objective") is not None or data.get("history") != []:
             issues.append(Issue("fake-state", str(state.relative_to(root)), "versioned task state must be neutral"))
+
+    issues.extend(validate_never_stop_and_all_the_medicine(root))
+    return issues
+
+
+def validate_never_stop_and_all_the_medicine(root: Path) -> list[Issue]:
+    """Validate the never-stop / all-the-medicine additions: presence, manifests, generation, versions."""
+    issues: list[Issue] = []
+
+    for name in REQUIRED_NEW_SKILLS:
+        for tree in ("skills", ".ai/skills"):
+            path = root / tree / name / "SKILL.md"
+            if not path.exists():
+                issues.append(Issue("missing-required", f"{tree}/{name}/SKILL.md", "required superpower skill"))
+                continue
+            text = path.read_text(encoding="utf-8")
+            if "## Stop condition" not in text:
+                issues.append(Issue("missing-stop-condition", f"{tree}/{name}/SKILL.md", "superpower skill must declare a stop condition"))
+
+    for rule in ("56-never-stop-relentless-execution.md", "57-all-the-medicine.md"):
+        if not (root / ".ai/rules" / rule).exists():
+            issues.append(Issue("missing-required", f".ai/rules/{rule}", "required superpower rule"))
+
+    try:
+        skills = json.loads((root / ".ai/manifests/skills.json").read_text(encoding="utf-8"))
+        for section in ("skills", "plugin_skills"):
+            entries = skills[section]
+            names = [item["name"] for item in entries]
+            if len(names) != len(set(names)):
+                issues.append(Issue("duplicate-skill-name", ".ai/manifests/skills.json", f"duplicate name in {section}"))
+            ids = [item["id"] for item in entries]
+            if len(ids) != len(set(ids)):
+                issues.append(Issue("duplicate-skill-id", ".ai/manifests/skills.json", f"duplicate id in {section}"))
+            for item in entries:
+                if not (root / item["path"]).exists():
+                    issues.append(Issue("missing-declared-path", item["path"], item.get("id", item.get("name", ""))))
+        plugin_dirs = {p.name for p in (root / "skills").iterdir() if p.is_dir()}
+        manifest_plugin_names = {item["name"] for item in skills["plugin_skills"]}
+        if plugin_dirs != manifest_plugin_names:
+            issues.append(Issue(
+                "skill-inventory-drift", ".ai/manifests/skills.json",
+                f"skills/ directories {sorted(plugin_dirs)} do not match plugin_skills {sorted(manifest_plugin_names)}",
+            ))
+        lowercase_names = [name.lower() for name in plugin_dirs]
+        if len(lowercase_names) != len(set(lowercase_names)):
+            issues.append(Issue("unvalidated-alias", "skills/", "case-insensitive duplicate skill directory names"))
+    except (OSError, KeyError, json.JSONDecodeError) as exc:
+        issues.append(Issue("invalid-manifest", ".ai/manifests/skills.json", str(exc)))
+
+    try:
+        install = json.loads((root / ".ai/manifests/install.json").read_text(encoding="utf-8"))
+        claude = json.loads((root / ".claude-plugin/plugin.json").read_text(encoding="utf-8"))
+        codex = json.loads((root / ".codex-plugin/plugin.json").read_text(encoding="utf-8"))
+        marketplace = json.loads((root / ".claude-plugin/marketplace.json").read_text(encoding="utf-8"))
+        versions = {
+            "install.release": install.get("release"),
+            "claude.version": claude.get("version"),
+            "codex.version": codex.get("version"),
+            "marketplace.version": marketplace.get("plugins", [{}])[0].get("version"),
+        }
+        if len(set(versions.values())) > 1:
+            issues.append(Issue("version-mismatch", ".claude-plugin/plugin.json", f"inconsistent release versions: {versions}"))
+    except (OSError, KeyError, IndexError, json.JSONDecodeError) as exc:
+        issues.append(Issue("invalid-manifest", ".claude-plugin/plugin.json", str(exc)))
+
+    readme = root / "README.md"
+    if readme.exists():
+        try:
+            rules_count = len(json.loads((root / ".ai/manifests/rules.json").read_text(encoding="utf-8"))["rules"])
+            skills = json.loads((root / ".ai/manifests/skills.json").read_text(encoding="utf-8"))
+            operational_count = len(skills["skills"])
+            plugin_count = len(skills["plugin_skills"])
+            match = COUNT_SENTENCE.search(readme.read_text(encoding="utf-8"))
+            if not match:
+                issues.append(Issue("readme-counts-missing", "README.md", "no rules/skills count sentence found"))
+            else:
+                declared = tuple(int(value) for value in match.groups())
+                actual = (rules_count, operational_count, plugin_count)
+                if declared != actual:
+                    issues.append(Issue("readme-counts-stale", "README.md", f"declared {declared} != actual {actual}"))
+        except (OSError, KeyError, json.JSONDecodeError) as exc:
+            issues.append(Issue("invalid-manifest", "README.md", str(exc)))
+
+    gates_path = root / ".ai/policies/approval-gates.json"
+    if gates_path.exists():
+        gates = json.loads(gates_path.read_text(encoding="utf-8"))
+        if gates.get("permissionBypass") is not False:
+            issues.append(Issue("permission-bypass-allowed", ".ai/policies/approval-gates.json", "hard-gate policy must forbid permission bypass"))
+
+    for generated_path, marker in (
+        ("skills/all-the-medicine/references/all-skills-compiled.md", "GENERATED"),
+        ("skills/all-the-medicine/references/all-rules-compiled.md", "GENERATED"),
+        (".ai/rules/57-all-the-medicine.md", "GENERATED COMPOSITE RULE"),
+    ):
+        full = root / generated_path
+        if full.exists() and marker not in full.read_text(encoding="utf-8"):
+            issues.append(Issue("generated-artifact-unmarked", generated_path, f"missing '{marker}' marker"))
+
+    if root == REPO_ROOT:
+        sys.path.insert(0, str(REPO_ROOT))
+        try:
+            from scripts.build_all_the_medicine import build as build_all_the_medicine, check as check_all_the_medicine
+
+            outputs = build_all_the_medicine()
+            for stale in check_all_the_medicine(outputs):
+                issues.append(Issue("all-the-medicine-stale", "skills/all-the-medicine/references/", stale))
+        except (FileNotFoundError, ValueError, KeyError, ImportError) as exc:
+            issues.append(Issue("all-the-medicine-build-failed", "scripts/build_all_the_medicine.py", str(exc)))
+
     return issues
 
 

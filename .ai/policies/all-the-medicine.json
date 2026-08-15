@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "principle": "load-every-medicine-activate-only-applicable-treatments-resolve-conflicts-execute-relentlessly-prove-completion-stop",
+  "dynamicInventorySource": ".ai/manifests/skills.json",
+  "includes": ["every-registered-public-skill", "never-stop"],
+  "excludes": ["all-the-medicine"],
+  "selfRecursionAllowed": false,
+  "statusValues": ["PENDING", "CHECKED", "ACTIVE", "SATISFIED", "NOT_APPLICABLE", "BLOCKED_BY_HIGHER_PRIORITY_RULE"],
+  "executionPhases": [
+    "instruction-and-permission-resolution",
+    "task-bootstrap",
+    "autonomous-execution-activation",
+    "evidence-and-reality-control",
+    "attention-and-scope-control",
+    "reasoning-balance",
+    "loop-and-recovery-control",
+    "adversarial-semantic-control",
+    "execution-and-verification",
+    "completion",
+    "context-and-memory-maintenance"
+  ],
+  "conflictPriority": [
+    {"pair": ["never-stop", "completion-gate"], "beforeProof": "never-stop", "afterProof": "completion-gate"},
+    {"pair": ["investigation-floor", "stop-overthinking"], "missingEvidence": "investigation-floor", "sufficientEvidenceRepeated": "stop-overthinking"},
+    {"pair": ["context-compression", "context-balance"], "rule": "remove-redundancy-preserve-required-meaning"},
+    {"pair": ["retry-budget", "executive-override"], "repeatedUnchangedStrategy": "retry-budget", "materiallyNewEvidence": "executive-override"},
+    {"pair": ["critic", "completion"], "correctnessSecurityRegression": "critic", "styleOrOptional": "completion"},
+    {"pair": ["blocker", "never-stop"], "unvalidatedBlocker": "never-stop", "validatedHardGateNoIndependentWork": "blocker"}
+  ],
+  "oneControlAtATime": true,
+  "superpower": {
+    "tier": "god-mode",
+    "type": "meta-superpower",
+    "composesAllRegisteredSkills": true,
+    "selfRecursionAllowed": false
+  }
+}
