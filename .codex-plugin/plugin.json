@@ -45,8 +45,7 @@
     "defaultPrompt": [
       "Audit this task for AI-Psychiatry loopholes and semantic bypasses.",
       "Balance underthinking and overthinking using sufficient reasoning.",
-      "Validate completion evidence, blockers, recursion, scope, and progress.",
-      "Use $never-stop or $all-the-medicine for maximum autonomous execution and complete orchestration."
+      "Use $never-stop or $all-the-medicine for autonomous execution while validating completion evidence, blockers, recursion, scope, and progress."
     ]
   }
 }
