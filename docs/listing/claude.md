@@ -29,6 +29,7 @@ Starter prompts:
 - Balance underthinking and overthinking, then produce completion evidence.
 - Use `/ai-psychiatry:never-stop` for maximum autonomous execution until the Definition of Done is proven.
 - Use `/ai-psychiatry:all-the-medicine` to load and orchestrate the complete framework in one command.
+- Use `/ai-psychiatry:direct-communication` for terse, assertive answers and non-looping questions.
 
 Hosted marketplace install:
 
@@ -38,4 +39,3 @@ Hosted marketplace install:
 ```
 
 Community directory target: `ai-psychiatry@claude-community` after Anthropic review and approval.
-

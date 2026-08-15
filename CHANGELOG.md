@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.5.0 - 2026-08-15
+
+- Added `direct-communication` for assertive, succinct answers, essential evidence, and single non-looping blocker questions.
+- Renamed the installed `communicate-briefly` control to `direct-communication` and registered it for Claude and Codex.
+- Added the skill to `all-the-medicine`, enforced Codex's three-prompt and 128-character limits, and refreshed package metadata.
+
 ## 0.4.0 - 2026-08-15
 
 - Added `never-stop`, an explicit-invocation "superpower" for maximum autonomous execution: a question-suppression gate, a routine/material/hard-gate decision hierarchy, an eight-level recovery ladder, blocker validation, and a proven-completion stop condition.

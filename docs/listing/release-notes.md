@@ -1,8 +1,12 @@
 # Release Notes
 
+## 0.5.0
+
+Adds `direct-communication` for terse, assertive answers, plain language, essential evidence, and one specific non-looping blocker question. It replaces the installed `communicate-briefly` control, is callable in Claude and Codex, and is automatically compiled into `all-the-medicine`. Codex starter prompts now satisfy the maximum count and 128-character limit.
+
 ## 0.4.0
 
-Adds two explicit-invocation "superpower" skills. `never-stop` provides maximum autonomous execution: it suppresses questions the repository or tools can already answer, classifies decisions as routine, material, or a hard approval gate, recovers through a bounded eight-level ladder instead of stopping at the first failure, keeps independent work moving while one branch is blocked, and stops only at proven completion or a genuine hard gate. `all-the-medicine` dynamically loads and orchestrates every registered public skill (including `never-stop`) from the manifest, activates only the applicable controls one at a time, resolves conflicts deterministically, and never invokes itself. A new generator compiles every public skill and rule into a progressive-disclosure reference with rewritten links and content hashes, and fails its `--check` mode on staleness, duplication, or self-recursion.
+Adds two explicit-invocation "superpower" skills. `never-stop` provides maximum autonomous execution and `all-the-medicine` dynamically orchestrates every registered public skill with deterministic conflict handling and self-recursion protection.
 
 ## 0.3.0
 

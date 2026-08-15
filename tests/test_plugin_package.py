@@ -40,7 +40,7 @@ class PluginPackageTests(unittest.TestCase):
         codex = load_json(REPO / ".codex-plugin/plugin.json")
         marketplace = load_json(REPO / ".claude-plugin/marketplace.json")
         release = install["release"]
-        self.assertEqual(release, "0.4.0")
+        self.assertEqual(release, "0.5.0")
         self.assertEqual(claude["version"], release)
         self.assertEqual(codex["version"], release)
         self.assertEqual(marketplace["plugins"][0]["version"], release)
@@ -51,7 +51,7 @@ class PluginPackageTests(unittest.TestCase):
         self.assertIn("reasoning-balance", install["public_skills"])
         skills = load_json(REPO / ".ai/manifests/skills.json")
         self.assertEqual(len(skills["skills"]), 49)
-        self.assertEqual(len(skills["plugin_skills"]), 30)
+        self.assertEqual(len(skills["plugin_skills"]), 31)
 
     def test_superpowers_are_registered_as_public_skills_and_manifest_paths_resolve(self):
         install = load_json(REPO / ".ai/manifests/install.json")

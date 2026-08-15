@@ -801,7 +801,8 @@
       "classification": "operational",
       "artifacts": [
         ".ai/rules/23-precommit-strategy.md",
-        ".ai/skills/communicate-briefly/SKILL.md"
+        ".ai/skills/direct-communication/SKILL.md",
+        "skills/direct-communication/SKILL.md"
       ]
     },
     "108": {
@@ -1313,7 +1314,7 @@
       "classification": "acceptance",
       "artifacts": [
         ".ai/rules/38-no-repetitive-planning.md",
-        ".ai/skills/communicate-briefly/SKILL.md"
+        ".ai/skills/direct-communication/SKILL.md"
       ]
     },
     "177": {

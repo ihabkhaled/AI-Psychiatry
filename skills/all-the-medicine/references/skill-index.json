@@ -1,7 +1,7 @@
 {
   "generated_by": "scripts/build_all_the_medicine.py",
   "self_excluded": "all-the-medicine",
-  "count": 29,
+  "count": 30,
   "skills": [
     {
       "id": "plugin-skill-00",
@@ -147,6 +147,11 @@
       "id": "plugin-skill-28",
       "name": "never-stop",
       "path": "skills/never-stop/SKILL.md"
+    },
+    {
+      "id": "plugin-skill-30",
+      "name": "direct-communication",
+      "path": "skills/direct-communication/SKILL.md"
     }
   ]
 }

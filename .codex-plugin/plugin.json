@@ -1,6 +1,6 @@
 {
   "name": "ai-psychiatry",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Semantic executive control for loopholes, underthinking, overthinking, evidence, recursion, context, memory, relentless execution, and reliable delivery.",
   "author": {
     "name": "Ihab Khaled"
@@ -23,7 +23,8 @@
     "anti-gaming",
     "relentless-execution",
     "autonomous-execution",
-    "all-the-medicine"
+    "all-the-medicine",
+    "direct-communication"
   ],
   "skills": "./skills/",
   "interface": {
@@ -45,7 +46,7 @@
     "defaultPrompt": [
       "Audit this task for AI-Psychiatry loopholes and semantic bypasses.",
       "Balance underthinking and overthinking using sufficient reasoning.",
-      "Use $never-stop or $all-the-medicine for autonomous execution while validating completion evidence, blockers, recursion, scope, and progress."
+      "Use $all-the-medicine for autonomous execution with concise, evidence-based completion."
     ]
   }
 }

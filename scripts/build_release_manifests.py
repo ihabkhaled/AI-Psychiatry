@@ -8,7 +8,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = "0.3.0"
+VERSION = "0.5.0"
 NEW_SKILLS = [
     "loophole-hunter", "framework-red-team", "anti-gaming", "false-progress-detector",
     "blocker-validator", "hidden-recursion-detector", "strategy-laundering-detector",
@@ -107,7 +107,7 @@ def main() -> None:
             plugin["interface"]["defaultPrompt"] = [
                 "Audit this task for AI-Psychiatry loopholes and semantic bypasses.",
                 "Balance underthinking and overthinking using sufficient reasoning.",
-                "Validate completion evidence, blockers, recursion, scope, and progress.",
+                "Use $all-the-medicine for autonomous execution with concise, evidence-based completion.",
             ]
         write(relative, plugin)
 
@@ -116,7 +116,7 @@ def main() -> None:
     marketplace["plugins"][0]["description"] = "Semantic anti-bypass and sufficient-reasoning controls for coding agents."
     marketplace["plugins"][0]["tags"] = list(dict.fromkeys(marketplace["plugins"][0]["tags"] + ["semantic-compliance", "underthinking", "anti-gaming"]))
     write(".claude-plugin/marketplace.json", marketplace)
-    print("Regenerated 0.3.0 release manifests")
+    print("Regenerated 0.5.0 release manifests")
 
 
 if __name__ == "__main__":

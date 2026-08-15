@@ -13,7 +13,7 @@
         "ref": "main"
       },
       "description": "Semantic anti-bypass and sufficient-reasoning controls for coding agents.",
-      "version": "0.4.0",
+      "version": "0.5.0",
       "category": "Productivity",
       "tags": [
         "ai-agents",

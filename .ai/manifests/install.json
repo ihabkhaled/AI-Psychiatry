@@ -34,7 +34,8 @@
     "executive-override",
     "rule-conflict-resolver",
     "never-stop",
-    "all-the-medicine"
+    "all-the-medicine",
+    "direct-communication"
   ],
   "observable_state_assessor": "scripts/executive_control.py",
   "layers": [
@@ -62,7 +63,7 @@
     "platform plugin validator",
     "repository-required tests"
   ],
-  "release": "0.4.0",
+  "release": "0.5.0",
   "supplemental_prompts": [
     {
       "path": "skills/install-framework/references/loophole-enhancement-prompts.md",

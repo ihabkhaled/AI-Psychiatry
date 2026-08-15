@@ -29,4 +29,4 @@ Starter prompts:
 - Use `$reasoning-balance` to decide whether to investigate, execute, verify, or stop.
 - Use `$never-stop` for maximum autonomous execution until the Definition of Done is proven.
 - Use `$all-the-medicine` to load and orchestrate the complete framework in one command.
-
+- Use `$direct-communication` for terse, assertive answers and non-looping questions.

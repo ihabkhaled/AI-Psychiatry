@@ -24,7 +24,7 @@ class PublicationTests(unittest.TestCase):
     def test_submission_archive_has_portable_root(self):
         import zipfile
 
-        archive = REPO / "dist/ai-psychiatry-0.4.0.zip"
+        archive = REPO / "dist/ai-psychiatry-0.5.0.zip"
         self.assertTrue(archive.exists())
         with zipfile.ZipFile(archive) as bundle:
             names = set(bundle.namelist())
