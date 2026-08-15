@@ -1,9 +1,25 @@
+import struct
 import unittest
 
 from tests.helpers import REPO, load_json, read
 
 
 class PluginPackageTests(unittest.TestCase):
+    def test_codex_branding_assets_use_valid_relative_square_paths(self):
+        codex = load_json(REPO / ".codex-plugin/plugin.json")
+        interface = codex["interface"]
+        for field in ["composerIcon", "logo"]:
+            relative = interface[field]
+            self.assertTrue(relative.startswith("./"), field)
+            asset = REPO / relative[2:]
+            self.assertTrue(asset.is_file(), field)
+        with (REPO / interface["composerIcon"][2:]).open("rb") as image:
+            self.assertEqual(image.read(8), b"\x89PNG\r\n\x1a\n")
+            image.read(4)
+            self.assertEqual(image.read(4), b"IHDR")
+            width, height = struct.unpack(">II", image.read(8))
+        self.assertEqual(width, height)
+
     def test_both_manifests_expose_shared_install_skill(self):
         self.assertTrue((REPO / ".claude-plugin/plugin.json").exists())
         codex = load_json(REPO / ".codex-plugin/plugin.json")

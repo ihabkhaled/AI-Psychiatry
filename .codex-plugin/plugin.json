@@ -37,7 +37,8 @@
     "privacyPolicyURL": "https://github.com/ihabkhaled/AI-Psychiatry/blob/main/PRIVACY.md",
     "termsOfServiceURL": "https://github.com/ihabkhaled/AI-Psychiatry/blob/main/TERMS.md",
     "brandColor": "#071A3D",
-    "logo": "assets/ai-psychiatry-logo.png",
+    "composerIcon": "./assets/ai-psychiatry-logo.png",
+    "logo": "./assets/ai-psychiatry-logo.png",
     "defaultPrompt": [
       "Audit this task for AI-Psychiatry loopholes and semantic bypasses.",
       "Balance underthinking and overthinking using sufficient reasoning.",
