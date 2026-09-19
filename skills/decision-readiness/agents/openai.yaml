@@ -1,4 +1,0 @@
-interface:
-  display_name: "Decision Readiness"
-  short_description: "Apply Decision Readiness controls"
-  default_prompt: "Use $decision-readiness to evaluate this task."

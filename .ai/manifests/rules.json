@@ -5,7 +5,7 @@
       "path": ".ai/rules/00-master-rules.md",
       "priority": 100,
       "load_when": "always",
-      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md",
       "prompt_sections": [
         0,
         3
@@ -16,7 +16,7 @@
       "path": ".ai/rules/01-pre-action-gate.md",
       "priority": 99,
       "load_when": "always",
-      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md",
       "prompt_sections": [
         4,
         8
@@ -27,7 +27,7 @@
       "path": ".ai/rules/02-goal-preservation.md",
       "priority": 98,
       "load_when": "always",
-      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md",
       "prompt_sections": [
         9,
         12
@@ -38,7 +38,7 @@
       "path": ".ai/rules/03-scope-control.md",
       "priority": 97,
       "load_when": "always",
-      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md",
       "prompt_sections": [
         13,
         17
@@ -49,7 +49,7 @@
       "path": ".ai/rules/04-attention-control.md",
       "priority": 96,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md",
       "prompt_sections": [
         18,
         22
@@ -60,7 +60,7 @@
       "path": ".ai/rules/05-anti-distraction.md",
       "priority": 95,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md",
       "prompt_sections": [
         23,
         26
@@ -71,7 +71,7 @@
       "path": ".ai/rules/06-anti-overthinking.md",
       "priority": 94,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md",
       "prompt_sections": [
         27,
         31
@@ -82,7 +82,7 @@
       "path": ".ai/rules/07-anti-recursion.md",
       "priority": 93,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md",
       "prompt_sections": [
         32,
         36
@@ -93,7 +93,7 @@
       "path": ".ai/rules/08-anti-perfectionism.md",
       "priority": 92,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md",
       "prompt_sections": [
         37,
         40
@@ -104,7 +104,7 @@
       "path": ".ai/rules/09-work-in-progress.md",
       "priority": 91,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md",
       "prompt_sections": [
         41,
         45
@@ -115,7 +115,7 @@
       "path": ".ai/rules/10-progress-control.md",
       "priority": 90,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md",
       "prompt_sections": [
         46,
         49
@@ -126,7 +126,7 @@
       "path": ".ai/rules/11-retry-budget.md",
       "priority": 89,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md",
       "prompt_sections": [
         50,
         54
@@ -137,7 +137,7 @@
       "path": ".ai/rules/12-verification-budget.md",
       "priority": 88,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md",
       "prompt_sections": [
         55,
         59
@@ -148,7 +148,7 @@
       "path": ".ai/rules/13-evidence-gate.md",
       "priority": 87,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md",
       "prompt_sections": [
         60,
         63
@@ -159,7 +159,7 @@
       "path": ".ai/rules/14-hallucination-control.md",
       "priority": 86,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md",
       "prompt_sections": [
         64,
         68
@@ -170,7 +170,7 @@
       "path": ".ai/rules/15-deadlock-detection.md",
       "priority": 85,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md",
       "prompt_sections": [
         69,
         73
@@ -181,7 +181,7 @@
       "path": ".ai/rules/16-livelock-detection.md",
       "priority": 84,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md",
       "prompt_sections": [
         74,
         77
@@ -192,7 +192,7 @@
       "path": ".ai/rules/17-recovery.md",
       "priority": 83,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md",
       "prompt_sections": [
         78,
         82
@@ -203,7 +203,7 @@
       "path": ".ai/rules/18-context-efficiency.md",
       "priority": 82,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md",
       "prompt_sections": [
         83,
         87
@@ -214,7 +214,7 @@
       "path": ".ai/rules/19-context-routing.md",
       "priority": 81,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md",
       "prompt_sections": [
         88,
         91
@@ -225,7 +225,7 @@
       "path": ".ai/rules/20-context-refresh.md",
       "priority": 80,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md",
       "prompt_sections": [
         92,
         96
@@ -236,7 +236,7 @@
       "path": ".ai/rules/21-memory-policy.md",
       "priority": 79,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md",
       "prompt_sections": [
         97,
         100
@@ -247,7 +247,7 @@
       "path": ".ai/rules/22-testing-strategy.md",
       "priority": 78,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md",
       "prompt_sections": [
         101,
         105
@@ -258,7 +258,7 @@
       "path": ".ai/rules/23-precommit-strategy.md",
       "priority": 77,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md",
       "prompt_sections": [
         106,
         110
@@ -269,7 +269,7 @@
       "path": ".ai/rules/24-critic-control.md",
       "priority": 76,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md",
       "prompt_sections": [
         111,
         114
@@ -280,7 +280,7 @@
       "path": ".ai/rules/25-multi-agent-control.md",
       "priority": 75,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md",
       "prompt_sections": [
         115,
         119
@@ -291,7 +291,7 @@
       "path": ".ai/rules/26-delivery-first.md",
       "priority": 74,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md",
       "prompt_sections": [
         120,
         124
@@ -302,7 +302,7 @@
       "path": ".ai/rules/27-definition-of-done.md",
       "priority": 73,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md",
       "prompt_sections": [
         125,
         128
@@ -313,7 +313,7 @@
       "path": ".ai/rules/28-termination.md",
       "priority": 72,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md",
       "prompt_sections": [
         129,
         133
@@ -324,7 +324,7 @@
       "path": ".ai/rules/29-communication-style.md",
       "priority": 71,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md",
       "prompt_sections": [
         134,
         138
@@ -335,7 +335,7 @@
       "path": ".ai/rules/30-progress-reporting.md",
       "priority": 70,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md",
       "prompt_sections": [
         139,
         142
@@ -346,7 +346,7 @@
       "path": ".ai/rules/31-tool-discipline.md",
       "priority": 69,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md",
       "prompt_sections": [
         143,
         147
@@ -357,7 +357,7 @@
       "path": ".ai/rules/32-search-before-read.md",
       "priority": 68,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md",
       "prompt_sections": [
         148,
         151
@@ -368,7 +368,7 @@
       "path": ".ai/rules/33-no-fake-background-work.md",
       "priority": 67,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md",
       "prompt_sections": [
         152,
         156
@@ -379,7 +379,7 @@
       "path": ".ai/rules/34-failure-communication.md",
       "priority": 66,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md",
       "prompt_sections": [
         157,
         161
@@ -390,7 +390,7 @@
       "path": ".ai/rules/35-knowledge-maintenance.md",
       "priority": 65,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md",
       "prompt_sections": [
         162,
         165
@@ -401,7 +401,7 @@
       "path": ".ai/rules/36-instruction-priority.md",
       "priority": 64,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md",
       "prompt_sections": [
         166,
         170
@@ -412,7 +412,7 @@
       "path": ".ai/rules/37-context-freshness.md",
       "priority": 63,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md",
       "prompt_sections": [
         171,
         175
@@ -423,7 +423,7 @@
       "path": ".ai/rules/38-no-repetitive-planning.md",
       "priority": 62,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md",
       "prompt_sections": [
         176,
         179
@@ -434,7 +434,7 @@
       "path": ".ai/rules/39-uncertainty-control.md",
       "priority": 61,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md",
       "prompt_sections": [
         180,
         184
@@ -445,7 +445,7 @@
       "path": ".ai/rules/40-change-strategy.md",
       "priority": 60,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/master-prompt.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md",
       "prompt_sections": [
         185,
         189
@@ -456,7 +456,7 @@
       "path": ".ai/rules/41-semantic-compliance.md",
       "priority": 59,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/loophole-enhancement-prompts.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/loophole-enhancement-prompts.md",
       "prompt_sections": []
     },
     {
@@ -464,7 +464,7 @@
       "path": ".ai/rules/42-false-progress.md",
       "priority": 58,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/loophole-enhancement-prompts.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/loophole-enhancement-prompts.md",
       "prompt_sections": []
     },
     {
@@ -472,7 +472,7 @@
       "path": ".ai/rules/43-completion-evidence.md",
       "priority": 57,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/loophole-enhancement-prompts.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/loophole-enhancement-prompts.md",
       "prompt_sections": []
     },
     {
@@ -480,7 +480,7 @@
       "path": ".ai/rules/44-blocker-validation.md",
       "priority": 56,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/loophole-enhancement-prompts.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/loophole-enhancement-prompts.md",
       "prompt_sections": []
     },
     {
@@ -488,7 +488,7 @@
       "path": ".ai/rules/45-hidden-recursion.md",
       "priority": 55,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/loophole-enhancement-prompts.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/loophole-enhancement-prompts.md",
       "prompt_sections": []
     },
     {
@@ -496,7 +496,7 @@
       "path": ".ai/rules/46-strategy-laundering.md",
       "priority": 54,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/loophole-enhancement-prompts.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/loophole-enhancement-prompts.md",
       "prompt_sections": []
     },
     {
@@ -504,7 +504,7 @@
       "path": ".ai/rules/47-scope-laundering.md",
       "priority": 53,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/loophole-enhancement-prompts.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/loophole-enhancement-prompts.md",
       "prompt_sections": []
     },
     {
@@ -512,7 +512,7 @@
       "path": ".ai/rules/48-memory-integrity.md",
       "priority": 52,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/loophole-enhancement-prompts.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/loophole-enhancement-prompts.md",
       "prompt_sections": []
     },
     {
@@ -520,7 +520,7 @@
       "path": ".ai/rules/49-context-balance.md",
       "priority": 51,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/loophole-enhancement-prompts.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/loophole-enhancement-prompts.md",
       "prompt_sections": []
     },
     {
@@ -528,7 +528,7 @@
       "path": ".ai/rules/50-underthinking.md",
       "priority": 50,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/loophole-enhancement-prompts.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/loophole-enhancement-prompts.md",
       "prompt_sections": []
     },
     {
@@ -536,7 +536,7 @@
       "path": ".ai/rules/51-investigation-evidence-floor.md",
       "priority": 49,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/loophole-enhancement-prompts.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/loophole-enhancement-prompts.md",
       "prompt_sections": []
     },
     {
@@ -544,7 +544,7 @@
       "path": ".ai/rules/52-reasoning-balance.md",
       "priority": 48,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/loophole-enhancement-prompts.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/loophole-enhancement-prompts.md",
       "prompt_sections": []
     },
     {
@@ -552,7 +552,7 @@
       "path": ".ai/rules/53-executive-override.md",
       "priority": 47,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/loophole-enhancement-prompts.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/loophole-enhancement-prompts.md",
       "prompt_sections": []
     },
     {
@@ -560,7 +560,7 @@
       "path": ".ai/rules/54-rule-conflict.md",
       "priority": 46,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/loophole-enhancement-prompts.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/loophole-enhancement-prompts.md",
       "prompt_sections": []
     },
     {
@@ -568,7 +568,7 @@
       "path": ".ai/rules/55-self-check.md",
       "priority": 45,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/loophole-enhancement-prompts.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/loophole-enhancement-prompts.md",
       "prompt_sections": []
     },
     {
@@ -576,7 +576,7 @@
       "path": ".ai/rules/56-never-stop-relentless-execution.md",
       "priority": 44,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/autonomous-execution-all-the-medicine-prompt.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/autonomous-execution-all-the-medicine-prompt.md",
       "prompt_sections": []
     },
     {
@@ -584,7 +584,7 @@
       "path": ".ai/rules/57-all-the-medicine.md",
       "priority": 43,
       "load_when": "on_demand",
-      "canonical_source": "skills/install-framework/references/autonomous-execution-all-the-medicine-prompt.md",
+      "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/autonomous-execution-all-the-medicine-prompt.md",
       "prompt_sections": []
     }
   ]

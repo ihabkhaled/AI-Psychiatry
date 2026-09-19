@@ -3,7 +3,7 @@ import unittest
 from pathlib import Path
 
 from scripts.executive_control import reasoning_balance, validate_completion, validate_override
-from tests.helpers import REPO, load_json, read
+from tests.helpers import REPO, load_json, read, public_skill
 
 
 NEW_SKILLS = {
@@ -92,7 +92,7 @@ class SemanticMachineAssetTests(unittest.TestCase):
 class SemanticInstructionAssetTests(unittest.TestCase):
     def test_semantic_skills_close_forward_pressure_loopholes(self):
         public = "\n".join(
-            read(REPO / "skills" / name / "SKILL.md")
+            read(public_skill(name))
             for name in [
                 "anti-gaming",
                 "hidden-recursion-detector",
@@ -152,7 +152,7 @@ class SemanticInstructionAssetTests(unittest.TestCase):
         bodies = set()
         for name in NEW_SKILLS:
             for root in ("skills", ".ai/skills"):
-                path = REPO / root / name / "SKILL.md"
+                path = public_skill(name) if root == "skills" else REPO / root / name / "SKILL.md"
                 self.assertTrue(path.exists(), f"{root}/{name}")
                 text = read(path)
                 self.assertTrue(text.startswith(f"---\nname: {name}\n"), str(path))
@@ -168,7 +168,7 @@ class SemanticInstructionAssetTests(unittest.TestCase):
             ("loophole-enhancement-prompts.md", "Semantic compliance > literal compliance"),
             ("underthinking-reasoning-balance-prompt.md", "Think enough"),
         ]:
-            text = read(REPO / "skills/install-framework/references" / name)
+            text = read(REPO / "skills/all-the-medicine/references/skills/install-framework/references" / name)
             self.assertIn(marker.lower(), text.lower())
             self.assertGreaterEqual(len(text.split()), 800, name)
 

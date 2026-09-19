@@ -1,5 +1,5 @@
 {
-  "version": "0.5.0",
+  "version": "0.6.0",
   "skills": [
     {
       "id": "skill-00",
@@ -14,7 +14,7 @@
         "rule-00",
         "rule-01"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-01",
@@ -28,7 +28,7 @@
       "canonical_rules": [
         "rule-00"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-02",
@@ -42,7 +42,7 @@
       "canonical_rules": [
         "rule-02"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-03",
@@ -56,7 +56,7 @@
       "canonical_rules": [
         "rule-03"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-04",
@@ -71,7 +71,7 @@
         "rule-04",
         "rule-05"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-05",
@@ -87,7 +87,7 @@
         "rule-06",
         "rule-07"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-06",
@@ -101,7 +101,7 @@
       "canonical_rules": [
         "rule-06"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-07",
@@ -119,7 +119,7 @@
         "rule-20",
         "rule-38"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-08",
@@ -134,7 +134,7 @@
         "rule-15",
         "rule-17"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-09",
@@ -149,7 +149,7 @@
         "rule-16",
         "rule-17"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-10",
@@ -164,7 +164,7 @@
         "rule-17",
         "rule-40"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-11",
@@ -179,7 +179,7 @@
         "rule-10",
         "rule-30"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-12",
@@ -195,7 +195,7 @@
         "rule-14",
         "rule-39"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-13",
@@ -210,7 +210,7 @@
         "rule-18",
         "rule-19"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-14",
@@ -225,7 +225,7 @@
         "rule-20",
         "rule-37"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-15",
@@ -240,7 +240,7 @@
         "rule-18",
         "rule-20"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-16",
@@ -255,7 +255,7 @@
         "rule-21",
         "rule-35"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-17",
@@ -270,7 +270,7 @@
         "rule-35",
         "rule-36"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-18",
@@ -286,7 +286,7 @@
         "rule-30",
         "rule-34"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-19",
@@ -301,7 +301,7 @@
         "rule-22",
         "rule-23"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-20",
@@ -315,7 +315,7 @@
       "canonical_rules": [
         "rule-12"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-21",
@@ -329,7 +329,7 @@
       "canonical_rules": [
         "rule-24"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-22",
@@ -344,7 +344,7 @@
         "rule-27",
         "rule-28"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-23",
@@ -359,7 +359,7 @@
         "rule-34",
         "rule-35"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-24",
@@ -373,7 +373,7 @@
       "canonical_rules": [
         "rule-35"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-25",
@@ -387,7 +387,7 @@
       "canonical_rules": [
         "rule-25"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-26",
@@ -403,7 +403,7 @@
         "rule-20",
         "rule-21"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-27",
@@ -419,7 +419,7 @@
         "rule-21",
         "rule-29"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-28",
@@ -433,7 +433,7 @@
       "canonical_rules": [
         "rule-41"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-29",
@@ -447,7 +447,7 @@
       "canonical_rules": [
         "rule-42"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-30",
@@ -461,7 +461,7 @@
       "canonical_rules": [
         "rule-43"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-31",
@@ -475,7 +475,7 @@
       "canonical_rules": [
         "rule-44"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-32",
@@ -489,7 +489,7 @@
       "canonical_rules": [
         "rule-45"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-33",
@@ -503,7 +503,7 @@
       "canonical_rules": [
         "rule-46"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-34",
@@ -517,7 +517,7 @@
       "canonical_rules": [
         "rule-47"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-35",
@@ -531,7 +531,7 @@
       "canonical_rules": [
         "rule-48"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-36",
@@ -545,7 +545,7 @@
       "canonical_rules": [
         "rule-49"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-37",
@@ -559,7 +559,7 @@
       "canonical_rules": [
         "rule-50"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-38",
@@ -573,7 +573,7 @@
       "canonical_rules": [
         "rule-51"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-39",
@@ -587,7 +587,7 @@
       "canonical_rules": [
         "rule-52"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-40",
@@ -601,7 +601,7 @@
       "canonical_rules": [
         "rule-53"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-41",
@@ -615,7 +615,7 @@
       "canonical_rules": [
         "rule-54"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-42",
@@ -629,7 +629,7 @@
       "canonical_rules": [
         "rule-55"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-43",
@@ -643,7 +643,7 @@
       "canonical_rules": [
         "rule-55"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-44",
@@ -657,7 +657,7 @@
       "canonical_rules": [
         "rule-55"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-45",
@@ -671,7 +671,7 @@
       "canonical_rules": [
         "rule-55"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-46",
@@ -685,7 +685,7 @@
       "canonical_rules": [
         "rule-55"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-47",
@@ -699,7 +699,7 @@
       "canonical_rules": [
         "rule-56"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "skill-48",
@@ -713,299 +713,299 @@
       "canonical_rules": [
         "rule-57"
       ],
-      "version": "0.5.0"
+      "version": "0.6.0"
     }
   ],
   "plugin_skills": [
     {
       "id": "plugin-skill-00",
       "name": "install-framework",
-      "path": "skills/install-framework/SKILL.md",
+      "path": "skills/all-the-medicine/references/skills/install-framework/install-framework.md",
       "purpose": "Install or upgrade the complete framework",
       "priority": 100,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "plugin-skill-01",
       "name": "executive-control",
-      "path": "skills/executive-control/SKILL.md",
+      "path": "skills/all-the-medicine/references/skills/executive-control/executive-control.md",
       "purpose": "Apply a focused executive-control intervention",
       "priority": 95,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "plugin-skill-02",
       "name": "attention-reset",
-      "path": "skills/attention-reset/SKILL.md",
+      "path": "skills/all-the-medicine/references/skills/attention-reset/attention-reset.md",
       "purpose": "Apply a focused executive-control intervention",
       "priority": 95,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "plugin-skill-03",
       "name": "stop-overthinking",
-      "path": "skills/stop-overthinking/SKILL.md",
+      "path": "skills/all-the-medicine/references/skills/stop-overthinking/stop-overthinking.md",
       "purpose": "Apply a focused executive-control intervention",
       "priority": 95,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "plugin-skill-04",
       "name": "stop-compulsive-verification",
-      "path": "skills/stop-compulsive-verification/SKILL.md",
+      "path": "skills/all-the-medicine/references/skills/stop-compulsive-verification/stop-compulsive-verification.md",
       "purpose": "Apply a focused executive-control intervention",
       "priority": 95,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "plugin-skill-05",
       "name": "flatten-recursive-investigation",
-      "path": "skills/flatten-recursive-investigation/SKILL.md",
+      "path": "skills/all-the-medicine/references/skills/flatten-recursive-investigation/flatten-recursive-investigation.md",
       "purpose": "Apply a focused executive-control intervention",
       "priority": 95,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "plugin-skill-06",
       "name": "evidence-gate",
-      "path": "skills/evidence-gate/SKILL.md",
+      "path": "skills/all-the-medicine/references/skills/evidence-gate/evidence-gate.md",
       "purpose": "Apply a focused executive-control intervention",
       "priority": 95,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "plugin-skill-07",
       "name": "recover-from-deadlock-livelock",
-      "path": "skills/recover-from-deadlock-livelock/SKILL.md",
+      "path": "skills/all-the-medicine/references/skills/recover-from-deadlock-livelock/recover-from-deadlock-livelock.md",
       "purpose": "Apply a focused executive-control intervention",
       "priority": 95,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "plugin-skill-08",
       "name": "completion-gate",
-      "path": "skills/completion-gate/SKILL.md",
+      "path": "skills/all-the-medicine/references/skills/completion-gate/completion-gate.md",
       "purpose": "Apply a focused executive-control intervention",
       "priority": 95,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "plugin-skill-09",
       "name": "loophole-hunter",
-      "path": "skills/loophole-hunter/SKILL.md",
+      "path": "skills/all-the-medicine/references/skills/loophole-hunter/loophole-hunter.md",
       "purpose": "Apply loophole hunter controls",
       "priority": 98,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "plugin-skill-10",
       "name": "framework-red-team",
-      "path": "skills/framework-red-team/SKILL.md",
+      "path": "skills/all-the-medicine/references/skills/framework-red-team/framework-red-team.md",
       "purpose": "Apply framework red team controls",
       "priority": 98,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "plugin-skill-11",
       "name": "anti-gaming",
-      "path": "skills/anti-gaming/SKILL.md",
+      "path": "skills/all-the-medicine/references/skills/anti-gaming/anti-gaming.md",
       "purpose": "Apply anti gaming controls",
       "priority": 98,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "plugin-skill-12",
       "name": "false-progress-detector",
-      "path": "skills/false-progress-detector/SKILL.md",
+      "path": "skills/all-the-medicine/references/skills/false-progress-detector/false-progress-detector.md",
       "purpose": "Apply false progress detector controls",
       "priority": 98,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "plugin-skill-13",
       "name": "blocker-validator",
-      "path": "skills/blocker-validator/SKILL.md",
+      "path": "skills/all-the-medicine/references/skills/blocker-validator/blocker-validator.md",
       "purpose": "Apply blocker validator controls",
       "priority": 98,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "plugin-skill-14",
       "name": "hidden-recursion-detector",
-      "path": "skills/hidden-recursion-detector/SKILL.md",
+      "path": "skills/all-the-medicine/references/skills/hidden-recursion-detector/hidden-recursion-detector.md",
       "purpose": "Apply hidden recursion detector controls",
       "priority": 98,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "plugin-skill-15",
       "name": "strategy-laundering-detector",
-      "path": "skills/strategy-laundering-detector/SKILL.md",
+      "path": "skills/all-the-medicine/references/skills/strategy-laundering-detector/strategy-laundering-detector.md",
       "purpose": "Apply strategy laundering detector controls",
       "priority": 98,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "plugin-skill-16",
       "name": "scope-laundering-detector",
-      "path": "skills/scope-laundering-detector/SKILL.md",
+      "path": "skills/all-the-medicine/references/skills/scope-laundering-detector/scope-laundering-detector.md",
       "purpose": "Apply scope laundering detector controls",
       "priority": 98,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "plugin-skill-17",
       "name": "completion-evidence",
-      "path": "skills/completion-evidence/SKILL.md",
+      "path": "skills/all-the-medicine/references/skills/completion-evidence/completion-evidence.md",
       "purpose": "Apply completion evidence controls",
       "priority": 98,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "plugin-skill-18",
       "name": "memory-validator",
-      "path": "skills/memory-validator/SKILL.md",
+      "path": "skills/all-the-medicine/references/skills/memory-validator/memory-validator.md",
       "purpose": "Apply memory validator controls",
       "priority": 98,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "plugin-skill-19",
       "name": "context-balance",
-      "path": "skills/context-balance/SKILL.md",
+      "path": "skills/all-the-medicine/references/skills/context-balance/context-balance.md",
       "purpose": "Apply context balance controls",
       "priority": 98,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "plugin-skill-20",
       "name": "underthinking-detector",
-      "path": "skills/underthinking-detector/SKILL.md",
+      "path": "skills/all-the-medicine/references/skills/underthinking-detector/underthinking-detector.md",
       "purpose": "Apply underthinking detector controls",
       "priority": 98,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "plugin-skill-21",
       "name": "reasoning-balance",
-      "path": "skills/reasoning-balance/SKILL.md",
+      "path": "skills/all-the-medicine/references/skills/reasoning-balance/reasoning-balance.md",
       "purpose": "Apply reasoning balance controls",
       "priority": 98,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "plugin-skill-22",
       "name": "investigation-floor",
-      "path": "skills/investigation-floor/SKILL.md",
+      "path": "skills/all-the-medicine/references/skills/investigation-floor/investigation-floor.md",
       "purpose": "Apply investigation floor controls",
       "priority": 98,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "plugin-skill-23",
       "name": "decision-readiness",
-      "path": "skills/decision-readiness/SKILL.md",
+      "path": "skills/all-the-medicine/references/skills/decision-readiness/decision-readiness.md",
       "purpose": "Apply decision readiness controls",
       "priority": 98,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "plugin-skill-24",
       "name": "root-cause-validator",
-      "path": "skills/root-cause-validator/SKILL.md",
+      "path": "skills/all-the-medicine/references/skills/root-cause-validator/root-cause-validator.md",
       "purpose": "Apply root cause validator controls",
       "priority": 98,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "plugin-skill-25",
       "name": "evidence-floor",
-      "path": "skills/evidence-floor/SKILL.md",
+      "path": "skills/all-the-medicine/references/skills/evidence-floor/evidence-floor.md",
       "purpose": "Apply evidence floor controls",
       "priority": 98,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "plugin-skill-26",
       "name": "executive-override",
-      "path": "skills/executive-override/SKILL.md",
+      "path": "skills/all-the-medicine/references/skills/executive-override/executive-override.md",
       "purpose": "Apply executive override controls",
       "priority": 98,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "plugin-skill-27",
       "name": "rule-conflict-resolver",
-      "path": "skills/rule-conflict-resolver/SKILL.md",
+      "path": "skills/all-the-medicine/references/skills/rule-conflict-resolver/rule-conflict-resolver.md",
       "purpose": "Apply rule conflict resolver controls",
       "priority": 98,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "plugin-skill-28",
       "name": "never-stop",
-      "path": "skills/never-stop/SKILL.md",
+      "path": "skills/all-the-medicine/references/skills/never-stop/never-stop.md",
       "purpose": "Apply maximum autonomous execution controls",
       "priority": 99,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "plugin-skill-29",
@@ -1015,17 +1015,17 @@
       "priority": 99,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "plugin-skill-30",
       "name": "direct-communication",
-      "path": "skills/direct-communication/SKILL.md",
+      "path": "skills/all-the-medicine/references/skills/direct-communication/direct-communication.md",
       "purpose": "Apply direct, concise, non-looping communication controls",
       "priority": 90,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.5.0"
+      "version": "0.6.0"
     }
   ]
 }

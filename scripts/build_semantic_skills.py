@@ -30,6 +30,15 @@ SKILLS = {
 }
 
 
+
+def public_skill_path(name: str) -> str:
+    """Where a public skill lives. There is ONE plugin skill, all-the-medicine;
+    every other public skill is a reference inside it, never a skill of its own,
+    so no platform lists it as a separate command."""
+    if name == "all-the-medicine":
+        return "skills/all-the-medicine/SKILL.md"
+    return f"skills/all-the-medicine/references/skills/{name}/{name}.md"
+
 def document(name: str, data: tuple[str, str, str, str, str], installed: bool) -> str:
     trigger, method, output_fields, success, mistake = data
     mode_heading = "Repository runtime" if installed else "Plugin invocation"
@@ -88,8 +97,8 @@ Stop this control when the observable state is truthful, the required evidence o
 
 def main() -> None:
     for name, data in SKILLS.items():
-        for root, installed in ((ROOT / "skills", False), (ROOT / ".ai" / "skills", True)):
-            target = root / name / "SKILL.md"
+        for target, installed in ((ROOT / public_skill_path(name), False),
+                                  (ROOT / ".ai" / "skills" / name / "SKILL.md", True)):
             target.parent.mkdir(parents=True, exist_ok=True)
             target.write_text(document(name, data, installed), encoding="utf-8", newline="\n")
     print(f"Built {len(SKILLS)} public and {len(SKILLS)} installed semantic skills")

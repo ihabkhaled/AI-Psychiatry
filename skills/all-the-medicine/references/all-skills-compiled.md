@@ -15,14 +15,14 @@ Apply the framework to the repository currently being worked on.
 
 ## Canonical specification
 
-Read [references/master-prompt.md](../../install-framework/references/master-prompt.md) before implementation.
+Read [references/master-prompt.md](skills/install-framework/references/master-prompt.md) before implementation.
 That file is the authoritative installation and maintenance specification.
 
 For the `0.3.0` and `0.4.0` complementary layers, also read only when relevant:
 
-- [loophole enhancement prompts](../../install-framework/references/loophole-enhancement-prompts.md) for semantic anti-gaming.
-- [underthinking and reasoning balance](../../install-framework/references/underthinking-reasoning-balance-prompt.md) for sufficient reasoning.
-- [relentless execution and all-in-one orchestration](../../install-framework/references/autonomous-execution-all-the-medicine-prompt.md) for `never-stop` and `all-the-medicine`.
+- [loophole enhancement prompts](skills/install-framework/references/loophole-enhancement-prompts.md) for semantic anti-gaming.
+- [underthinking and reasoning balance](skills/install-framework/references/underthinking-reasoning-balance-prompt.md) for sufficient reasoning.
+- [relentless execution and all-in-one orchestration](skills/install-framework/references/autonomous-execution-all-the-medicine-prompt.md) for `never-stop` and `all-the-medicine`.
 
 ## Packaged implementation
 

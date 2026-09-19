@@ -1,7 +1,7 @@
 {
   "name": "ai-psychiatry",
-  "version": "0.5.0",
-  "description": "Semantic executive control for loopholes, underthinking, overthinking, evidence, recursion, context, memory, relentless execution, and reliable delivery.",
+  "version": "0.6.0",
+  "description": "Semantic executive control for loopholes, underthinking, overthinking, evidence, recursion, context, memory, and reliable delivery.",
   "author": {
     "name": "Ihab Khaled"
   },
@@ -30,7 +30,7 @@
   "interface": {
     "displayName": "AI Psychiatry",
     "shortDescription": "Executive control for coding agents",
-    "longDescription": "Detects semantic bypasses, false progress/completion/blockers, hidden recursion, strategy and scope laundering, memory/context corruption, underthinking, overthinking, and missing evidence. Adds explicit-invocation relentless execution and a single all-in-one orchestrator that loads and applies every control until completion is proven.",
+    "longDescription": "Detects semantic bypasses, false progress/completion/blockers, hidden recursion, strategy and scope laundering, memory/context corruption, underthinking, overthinking, and missing evidence.",
     "developerName": "Ihab Khaled",
     "category": "Productivity",
     "capabilities": [

@@ -1,5 +1,5 @@
 {
-  "canonical_source": "skills/install-framework/references/master-prompt.md",
+  "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md",
   "canonical_sha256": "32AAB10548A9B1808BE5051207EA2732A72274081933AC8F87B5F57B9DBE1075",
   "sections": {
     "0": {
@@ -802,7 +802,7 @@
       "artifacts": [
         ".ai/rules/23-precommit-strategy.md",
         ".ai/skills/direct-communication/SKILL.md",
-        "skills/direct-communication/SKILL.md"
+        "skills/all-the-medicine/references/skills/direct-communication/direct-communication.md"
       ]
     },
     "108": {
@@ -875,7 +875,7 @@
       "artifacts": [
         ".ai/rules/25-multi-agent-control.md",
         ".ai/skills/evidence-gate/SKILL.md",
-        "skills/evidence-gate/SKILL.md"
+        "skills/all-the-medicine/references/skills/evidence-gate/evidence-gate.md"
       ]
     },
     "117": {
@@ -900,7 +900,7 @@
       "artifacts": [
         ".ai/rules/25-multi-agent-control.md",
         ".ai/skills/completion-gate/SKILL.md",
-        "skills/completion-gate/SKILL.md"
+        "skills/all-the-medicine/references/skills/completion-gate/completion-gate.md"
       ]
     },
     "120": {
@@ -1408,7 +1408,7 @@
       "classification": "operational",
       "artifacts": [
         ".ai/rules/40-change-strategy.md",
-        "skills/install-framework/SKILL.md",
+        "skills/all-the-medicine/references/skills/install-framework/install-framework.md",
         ".ai/manifests/install.json"
       ]
     },
@@ -1417,7 +1417,7 @@
       "classification": "operational",
       "artifacts": [
         ".ai/rules/40-change-strategy.md",
-        "skills/install-framework/SKILL.md"
+        "skills/all-the-medicine/references/skills/install-framework/install-framework.md"
       ]
     }
   }

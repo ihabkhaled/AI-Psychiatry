@@ -24,9 +24,9 @@ Long description: Installs a traceable, repository-wide reasoning-balance framew
 
 Starter prompts:
 
-- Use `$install-framework` to install AI Psychiatry without overwriting repository instructions.
-- Use `$anti-gaming` to audit semantic bypasses in this task.
-- Use `$reasoning-balance` to decide whether to investigate, execute, verify, or stop.
-- Use `$never-stop` for maximum autonomous execution until the Definition of Done is proven.
-- Use `$all-the-medicine` to load and orchestrate the complete framework in one command.
-- Use `$direct-communication` for terse, assertive answers and non-looping questions.
+- Install the AI Psychiatry framework without overwriting repository instructions.
+- Audit semantic bypasses in this task.
+- Decide whether to investigate, execute, verify, or stop.
+- Never stop until the Definition of Done is proven (maximum autonomous execution, on request only).
+- Use `$all-the-medicine` - the one command - for the complete framework; it is also always on.
+- Answer directly: terse, assertive, one non-looping question at most.

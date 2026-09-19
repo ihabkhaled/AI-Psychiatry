@@ -9,7 +9,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PROMPT = ROOT / "skills/install-framework/references/master-prompt.md"
+PROMPT = ROOT / "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md"
 OUTPUT = ROOT / ".ai/manifests/prompt-traceability.json"
 
 
@@ -88,10 +88,19 @@ SPECIAL = {
     181: [".ai/tests/executive-function-cases.md"],
     182: ["scripts/validate_framework.py"],
     183: ["scripts/validate_framework.py"],
-    188: ["skills/install-framework/SKILL.md", ".ai/manifests/install.json"],
-    189: ["skills/install-framework/SKILL.md"],
+    188: ["skills/all-the-medicine/references/skills/install-framework/install-framework.md", ".ai/manifests/install.json"],
+    189: ["skills/all-the-medicine/references/skills/install-framework/install-framework.md"],
 }
 
+
+
+def public_skill_path(name: str) -> str:
+    """Where a public skill lives. There is ONE plugin skill, all-the-medicine;
+    every other public skill is a reference inside it, never a skill of its own,
+    so no platform lists it as a separate command."""
+    if name == "all-the-medicine":
+        return "skills/all-the-medicine/SKILL.md"
+    return f"skills/all-the-medicine/references/skills/{name}/{name}.md"
 
 def build() -> dict:
     prompt_bytes = PROMPT.read_bytes()
@@ -110,9 +119,8 @@ def build() -> dict:
         if number in SKILL_SECTIONS:
             skill = SKILL_SECTIONS[number]
             artifacts.append(f".ai/skills/{skill}/SKILL.md")
-            public = ROOT / "skills" / skill / "SKILL.md"
-            if public.exists():
-                artifacts.append(f"skills/{skill}/SKILL.md")
+            if (ROOT / public_skill_path(skill)).exists():
+                artifacts.append(public_skill_path(skill))
         artifacts = list(dict.fromkeys(artifacts))
         sections[str(number)] = {
             "title": headings[number],

@@ -1,4 +1,0 @@
-interface:
-  display_name: "Framework Red Team"
-  short_description: "Apply Framework Red Team controls"
-  default_prompt: "Use $framework-red-team to evaluate this task."

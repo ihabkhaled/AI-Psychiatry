@@ -1,4 +1,0 @@
-interface:
-  display_name: "Context Balance"
-  short_description: "Apply Context Balance controls"
-  default_prompt: "Use $context-balance to evaluate this task."

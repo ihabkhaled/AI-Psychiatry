@@ -1,4 +1,0 @@
-interface:
-  display_name: "Memory Validator"
-  short_description: "Apply Memory Validator controls"
-  default_prompt: "Use $memory-validator to evaluate this task."

@@ -1,5 +1,9 @@
 # Release Notes
 
+## 0.6.0
+
+One skill and one command on every platform: `all-the-medicine`, now always on through a Claude SessionStart hook, a Codex `AGENTS.md` block and a Cursor rule. The individual controls are references inside it, so menus show one entry instead of 31. Adds a one-line installer for Claude Code, Codex and Cursor.
+
 ## 0.5.0
 
 Adds `direct-communication` for terse, assertive answers, plain language, essential evidence, and one specific non-looping blocker question. It replaces the installed `communicate-briefly` control, is callable in Claude and Codex, and is automatically compiled into `all-the-medicine`. Codex starter prompts now satisfy the maximum count and 128-character limit.

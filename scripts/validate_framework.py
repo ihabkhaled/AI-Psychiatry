@@ -24,9 +24,18 @@ COUNT_SENTENCE = re.compile(
 REQUIRED_NEW_SKILLS = ("never-stop", "all-the-medicine")
 
 
+
+def public_skill_path(name: str) -> str:
+    """Where a public skill lives. There is ONE plugin skill, all-the-medicine;
+    every other public skill is a reference inside it, never a skill of its own,
+    so no platform lists it as a separate command."""
+    if name == "all-the-medicine":
+        return "skills/all-the-medicine/SKILL.md"
+    return f"skills/all-the-medicine/references/skills/{name}/{name}.md"
+
 def validate_traceability(root: Path) -> list[Issue]:
     root = Path(root).resolve()
-    prompt_path = root / "skills/install-framework/references/master-prompt.md"
+    prompt_path = root / "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md"
     trace_path = root / ".ai/manifests/prompt-traceability.json"
     if not prompt_path.exists() or not trace_path.exists():
         return [Issue("traceability-missing", str(trace_path.relative_to(root)), "canonical prompt or traceability manifest missing")]
@@ -79,7 +88,7 @@ def validate(root: Path, package_required: bool = True) -> list[Issue]:
         return issues
     required = [
         ".claude-plugin/plugin.json", ".codex-plugin/plugin.json",
-        "skills/install-framework/SKILL.md", ".ai/manifests/rules.json",
+        "skills/all-the-medicine/references/skills/install-framework/install-framework.md", ".ai/manifests/rules.json",
         ".ai/manifests/skills.json", ".ai/manifests/agents.json",
         ".ai/manifests/prompt-traceability.json"
     ]
@@ -120,14 +129,14 @@ def validate_never_stop_and_all_the_medicine(root: Path) -> list[Issue]:
     issues: list[Issue] = []
 
     for name in REQUIRED_NEW_SKILLS:
-        for tree in ("skills", ".ai/skills"):
-            path = root / tree / name / "SKILL.md"
+        for rel in (public_skill_path(name), f".ai/skills/{name}/SKILL.md"):
+            path = root / rel
             if not path.exists():
-                issues.append(Issue("missing-required", f"{tree}/{name}/SKILL.md", "required superpower skill"))
+                issues.append(Issue("missing-required", rel, "required superpower skill"))
                 continue
             text = path.read_text(encoding="utf-8")
             if "## Stop condition" not in text:
-                issues.append(Issue("missing-stop-condition", f"{tree}/{name}/SKILL.md", "superpower skill must declare a stop condition"))
+                issues.append(Issue("missing-stop-condition", rel, "superpower skill must declare a stop condition"))
 
     for rule in ("56-never-stop-relentless-execution.md", "57-all-the-medicine.md"):
         if not (root / ".ai/rules" / rule).exists():
@@ -146,7 +155,16 @@ def validate_never_stop_and_all_the_medicine(root: Path) -> list[Issue]:
             for item in entries:
                 if not (root / item["path"]).exists():
                     issues.append(Issue("missing-declared-path", item["path"], item.get("id", item.get("name", ""))))
+        # One plugin skill; the rest are references inside it (see public_skill_path).
         plugin_dirs = {p.name for p in (root / "skills").iterdir() if p.is_dir()}
+        refs = root / "skills/all-the-medicine/references/skills"
+        if refs.is_dir():
+            plugin_dirs |= {p.name for p in refs.iterdir() if p.is_dir()}
+        stray = sorted(str(p.relative_to(root)) for p in (root / "skills").rglob("SKILL.md")
+                       if p != root / "skills/all-the-medicine/SKILL.md")
+        if stray or sorted(p.name for p in (root / "skills").iterdir() if p.is_dir()) != ["all-the-medicine"]:
+            issues.append(Issue("second-plugin-skill", "skills/",
+                                f"exactly one plugin skill may exist; found extra {stray or 'directories'}"))
         manifest_plugin_names = {item["name"] for item in skills["plugin_skills"]}
         if plugin_dirs != manifest_plugin_names:
             issues.append(Issue(

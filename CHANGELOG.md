@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.6.0 - 2026-09-19
+
+- **One skill, one command, always on.** `all-the-medicine` is now AI-Psychiatry's only skill and its only command on every platform (`/ai-psychiatry:all-the-medicine`, `$all-the-medicine`, `/all-the-medicine`). The other 30 public skills moved to `skills/all-the-medicine/references/skills/<name>/<name>.md` and are applied one at a time from there, so no platform lists 31 entries any more (verified live on Claude Code 2.1.154: one `/` entry). Their per-skill Codex `agents/openai.yaml` files were removed.
+- **Always on.** A SessionStart hook (exec form) injects the contract on Claude Code; the installer writes the same contract as a marked `AGENTS.md` block for Codex and an `alwaysApply` rule for Cursor. One source: `skills/all-the-medicine/references/always-on.md`. `never-stop` relentless execution stays explicit-invocation only.
+- **One-line installer** for Claude Code, Codex and Cursor: `install.sh` / `install.ps1` (re-run to update, `--repo`, `--uninstall` restores edited files byte for byte).
+- `all-the-medicine/SKILL.md` trimmed under Codex's 8,000-byte explicit-invocation limit; the execution-phase table moved to `references/execution-phases.md`.
+- Build scripts, the validator and tests resolve public skills through one rule (`public_skill_path`); the validator and a new test fail if a second plugin skill appears.
+
 ## 0.5.0 - 2026-08-15
 
 - Added `direct-communication` for assertive, succinct answers, essential evidence, and single non-looping blocker questions.

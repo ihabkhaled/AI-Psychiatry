@@ -1,0 +1,18 @@
+{
+  "description": "AI-Psychiatry SessionStart hook: the always-on contract. Exec form (command + args): the shell form exits 126 on Claude Code 2.1.154 under Git Bash.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "sh",
+            "args": [
+              "${CLAUDE_PLUGIN_ROOT}/hooks/session-start.sh"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,4 +1,0 @@
-interface:
-  display_name: "Anti Gaming"
-  short_description: "Apply Anti Gaming controls"
-  default_prompt: "Use $anti-gaming to evaluate this task."

@@ -1,13 +1,13 @@
 import json
 import unittest
 
-from tests.helpers import REPO, read
+from tests.helpers import REPO, public_skill, read
 
 
 class DirectCommunicationTests(unittest.TestCase):
     def test_public_and_runtime_skills_exist(self):
         for root in ("skills", ".ai/skills"):
-            path = REPO / root / "direct-communication" / "SKILL.md"
+            path = public_skill("direct-communication") if root == "skills" else REPO / root / "direct-communication" / "SKILL.md"
             self.assertTrue(path.exists(), str(path))
             text = read(path)
             self.assertTrue(text.startswith("---\nname: direct-communication\n"))
@@ -38,7 +38,7 @@ class DirectCommunicationTests(unittest.TestCase):
         ):
             data = json.loads(read(REPO / path))
             version = data.get("release") or data.get("version") or data["plugins"][0]["version"]
-            self.assertEqual(version, "0.5.0", path)
+            self.assertEqual(version, "0.6.0", path)
 
 
 if __name__ == "__main__":

@@ -6,40 +6,42 @@ AI Psychiatry is a cross-platform executive-control plugin for Claude Code and O
 
 ## Install
 
-### Claude Code
+One line, no clone. It installs for every one of Claude Code, Codex and Cursor it finds; re-run to update.
 
-Local validation and use:
+```bash
+curl -fsSL https://raw.githubusercontent.com/ihabkhaled/AI-Psychiatry/main/install.sh | sh
+```
 
 ```powershell
-claude plugin validate .
-claude --plugin-dir .
+irm https://raw.githubusercontent.com/ihabkhaled/AI-Psychiatry/main/install.ps1 | iex
 ```
 
-Marketplace installation after publication:
+`--repo PATH` (`-Repo`) installs into one project only; `--uninstall` (`-Uninstall`) removes everything it added and restores edited files byte for byte.
 
-```text
-/plugin marketplace add ihabkhaled/AI-Psychiatry
-/plugin install ai-psychiatry@ihabkhaled-ai
-/ai-psychiatry:install-framework
+Claude Code without the script:
+
+```bash
+claude plugin marketplace add https://github.com/ihabkhaled/AI-Psychiatry.git
+claude plugin install ai-psychiatry@ihabkhaled-ai
 ```
 
-### OpenAI Codex
+In the VS Code extension: `/plugins` -> Marketplaces -> add the URL above -> install. Try it for one session only: `claude --plugin-dir .` from a checkout.
 
-```powershell
-codex plugin marketplace add ihabkhaled/AI-Psychiatry
-```
+## One skill, one command, always on
 
-Install **AI Psychiatry** from the Plugins Directory, then invoke:
+AI-Psychiatry is **one skill**, `all-the-medicine`, and it is also the **one command**. You normally type nothing: it is always on.
 
-```text
-$install-framework
-```
+| Platform | Always on via | The one command |
+|---|---|---|
+| Claude Code | SessionStart hook | `/ai-psychiatry:all-the-medicine` |
+| Codex | a marked block in `~/.codex/AGENTS.md` | `$all-the-medicine` |
+| Cursor | an `alwaysApply` rule in `~/.cursor/rules/` | `/all-the-medicine` |
 
-## Use the controls directly
+The always-on contract is one file, `skills/all-the-medicine/references/always-on.md`; the hook, the Codex block and the Cursor rule all print it.
 
-The plugin exposes focused skills in both platforms. Claude uses `/ai-psychiatry:<skill>`; Codex uses `$<skill>`.
+Every control below is a **reference inside the one skill** (`skills/all-the-medicine/references/skills/<name>/<name>.md`), selected one at a time when its behavior is observed - never a separate skill, so no platform lists it as a separate command. To use one deliberately, name it: "apply stop-overthinking".
 
-| Behavior | Skill |
+| Behavior | Control |
 |---|---|
 | Select the correct controller | `executive-control` |
 | ADHD-like attention drift analogy | `attention-reset` |
@@ -62,38 +64,14 @@ The plugin exposes focused skills in both platforms. Claude uses `/ai-psychiatry
 | Controlled budget exception | `executive-override` |
 | Conflicting instruction sources | `rule-conflict-resolver` |
 | Maximum autonomous execution until proven completion | `never-stop` |
-| Complete all-in-one AI-Psychiatry orchestration | `all-the-medicine` |
 | Verbose, indirect, repetitive answers or questions | `direct-communication` |
+| Installing the `.ai/` framework into a repository | `install-framework` - ask "install the AI-Psychiatry framework" |
 
-Example:
-
-```text
-/ai-psychiatry:flatten-recursive-investigation
-$stop-compulsive-verification
-```
-
-### Superpowers
-
-`never-stop` and `all-the-medicine` are explicit-invocation-only "superpowers," not part of ordinary always-loaded behavior:
-
-```text
-/ai-psychiatry:never-stop
-/ai-psychiatry:all-the-medicine
-
-$never-stop
-$all-the-medicine
-$direct-communication
-```
-
-**NeverStop** — maximum persistence and decision autonomy within existing permissions: it decides routine and reversible questions from evidence instead of asking, recovers from ordinary failure instead of stopping, keeps independent work moving while one branch is blocked, and stops only at proven completion or a genuine hard approval gate.
-
-**All the medicine** — one command that loads, evaluates, and orchestrates every applicable AI-Psychiatry skill (including `never-stop`) instead of the user having to invoke them one by one, resolving conflicts deterministically and excluding itself from its own inventory. Its canonical command is `/ai-psychiatry:all-the-medicine`.
-
-**Direct communication** — puts the answer first, removes filler and repetition, preserves required evidence, and asks only one specific blocking question when input is truly necessary.
+**NeverStop** stays explicit: relentless autonomous execution runs only when you ask for it ("never stop until it's done"), inside existing permissions, and stops at proven completion or a genuine hard approval gate.
 
 ## What it installs
 
-The shared installer preserves repository-specific instructions and adds a compact `.ai/` runtime with 58 focused rules, 49 operational skills, 31 public plugin skills, semantic policies, thin agent adapters, context and durable memory, JSON/TOON/SJON state, schemas, manifests, and scenario tests. The original master prompt and complementary loophole/underthinking prompts are progressively disclosed from `skills/install-framework/references/`.
+The shared installer preserves repository-specific instructions and adds a compact `.ai/` runtime with 58 focused rules, 49 operational skills, 31 public plugin skills, semantic policies, thin agent adapters, context and durable memory, JSON/TOON/SJON state, schemas, manifests, and scenario tests. The original master prompt and complementary loophole/underthinking prompts are progressively disclosed from `skills/all-the-medicine/references/skills/install-framework/references/`.
 
 Coverage includes hallucination, attention drift, ADHD-style distraction analogy, OCD-style compulsive-checking analogy, underthinking, overthinking, hidden recursion, strategy and scope laundering, false progress/completion/blockers, memory poisoning, context starvation, critic suppression, deadlock, livelock, and completion avoidance. Guidance is indexed in [AI framework guidance](docs/ai/README.md); semantic loopholes are cataloged [here](.ai/guides/loophole-catalog.md).
 

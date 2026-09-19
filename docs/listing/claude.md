@@ -27,9 +27,9 @@ Starter prompts:
 - Install the AI Psychiatry framework while preserving this repository's existing instructions.
 - Audit this task for semantic loopholes, hidden recursion, and strategy laundering.
 - Balance underthinking and overthinking, then produce completion evidence.
-- Use `/ai-psychiatry:never-stop` for maximum autonomous execution until the Definition of Done is proven.
-- Use `/ai-psychiatry:all-the-medicine` to load and orchestrate the complete framework in one command.
-- Use `/ai-psychiatry:direct-communication` for terse, assertive answers and non-looping questions.
+- Never stop until the Definition of Done is proven (maximum autonomous execution, on request only).
+- Use `/ai-psychiatry:all-the-medicine` - the one command - for the complete framework; it is also always on.
+- Answer directly: terse, assertive, one non-looping question at most.
 
 Hosted marketplace install:
 

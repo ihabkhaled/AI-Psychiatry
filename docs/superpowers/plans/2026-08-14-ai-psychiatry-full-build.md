@@ -34,13 +34,13 @@
 - Delete: `hooks/.gitkeep`
 - Delete: `codex/README.md`
 - Delete: `codex/prompts/.gitkeep`
-- Create: `skills/install-framework/SKILL.md`
-- Create: `skills/install-framework/references/master-prompt.md`
+- Create: `skills/all-the-medicine/references/skills/install-framework/install-framework.md`
+- Create: `skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md`
 - Create: `tests/test_plugin_package.py`
 
 **Interfaces:**
 - Consumes: source-pack manifests, installer skill, and master prompt.
-- Produces: valid shared skill path `skills/install-framework`, plugin name `ai-psychiatry`, and canonical specification path used by all later tasks.
+- Produces: valid shared skill path `skills/all-the-medicine/references/skills/install-framework`, plugin name `ai-psychiatry`, and canonical specification path used by all later tasks.
 
 - [ ] **Step 1: Write failing package tests**
 
@@ -49,13 +49,13 @@ def test_both_manifests_expose_shared_install_skill(repo):
     assert (repo / ".claude-plugin/plugin.json").exists()
     codex = load_json(repo / ".codex-plugin/plugin.json")
     assert codex["skills"] == "./skills/"
-    assert (repo / "skills/install-framework/SKILL.md").exists()
+    assert (repo / "skills/all-the-medicine/references/skills/install-framework/install-framework.md").exists()
 
 def test_master_prompt_is_progressively_disclosed(repo):
-    skill = read(repo / "skills/install-framework/SKILL.md")
+    skill = read(repo / "skills/all-the-medicine/references/skills/install-framework/install-framework.md")
     assert "references/master-prompt.md" in skill
     assert len(skill.encode()) < 5000
-    assert (repo / "skills/install-framework/references/master-prompt.md").stat().st_size > 60000
+    assert (repo / "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md").stat().st_size > 60000
 ```
 
 - [ ] **Step 2: Run the focused tests and verify failure**

@@ -3,7 +3,7 @@ import re
 import unittest
 
 from scripts.executive_control import assess
-from tests.helpers import REPO, load_json, read
+from tests.helpers import REPO, load_json, read, public_skill
 
 
 class InterventionBehaviorTests(unittest.TestCase):
@@ -63,12 +63,12 @@ class PluginInterventionAssetTests(unittest.TestCase):
     }
 
     def test_reattached_master_prompt_is_canonical(self):
-        data = (REPO / "skills/install-framework/references/master-prompt.md").read_bytes()
+        data = (REPO / "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md").read_bytes()
         self.assertEqual(hashlib.sha256(data).hexdigest().upper(), "32AAB10548A9B1808BE5051207EA2732A72274081933AC8F87B5F57B9DBE1075")
 
     def test_interventions_are_discoverable_as_plugin_skills(self):
         for name in self.PUBLIC_SKILLS:
-            skill = REPO / "skills" / name / "SKILL.md"
+            skill = public_skill(name)
             self.assertTrue(skill.exists(), name)
             text = read(skill)
             self.assertTrue(text.startswith(f"---\nname: {name}\n"))
@@ -129,7 +129,7 @@ class PluginInterventionAssetTests(unittest.TestCase):
             self.assertIn(f"../guides/{guide}", text, rule)
 
     def test_traceability_uses_exact_prompt_titles_and_existing_artifacts(self):
-        prompt = read(REPO / "skills/install-framework/references/master-prompt.md")
+        prompt = read(REPO / "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md")
         headings = dict(re.findall(r"^# (\d+)\. (.+)$", prompt, flags=re.MULTILINE))
         trace = load_json(REPO / ".ai/manifests/prompt-traceability.json")["sections"]
         self.assertEqual(set(headings), set(trace))

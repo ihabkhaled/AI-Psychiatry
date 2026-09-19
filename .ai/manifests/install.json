@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "canonical_prompt": "skills/install-framework/references/master-prompt.md",
+  "canonical_prompt": "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md",
   "canonical_prompt_sha256": "32AAB10548A9B1808BE5051207EA2732A72274081933AC8F87B5F57B9DBE1075",
   "public_skill_root": "skills/",
   "target_runtime_root": ".ai/",
@@ -63,18 +63,18 @@
     "platform plugin validator",
     "repository-required tests"
   ],
-  "release": "0.5.0",
+  "release": "0.6.0",
   "supplemental_prompts": [
     {
-      "path": "skills/install-framework/references/loophole-enhancement-prompts.md",
+      "path": "skills/all-the-medicine/references/skills/install-framework/references/loophole-enhancement-prompts.md",
       "sha256": "834DE76B3A3D18F5E1151DDB8E9A5624195F92A1D678EC854A41028CBF7D4172"
     },
     {
-      "path": "skills/install-framework/references/underthinking-reasoning-balance-prompt.md",
+      "path": "skills/all-the-medicine/references/skills/install-framework/references/underthinking-reasoning-balance-prompt.md",
       "sha256": "EFF147FE72AD744B8905DA5F529EE4E7A127833A8727907961DA7786B393203A"
     },
     {
-      "path": "skills/install-framework/references/autonomous-execution-all-the-medicine-prompt.md",
+      "path": "skills/all-the-medicine/references/skills/install-framework/references/autonomous-execution-all-the-medicine-prompt.md",
       "sha256": "6BC7F60555FFE590902A340BECE1AB73CC5831DEA1D30D7512A05553088DEF8A"
     }
   ]

@@ -14,7 +14,7 @@ from tests.helpers import REPO, load_json, read
 class NeverStopAssetTests(unittest.TestCase):
     def test_skill_pair_is_discoverable_and_declares_stop_condition(self):
         for root in ("skills", ".ai/skills"):
-            path = REPO / root / "never-stop" / "SKILL.md"
+            path = REPO / ("skills/all-the-medicine/references/skills/never-stop/never-stop.md" if root == "skills" else f"{root}/never-stop/SKILL.md")
             self.assertTrue(path.exists(), str(path))
             text = read(path)
             self.assertTrue(text.startswith("---\nname: never-stop\n"), str(path))
@@ -38,7 +38,7 @@ class NeverStopAssetTests(unittest.TestCase):
         runtime = next(item for item in skills["skills"] if item["name"] == "never-stop")
         self.assertEqual(runtime["loadCondition"], "explicit-invocation")
         plugin = next(item for item in skills["plugin_skills"] if item["name"] == "never-stop")
-        self.assertEqual(plugin["path"], "skills/never-stop/SKILL.md")
+        self.assertEqual(plugin["path"], "skills/all-the-medicine/references/skills/never-stop/never-stop.md")
         self.assertIn("rule-56", runtime["canonical_rules"])
 
     def test_autonomy_policy_declares_superpower_and_forbids_bypass(self):

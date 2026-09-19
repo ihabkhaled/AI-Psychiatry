@@ -1,6 +1,6 @@
 ---
 name: all-the-medicine
-description: Use when the user explicitly requests the complete AI-Psychiatry framework through one all-in-one command that evaluates and orchestrates every available skill until the task is proven complete.
+description: Use for every task - AI-Psychiatry is always on and this is its only skill. Diagnoses observable agent state and applies the one applicable control (evidence, attention, reasoning balance, loops, loopholes, completion) until the task is proven complete. Also the one explicit command, /ai-psychiatry:all-the-medicine, for the full pass.
 ---
 
 # All The Medicine
@@ -11,7 +11,11 @@ Load every medicine. Diagnose observable state. Activate only applicable treatme
 
 ## Superpower classification
 
-Type: `meta-superpower`. Tier: `god-mode`. Risk: `high`. Invocation: `explicit-only`. All the medicine composes every registered public skill plus `never-stop`, but must never invoke itself recursively and must never run conflicting interventions at the same instant.
+Type: `meta-superpower`. Tier: `god-mode`. Risk: `high`. Invocation: always on, and the one explicit command. Relentless `never-stop` execution inside it stays explicit-invocation only. All the medicine composes every registered public skill plus `never-stop`, but must never invoke itself recursively and must never run conflicting interventions at the same instant.
+
+## One skill
+
+This is AI-Psychiatry's only skill and only command on every platform. Every other public skill is a reference file here, `references/skills/<name>/<name>.md`, opened when its control is selected - never a separate skill, so no platform lists it as a separate command.
 
 ## Dynamic skill inventory
 
@@ -38,19 +42,7 @@ Regenerate with `python scripts/build_all_the_medicine.py`; verify freshness wit
 
 ## Execution phases
 
-| Phase | Focus | Representative controls |
-|---|---|---|
-| 0 | Instruction and permission resolution | `rule-conflict-resolver`, executive-override boundaries, platform/system/user/repository precedence |
-| 1 | Task bootstrap | `executive-control`, goal lock, Definition of Done, scope control, `decision-readiness` |
-| 2 | Autonomous execution activation | `never-stop`, question-suppression gate, decision autonomy, persistent execution |
-| 3 | Evidence and reality control | `evidence-gate`, `evidence-floor`, `root-cause-validator`, completion evidence prerequisites |
-| 4 | Attention and scope control | `attention-reset`, `hidden-recursion-detector`, `flatten-recursive-investigation`, `scope-laundering-detector`, `anti-gaming` |
-| 5 | Reasoning balance | `underthinking-detector`, `investigation-floor`, `reasoning-balance`, `stop-overthinking`, `stop-compulsive-verification`, `context-balance` |
-| 6 | Loop and recovery control | `strategy-laundering-detector`, `false-progress-detector`, `recover-from-deadlock-livelock`, `blocker-validator`, narrow `executive-override` |
-| 7 | Adversarial semantic control (when relevant, not for every tiny task) | `loophole-hunter`, `framework-red-team`, `anti-gaming` |
-| 8 | Execution and verification | targeted execution, root-cause validation, tests, verification, critic control, mandatory quality gates |
-| 9 | Completion | `completion-evidence`, `completion-gate`, false-completion protection, termination |
-| 10 | Context and memory maintenance (only where reusable information exists) | `memory-validator`, `context-balance`, failure learning, repository-map update, handoff state |
+Step 3 selects from eleven phases, 0 (instruction and permission resolution) to 10 (context and memory maintenance), in order. The full table with representative controls: [references/execution-phases.md](references/execution-phases.md).
 
 ## Conflict resolution
 
@@ -61,10 +53,6 @@ Regenerate with `python scripts/build_all_the_medicine.py`; verify freshness wit
 - Critic vs Completion: a correctness, security, or regression finding may block; a style or optional-improvement finding does not — Completion wins.
 - Blocker vs NeverStop: an unvalidated blocker does not stop NeverStop; a validated hard gate with no independent work left permits a blocker report.
 - High Effort vs Anti-Overthinking: high effort means persistent useful action, never infinite speculative reasoning.
-
-## Plugin invocation
-
-Apply this as a callable Claude or Codex plugin skill. Keep the result provider-neutral and write repository state only when the active task authorizes changes. Use the compiled `references/` artifacts for progressive disclosure instead of reloading every individual skill file.
 
 ## Semantic boundaries
 

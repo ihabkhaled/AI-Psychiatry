@@ -1,4 +1,0 @@
-interface:
-  display_name: "Investigation Floor"
-  short_description: "Apply Investigation Floor controls"
-  default_prompt: "Use $investigation-floor to evaluate this task."

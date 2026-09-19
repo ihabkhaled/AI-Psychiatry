@@ -100,8 +100,8 @@
 **Files:**
 - Create: `skills/<new-skill>/SKILL.md` for the nineteen design-listed skills.
 - Create: `.ai/skills/<new-skill>/SKILL.md` for the same operational controls.
-- Modify: `skills/executive-control/SKILL.md`
-- Modify: `skills/install-framework/SKILL.md`
+- Modify: `skills/all-the-medicine/references/skills/executive-control/executive-control.md`
+- Modify: `skills/all-the-medicine/references/skills/install-framework/install-framework.md`
 - Modify: `.ai/skills/executive-function/SKILL.md`
 - Test: `tests/test_semantic_assets.py`
 
@@ -132,8 +132,8 @@
 - Create: `docs/ai/reasoning-balance.md`
 - Create: `docs/ai/context-starvation.md`
 - Create: `docs/ai/sufficient-reasoning.md`
-- Create: `skills/install-framework/references/loophole-enhancement-prompts.md`
-- Create: `skills/install-framework/references/underthinking-reasoning-balance-prompt.md`
+- Create: `skills/all-the-medicine/references/skills/install-framework/references/loophole-enhancement-prompts.md`
+- Create: `skills/all-the-medicine/references/skills/install-framework/references/underthinking-reasoning-balance-prompt.md`
 - Test: `tests/test_plugin_package.py`
 
 **Interfaces:**

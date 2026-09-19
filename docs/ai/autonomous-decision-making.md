@@ -4,4 +4,4 @@
 
 The evidence hierarchy for ambiguous but routine decisions is fixed: explicit current user instruction, then platform/system/developer constraints, then repository instructions, then explicit requirements and acceptance criteria, then authoritative source and configuration, then established subsystem pattern, then existing architectural convention, then official documentation, then the safest minimal reversible option, then the most conventional low-surprise implementation. When several options are valid, prefer the existing repository pattern, the smallest correct change, reversibility, lower blast radius, and stronger testability over adding a dependency or inventing a new pattern.
 
-See [`never-stop`](../../skills/never-stop/SKILL.md) and [approval boundaries](approval-boundaries.md) for where autonomy ends and a hard gate begins.
+See [`never-stop`](../../skills/all-the-medicine/references/skills/never-stop/never-stop.md) and [approval boundaries](approval-boundaries.md) for where autonomy ends and a hard gate begins.

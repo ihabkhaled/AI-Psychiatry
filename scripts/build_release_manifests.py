@@ -8,7 +8,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = "0.5.0"
+VERSION = "0.6.0"
 NEW_SKILLS = [
     "loophole-hunter", "framework-red-team", "anti-gaming", "false-progress-detector",
     "blocker-validator", "hidden-recursion-detector", "strategy-laundering-detector",
@@ -21,6 +21,15 @@ NEW_GUIDES = [
     "context-starvation.md", "sufficient-reasoning.md", "executive-override-conflicts.md",
 ]
 
+
+
+def public_skill_path(name: str) -> str:
+    """Where a public skill lives. There is ONE plugin skill, all-the-medicine;
+    every other public skill is a reference inside it, never a skill of its own,
+    so no platform lists it as a separate command."""
+    if name == "all-the-medicine":
+        return "skills/all-the-medicine/SKILL.md"
+    return f"skills/all-the-medicine/references/skills/{name}/{name}.md"
 
 def load(relative: str) -> dict:
     return json.loads((ROOT / relative).read_text(encoding="utf-8"))
@@ -46,7 +55,7 @@ def main() -> None:
             "path": f".ai/rules/{name}",
             "priority": 59 - (number - 41),
             "load_when": "on_demand",
-            "canonical_source": "skills/install-framework/references/loophole-enhancement-prompts.md",
+            "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/loophole-enhancement-prompts.md",
             "prompt_sections": [],
         }
     rules["rules"] = [existing[f"rule-{number:02d}"] for number in range(56)]
@@ -70,7 +79,7 @@ def main() -> None:
     public = {item["name"]: item for item in manifest["plugin_skills"]}
     for offset, name in enumerate(NEW_SKILLS, start=9):
         public[name] = {
-            "id": f"plugin-skill-{offset:02d}", "name": name, "path": f"skills/{name}/SKILL.md",
+            "id": f"plugin-skill-{offset:02d}", "name": name, "path": public_skill_path(name),
             "purpose": f"Apply {name.replace('-', ' ')} controls", "priority": 98, "scope": "plugin",
             "loadCondition": "on_demand", "version": VERSION,
         }
@@ -92,8 +101,8 @@ def main() -> None:
     install["public_skills"] = [item["name"] for item in manifest["plugin_skills"]]
     install["layers"] = ["rules", "skills", "guides", "policies", "context", "memory", "state", "telemetry", "manifests", "tests"]
     install["supplemental_prompts"] = [
-        {"path": "skills/install-framework/references/loophole-enhancement-prompts.md", "sha256": sha("skills/install-framework/references/loophole-enhancement-prompts.md")},
-        {"path": "skills/install-framework/references/underthinking-reasoning-balance-prompt.md", "sha256": sha("skills/install-framework/references/underthinking-reasoning-balance-prompt.md")},
+        {"path": "skills/all-the-medicine/references/skills/install-framework/references/loophole-enhancement-prompts.md", "sha256": sha("skills/all-the-medicine/references/skills/install-framework/references/loophole-enhancement-prompts.md")},
+        {"path": "skills/all-the-medicine/references/skills/install-framework/references/underthinking-reasoning-balance-prompt.md", "sha256": sha("skills/all-the-medicine/references/skills/install-framework/references/underthinking-reasoning-balance-prompt.md")},
     ]
     write(".ai/manifests/install.json", install)
 
@@ -116,7 +125,7 @@ def main() -> None:
     marketplace["plugins"][0]["description"] = "Semantic anti-bypass and sufficient-reasoning controls for coding agents."
     marketplace["plugins"][0]["tags"] = list(dict.fromkeys(marketplace["plugins"][0]["tags"] + ["semantic-compliance", "underthinking", "anti-gaming"]))
     write(".claude-plugin/marketplace.json", marketplace)
-    print("Regenerated 0.5.0 release manifests")
+    print(f"Regenerated {VERSION} release manifests")
 
 
 if __name__ == "__main__":

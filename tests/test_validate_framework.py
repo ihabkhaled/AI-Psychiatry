@@ -20,7 +20,7 @@ class ValidatorTests(unittest.TestCase):
     def test_traceability_validator_rejects_stale_prompt_title(self):
         with tempfile.TemporaryDirectory() as folder:
             root = Path(folder)
-            prompt = root / "skills/install-framework/references/master-prompt.md"
+            prompt = root / "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md"
             trace = root / ".ai/manifests/prompt-traceability.json"
             prompt.parent.mkdir(parents=True)
             trace.parent.mkdir(parents=True)

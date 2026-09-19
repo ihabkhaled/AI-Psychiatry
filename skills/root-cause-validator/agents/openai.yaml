@@ -1,4 +1,0 @@
-interface:
-  display_name: "Root Cause Validator"
-  short_description: "Apply Root Cause Validator controls"
-  default_prompt: "Use $root-cause-validator to evaluate this task."

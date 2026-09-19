@@ -24,7 +24,7 @@ This avoids both extremes: a thin wrapper that asks every installer to improvise
 
 The repository has three deliberately different truth layers:
 
-1. `skills/install-framework/references/master-prompt.md` is the authoritative installation and maintenance specification.
+1. `skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md` is the authoritative installation and maintenance specification.
 2. `.ai/rules/00-master-rules.md`, `.ai/executive-function/`, and `.ai/bootstrap/` are the small runtime core for daily agent behavior.
 3. Focused `.ai/rules/`, `.ai/skills/`, and `docs/ai/` files provide progressively disclosed operational and explanatory guidance.
 
@@ -36,8 +36,8 @@ Machine representations mirror only runtime-relevant facts. They do not become i
 
 - `.claude-plugin/plugin.json` and `.claude-plugin/marketplace.json` package the Claude plugin.
 - `.codex-plugin/plugin.json` packages the Codex plugin and points to the shared `skills/` tree.
-- `skills/install-framework/SKILL.md` is the shared public entrypoint.
-- `skills/install-framework/references/master-prompt.md` holds the large specification outside always-loaded context.
+- `skills/all-the-medicine/references/skills/install-framework/install-framework.md` is the shared public entrypoint.
+- `skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md` holds the large specification outside always-loaded context.
 - `docs/publishing.md` documents validation, local testing, and public submission requirements.
 - Public listing metadata, starter prompts, positive and negative evaluation cases, release notes, support information, and publisher-verification requirements are checked in where each marketplace accepts repository-hosted materials.
 
