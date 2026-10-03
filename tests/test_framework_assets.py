@@ -22,7 +22,7 @@ class RuntimeTests(unittest.TestCase):
 class CatalogTests(unittest.TestCase):
     def test_rule_manifest_is_complete(self):
         rules = load_json(REPO / ".ai/manifests/rules.json")["rules"]
-        self.assertEqual([r["id"] for r in rules], [f"rule-{n:02d}" for n in range(58)])
+        self.assertEqual([r["id"] for r in rules], [f"rule-{n:02d}" for n in range(59)])
         self.assertTrue(all((REPO / r["path"]).exists() for r in rules))
 
     def test_every_prompt_section_is_traced(self):

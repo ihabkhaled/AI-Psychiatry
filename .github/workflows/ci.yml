@@ -1,0 +1,44 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m unittest discover -s tests
+      - run: python scripts/validate_framework.py
+      - run: python scripts/build_all_the_medicine.py --check
+      - run: python scripts/psychiatry_version.py check
+
+  # Rule 58: a change to a shipped path needs a version bump and a CHANGELOG section.
+  version-discipline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: version check against the base
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            BASE="origin/${{ github.base_ref }}"
+          else
+            BASE="${{ github.event.before }}"
+            git rev-parse --verify --quiet "$BASE^{commit}" >/dev/null || BASE="HEAD~1"
+          fi
+          python scripts/psychiatry_version.py check --base "$BASE"

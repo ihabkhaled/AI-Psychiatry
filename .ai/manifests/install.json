@@ -63,7 +63,7 @@
     "platform plugin validator",
     "repository-required tests"
   ],
-  "release": "0.6.0",
+  "release": "0.7.0",
   "supplemental_prompts": [
     {
       "path": "skills/all-the-medicine/references/skills/install-framework/references/loophole-enhancement-prompts.md",

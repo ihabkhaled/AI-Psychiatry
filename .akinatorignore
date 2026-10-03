@@ -1,0 +1,5 @@
+# Paths deliberately not held to the Akinator invariants. Justify every line.
+
+# Frozen design-history plan written before the build. It names files that were
+# planned and never created; rewriting it would falsify the history it records.
+docs/superpowers/plans

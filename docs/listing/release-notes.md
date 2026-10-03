@@ -1,5 +1,9 @@
 # Release Notes
 
+## 0.7.0
+
+Always followed: a `UserPromptSubmit` hook adds a three-line loud reminder to every prompt, next to the `SessionStart` contract. Version discipline joins the one skill (rule 58, `scripts/psychiatry_version.py`, a CI job): a shipped change needs a higher version and a CHANGELOG entry. Uninstall now removes the installer's download cache.
+
 ## 0.6.0
 
 One skill and one command on every platform: `all-the-medicine`, now always on through a Claude SessionStart hook, a Codex `AGENTS.md` block and a Cursor rule. The individual controls are references inside it, so menus show one entry instead of 31. Adds a one-line installer for Claude Code, Codex and Cursor.

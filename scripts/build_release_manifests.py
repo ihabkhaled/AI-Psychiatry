@@ -8,7 +8,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = "0.6.0"
+VERSION = "0.7.0"
 NEW_SKILLS = [
     "loophole-hunter", "framework-red-team", "anti-gaming", "false-progress-detector",
     "blocker-validator", "hidden-recursion-detector", "strategy-laundering-detector",
@@ -58,7 +58,7 @@ def main() -> None:
             "canonical_source": "skills/all-the-medicine/references/skills/install-framework/references/loophole-enhancement-prompts.md",
             "prompt_sections": [],
         }
-    rules["rules"] = [existing[f"rule-{number:02d}"] for number in range(56)]
+    rules["rules"] = [existing[key] for key in sorted(existing)]  # keep every rule, incl. 56+
     write(".ai/manifests/rules.json", rules)
 
     manifest = load(".ai/manifests/skills.json")

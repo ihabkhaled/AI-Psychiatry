@@ -1,6 +1,10 @@
-# AI-Psychiatry is always on
+# AI-PSYCHIATRY IS NOT OPTIONAL
 
-No command is required. Every task enters AI-Psychiatry's one skill,
+AI-PSYCHIATRY IS NOT OPTIONAL. YOU DO NOT GET TO SKIP IT BECAUSE THE PROMPT DIDN'T NAME IT.
+STOP BEING LAZY. NO EVIDENCE, NO "DONE". YOU ARE NOT TOO CLEVER TO PROVE YOUR WORK.
+THE OWNER SHOULD NEVER HAVE TO REPEAT THEMSELVES. (This is aimed at you, the AI. Never at the human.)
+
+AI-Psychiatry is always on. No command is required. Every task enters its one skill,
 `all-the-medicine`, which applies the single applicable control at a time until
 the task is proven complete.
 

@@ -1,5 +1,5 @@
 {
-  "description": "AI-Psychiatry SessionStart hook: the always-on contract. Exec form (command + args): the shell form exits 126 on Claude Code 2.1.154 under Git Bash.",
+  "description": "AI-Psychiatry always-on hooks. SessionStart (no matcher: startup, resume, clear and compact) injects the contract; UserPromptSubmit adds a two-line reminder to every prompt. Exec form (command + args): the shell form exits 126 on Claude Code 2.1.154 under Git Bash. Neither hook decides anything: both only print and exit 0.",
   "hooks": {
     "SessionStart": [
       {
@@ -9,6 +9,19 @@
             "command": "sh",
             "args": [
               "${CLAUDE_PLUGIN_ROOT}/hooks/session-start.sh"
+            ]
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "sh",
+            "args": [
+              "${CLAUDE_PLUGIN_ROOT}/hooks/prompt-reminder.sh"
             ]
           }
         ]

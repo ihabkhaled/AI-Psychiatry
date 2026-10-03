@@ -7,7 +7,7 @@ from pathlib import Path, PurePosixPath
 
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = "0.6.0"
+VERSION = "0.7.0"
 OUTPUT = ROOT / "dist" / f"ai-psychiatry-{VERSION}.zip"
 
 DIRECTORIES = (
@@ -45,6 +45,7 @@ FILES = (
     "TERMS.md",
     "docs/publishing.md",
     "scripts/executive_control.py",
+    "scripts/psychiatry_version.py",
     "scripts/validate_framework.py",
 )
 

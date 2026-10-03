@@ -21,7 +21,7 @@ Evidence recorded 2026-08-14:
 
 - [x] Push the validated `0.3.0` release to `ihabkhaled/AI-Psychiatry` main (`cf2b84f`).
 - [x] Add support, privacy, terms, listing copy, logo, and release notes.
-- [x] Build and validate `dist/ai-psychiatry-0.3.0.zip`.
+- [x] Build and validate the 0.3.0 submission archive (no longer kept in the tree).
 - [x] Claude hosted marketplace smoke test completed.
 - [ ] Claude marketplace submission completed and identifier recorded.
 - [x] Codex hosted marketplace smoke test completed.

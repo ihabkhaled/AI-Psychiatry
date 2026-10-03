@@ -40,7 +40,7 @@ class PluginPackageTests(unittest.TestCase):
         codex = load_json(REPO / ".codex-plugin/plugin.json")
         marketplace = load_json(REPO / ".claude-plugin/marketplace.json")
         release = install["release"]
-        self.assertEqual(release, "0.6.0")
+        self.assertEqual(release, "0.7.0")
         self.assertEqual(claude["version"], release)
         self.assertEqual(codex["version"], release)
         self.assertEqual(marketplace["plugins"][0]["version"], release)

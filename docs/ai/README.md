@@ -27,4 +27,21 @@ Explicit-invocation superpowers:
 - [Approval boundaries](approval-boundaries.md) — what proceeds automatically and what requires authorization.
 - [All the medicine](all-the-medicine.md), backing [`all-the-medicine`](../../.ai/guides/all-the-medicine.md).
 
+More guidance:
+
+- [ai failure modes](ai-failure-modes.md)
+- [architecture](architecture.md)
+- [attention management](attention-management.md)
+- [communication](communication.md)
+- [context management](context-management.md)
+- [deadlock and livelock](deadlock-and-livelock.md)
+- [executive function](executive-function.md)
+- [knowledge management](knowledge-management.md)
+- [loophole baseline results](loophole-baseline-results.md)
+- [memory management](memory-management.md)
+- [multi agent control](multi-agent-control.md)
+- [progress model](progress-model.md)
+- [recovery playbook](recovery-playbook.md)
+- [testing the ai framework](testing-the-ai-framework.md)
+
 Operational authority remains in the canonical master prompt, focused `.ai/rules/`, and callable skills. Load deep guidance only when its observable trigger occurs.

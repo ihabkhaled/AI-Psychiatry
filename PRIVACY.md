@@ -2,7 +2,7 @@
 
 Effective date: 2026-08-14
 
-AI-Psychiatry is a skills-only plugin. The plugin does not operate a hosted service, include an MCP server, create an analytics channel, set cookies, or independently collect, transmit, sell, or retain personal information. Its Markdown skills and local policy files are read by the host coding agent and may guide that agent while it works with files, commands, and context the user has already authorized.
+AI-Psychiatry is a skills-and-hooks plugin. Its two hooks are local shell scripts that only print static text or the contract file; they read no prompt, make no network call and decide nothing. The plugin does not operate a hosted service, include an MCP server, create an analytics channel, set cookies, or independently collect, transmit, sell, or retain personal information. Its Markdown skills and local policy files are read by the host coding agent and may guide that agent while it works with files, commands, and context the user has already authorized.
 
 Use of Claude Code, Codex, GitHub, or another host remains subject to that provider's privacy policy and settings. Repository content and prompts may therefore be processed by the selected host even though AI-Psychiatry itself has no data backend. Users should avoid placing secrets or unnecessary personal data in prompts, logs, durable memory, or repositories.
 

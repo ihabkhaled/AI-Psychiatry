@@ -171,6 +171,12 @@ if [ "$UNINSTALL" -eq 1 ]; then
   fi
   if [ "$WANT_CODEX" -eq 1 ] || [ "$WANT_CURSOR" -eq 1 ]; then remove_ours; fi
   if [ "$WANT_CODEX" -eq 1 ]; then remove_block "$CONTRACT"; fi
+  if [ "$WANT_CODEX" -eq 1 ] || [ "$WANT_CURSOR" -eq 1 ]; then
+    # The download cache an install created is ours too: leave nothing behind.
+    CACHE="$USER_HOME/.ai-psychiatry/src"
+    if is_checkout "$CACHE"; then rm -rf "$CACHE"; say "removed $CACHE"; fi
+    rmdir "$USER_HOME/.ai-psychiatry" 2>/dev/null || true
+  fi
   if [ "$WANT_CURSOR" -eq 1 ] && [ -f "$RULE" ] && grep -q "$MARKER" "$RULE"; then rm -f "$RULE"; say "removed $RULE"; fi
   for d in "$SKILLS_ROOT" "$(dirname -- "$SKILLS_ROOT")" "$(dirname -- "$RULE")" "$(dirname -- "$(dirname -- "$RULE")")"; do
     rmdir "$d" 2>/dev/null || true

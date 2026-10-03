@@ -123,6 +123,13 @@ if ($Uninstall) {
         }
     }
     if ($Cursor -and (Test-Path $Rule) -and (Select-String -Path $Rule -SimpleMatch $Marker -Quiet)) { Remove-Item -Force $Rule; Say "removed $Rule" }
+    if ($Codex -or $Cursor) {
+        # The download cache an install created is ours too: leave nothing behind.
+        $Cache = Join-Path $UserHome '.ai-psychiatry\src'
+        if (Test-Checkout $Cache) { Remove-Item -Recurse -Force $Cache; Say "removed $Cache" }
+        $CacheRoot = Split-Path -Parent $Cache
+        if ((Test-Path $CacheRoot) -and -not (Get-ChildItem -Force $CacheRoot)) { Remove-Item -Force $CacheRoot }
+    }
     foreach ($d in @($SkillsRoot, (Split-Path -Parent $SkillsRoot), (Split-Path -Parent $Rule), (Split-Path -Parent (Split-Path -Parent $Rule)))) {
         if ((Test-Path $d) -and -not (Get-ChildItem -Force $d)) { Remove-Item -Force $d }
     }

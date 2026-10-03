@@ -38,7 +38,7 @@ class DirectCommunicationTests(unittest.TestCase):
         ):
             data = json.loads(read(REPO / path))
             version = data.get("release") or data.get("version") or data["plugins"][0]["version"]
-            self.assertEqual(version, "0.6.0", path)
+            self.assertEqual(version, "0.7.0", path)
 
 
 if __name__ == "__main__":

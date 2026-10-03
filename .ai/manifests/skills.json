@@ -1,5 +1,5 @@
 {
-  "version": "0.6.0",
+  "version": "0.7.0",
   "skills": [
     {
       "id": "skill-00",
@@ -14,7 +14,7 @@
         "rule-00",
         "rule-01"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-01",
@@ -28,7 +28,7 @@
       "canonical_rules": [
         "rule-00"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-02",
@@ -42,7 +42,7 @@
       "canonical_rules": [
         "rule-02"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-03",
@@ -56,7 +56,7 @@
       "canonical_rules": [
         "rule-03"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-04",
@@ -71,7 +71,7 @@
         "rule-04",
         "rule-05"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-05",
@@ -87,7 +87,7 @@
         "rule-06",
         "rule-07"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-06",
@@ -101,7 +101,7 @@
       "canonical_rules": [
         "rule-06"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-07",
@@ -119,7 +119,7 @@
         "rule-20",
         "rule-38"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-08",
@@ -134,7 +134,7 @@
         "rule-15",
         "rule-17"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-09",
@@ -149,7 +149,7 @@
         "rule-16",
         "rule-17"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-10",
@@ -164,7 +164,7 @@
         "rule-17",
         "rule-40"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-11",
@@ -179,7 +179,7 @@
         "rule-10",
         "rule-30"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-12",
@@ -195,7 +195,7 @@
         "rule-14",
         "rule-39"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-13",
@@ -210,7 +210,7 @@
         "rule-18",
         "rule-19"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-14",
@@ -225,7 +225,7 @@
         "rule-20",
         "rule-37"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-15",
@@ -240,7 +240,7 @@
         "rule-18",
         "rule-20"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-16",
@@ -255,7 +255,7 @@
         "rule-21",
         "rule-35"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-17",
@@ -270,7 +270,7 @@
         "rule-35",
         "rule-36"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-18",
@@ -286,7 +286,7 @@
         "rule-30",
         "rule-34"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-19",
@@ -301,7 +301,7 @@
         "rule-22",
         "rule-23"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-20",
@@ -315,7 +315,7 @@
       "canonical_rules": [
         "rule-12"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-21",
@@ -329,7 +329,7 @@
       "canonical_rules": [
         "rule-24"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-22",
@@ -344,7 +344,7 @@
         "rule-27",
         "rule-28"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-23",
@@ -359,7 +359,7 @@
         "rule-34",
         "rule-35"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-24",
@@ -373,7 +373,7 @@
       "canonical_rules": [
         "rule-35"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-25",
@@ -387,7 +387,7 @@
       "canonical_rules": [
         "rule-25"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-26",
@@ -403,7 +403,7 @@
         "rule-20",
         "rule-21"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-27",
@@ -419,7 +419,7 @@
         "rule-21",
         "rule-29"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-28",
@@ -433,7 +433,7 @@
       "canonical_rules": [
         "rule-41"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-29",
@@ -447,7 +447,7 @@
       "canonical_rules": [
         "rule-42"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-30",
@@ -461,7 +461,7 @@
       "canonical_rules": [
         "rule-43"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-31",
@@ -475,7 +475,7 @@
       "canonical_rules": [
         "rule-44"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-32",
@@ -489,7 +489,7 @@
       "canonical_rules": [
         "rule-45"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-33",
@@ -503,7 +503,7 @@
       "canonical_rules": [
         "rule-46"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-34",
@@ -517,7 +517,7 @@
       "canonical_rules": [
         "rule-47"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-35",
@@ -531,7 +531,7 @@
       "canonical_rules": [
         "rule-48"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-36",
@@ -545,7 +545,7 @@
       "canonical_rules": [
         "rule-49"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-37",
@@ -559,7 +559,7 @@
       "canonical_rules": [
         "rule-50"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-38",
@@ -573,7 +573,7 @@
       "canonical_rules": [
         "rule-51"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-39",
@@ -587,7 +587,7 @@
       "canonical_rules": [
         "rule-52"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-40",
@@ -601,7 +601,7 @@
       "canonical_rules": [
         "rule-53"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-41",
@@ -615,7 +615,7 @@
       "canonical_rules": [
         "rule-54"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-42",
@@ -629,7 +629,7 @@
       "canonical_rules": [
         "rule-55"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-43",
@@ -643,7 +643,7 @@
       "canonical_rules": [
         "rule-55"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-44",
@@ -657,7 +657,7 @@
       "canonical_rules": [
         "rule-55"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-45",
@@ -671,7 +671,7 @@
       "canonical_rules": [
         "rule-55"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-46",
@@ -685,7 +685,7 @@
       "canonical_rules": [
         "rule-55"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-47",
@@ -699,7 +699,7 @@
       "canonical_rules": [
         "rule-56"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "skill-48",
@@ -713,7 +713,7 @@
       "canonical_rules": [
         "rule-57"
       ],
-      "version": "0.6.0"
+      "version": "0.7.0"
     }
   ],
   "plugin_skills": [
@@ -725,7 +725,7 @@
       "priority": 100,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "plugin-skill-01",
@@ -735,7 +735,7 @@
       "priority": 95,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "plugin-skill-02",
@@ -745,7 +745,7 @@
       "priority": 95,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "plugin-skill-03",
@@ -755,7 +755,7 @@
       "priority": 95,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "plugin-skill-04",
@@ -765,7 +765,7 @@
       "priority": 95,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "plugin-skill-05",
@@ -775,7 +775,7 @@
       "priority": 95,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "plugin-skill-06",
@@ -785,7 +785,7 @@
       "priority": 95,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "plugin-skill-07",
@@ -795,7 +795,7 @@
       "priority": 95,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "plugin-skill-08",
@@ -805,7 +805,7 @@
       "priority": 95,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "plugin-skill-09",
@@ -815,7 +815,7 @@
       "priority": 98,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "plugin-skill-10",
@@ -825,7 +825,7 @@
       "priority": 98,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "plugin-skill-11",
@@ -835,7 +835,7 @@
       "priority": 98,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "plugin-skill-12",
@@ -845,7 +845,7 @@
       "priority": 98,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "plugin-skill-13",
@@ -855,7 +855,7 @@
       "priority": 98,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "plugin-skill-14",
@@ -865,7 +865,7 @@
       "priority": 98,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "plugin-skill-15",
@@ -875,7 +875,7 @@
       "priority": 98,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "plugin-skill-16",
@@ -885,7 +885,7 @@
       "priority": 98,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "plugin-skill-17",
@@ -895,7 +895,7 @@
       "priority": 98,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "plugin-skill-18",
@@ -905,7 +905,7 @@
       "priority": 98,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "plugin-skill-19",
@@ -915,7 +915,7 @@
       "priority": 98,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "plugin-skill-20",
@@ -925,7 +925,7 @@
       "priority": 98,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "plugin-skill-21",
@@ -935,7 +935,7 @@
       "priority": 98,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "plugin-skill-22",
@@ -945,7 +945,7 @@
       "priority": 98,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "plugin-skill-23",
@@ -955,7 +955,7 @@
       "priority": 98,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "plugin-skill-24",
@@ -965,7 +965,7 @@
       "priority": 98,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "plugin-skill-25",
@@ -975,7 +975,7 @@
       "priority": 98,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "plugin-skill-26",
@@ -985,7 +985,7 @@
       "priority": 98,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "plugin-skill-27",
@@ -995,7 +995,7 @@
       "priority": 98,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "plugin-skill-28",
@@ -1005,7 +1005,7 @@
       "priority": 99,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "plugin-skill-29",
@@ -1015,7 +1015,7 @@
       "priority": 99,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "plugin-skill-30",
@@ -1025,7 +1025,7 @@
       "priority": 90,
       "scope": "plugin",
       "loadCondition": "on_demand",
-      "version": "0.6.0"
+      "version": "0.7.0"
     }
   ]
 }

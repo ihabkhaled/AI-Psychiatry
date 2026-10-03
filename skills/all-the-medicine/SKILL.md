@@ -5,9 +5,19 @@ description: Use for every task - AI-Psychiatry is always on and this is its onl
 
 # All The Medicine
 
+AI-PSYCHIATRY IS NOT OPTIONAL. YOU DO NOT GET TO SKIP IT BECAUSE THE PROMPT DIDN'T NAME IT. STOP BEING LAZY: NO EVIDENCE, NO "DONE". (Aimed at the AI, never at the human.)
+
 ## Core principle
 
 Load every medicine. Diagnose observable state. Activate only applicable treatments. Resolve treatment conflicts. Execute relentlessly. Verify sufficiently. Prevent semantic loopholes. Prove completion. Stop. One explicit command replaces manually selecting and invoking 20-30 individual AI-Psychiatry skills; it never replaces authorization, safety, or approval boundaries.
+
+## When to use
+
+Every task.
+
+## When not to use
+
+Do not run a control whose status is already `SATISFIED`, and do not let it override system, platform, user or safety boundaries.
 
 ## Superpower classification
 
@@ -16,6 +26,8 @@ Type: `meta-superpower`. Tier: `god-mode`. Risk: `high`. Invocation: always on, 
 ## One skill
 
 This is AI-Psychiatry's only skill and only command on every platform. Every other public skill is a reference file here, `references/skills/<name>/<name>.md`, opened when its control is selected - never a separate skill, so no platform lists it as a separate command.
+
+It stays always followed through two hooks on Claude Code (SessionStart contract, UserPromptSubmit reminder), the `AGENTS.md` block on Codex and the `alwaysApply` rule on Cursor. When a change touches a shipped path (skills, hooks, installers, manifests, agents, templates), the version moves too: `python scripts/psychiatry_version.py next|bump|check --base <ref>` (rule 58).
 
 ## Dynamic skill inventory
 
