@@ -64,7 +64,9 @@ class PluginInterventionAssetTests(unittest.TestCase):
 
     def test_reattached_master_prompt_is_canonical(self):
         data = (REPO / "skills/all-the-medicine/references/skills/install-framework/references/master-prompt.md").read_bytes()
-        self.assertEqual(hashlib.sha256(data).hexdigest().upper(), "32AAB10548A9B1808BE5051207EA2732A72274081933AC8F87B5F57B9DBE1075")
+        # Line-ending neutral: a Windows autocrlf checkout and Linux CI must agree.
+        data = data.replace(bytes([13, 10]), bytes([10]))
+        self.assertEqual(hashlib.sha256(data).hexdigest().upper(), "1ED7A4CD38F3AB4835AE8E7F6B4AE7207EC3AEC51A221FAC15BE863FC2A12704")
 
     def test_interventions_are_discoverable_as_plugin_skills(self):
         for name in self.PUBLIC_SKILLS:

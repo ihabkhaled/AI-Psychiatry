@@ -71,3 +71,5 @@ A hook is added or removed, the contract text changes, or the version tool's shi
 - `docs/wiki/infra/installation.md` regenerated with the corrected README link depth (Akinator `extract_operations.py`).
 - `.akinatorignore` - exempts `docs/superpowers/plans`, a frozen design-history plan that names files planned and never created; rewriting it would falsify the history it records.
 - `docs/README.md` - indexes the listing materials and the semantic-compliance spec, which were reachable only through the now-exempt plans.
+- `scripts/build_traceability.py`, `scripts/validate_framework.py`, `.ai/manifests/prompt-traceability.json` - the canonical prompt hash is line-ending neutral (CRLF read as LF). It was computed over raw bytes, so a Windows checkout (autocrlf) and Linux CI hashed the same commit differently; found by the first CI run this repo ever had.
+- `tests/test_interventions.py` - pins the line-ending-neutral master-prompt hash.

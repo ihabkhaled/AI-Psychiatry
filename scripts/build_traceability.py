@@ -103,7 +103,9 @@ def public_skill_path(name: str) -> str:
     return f"skills/all-the-medicine/references/skills/{name}/{name}.md"
 
 def build() -> dict:
-    prompt_bytes = PROMPT.read_bytes()
+    # Line-ending neutral: a Windows checkout (autocrlf) and a Linux CI checkout
+    # of the same commit must hash identically.
+    prompt_bytes = PROMPT.read_bytes().replace(bytes([13, 10]), bytes([10]))
     prompt = prompt_bytes.decode("utf-8")
     headings = {int(number): title.rstrip("\r") for number, title in re.findall(r"^# (\d+)\. (.+)$", prompt, flags=re.MULTILINE)}
     if set(headings) != set(range(190)):

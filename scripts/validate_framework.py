@@ -39,7 +39,8 @@ def validate_traceability(root: Path) -> list[Issue]:
     trace_path = root / ".ai/manifests/prompt-traceability.json"
     if not prompt_path.exists() or not trace_path.exists():
         return [Issue("traceability-missing", str(trace_path.relative_to(root)), "canonical prompt or traceability manifest missing")]
-    prompt_bytes = prompt_path.read_bytes()
+    # Line-ending neutral, matching scripts/build_traceability.py.
+    prompt_bytes = prompt_path.read_bytes().replace(bytes([13, 10]), bytes([10]))
     prompt = prompt_bytes.decode("utf-8")
     headings = {number: title.rstrip("\r") for number, title in re.findall(r"^# (\d+)\. (.+)$", prompt, flags=re.MULTILINE)}
     trace = json.loads(trace_path.read_text(encoding="utf-8"))
