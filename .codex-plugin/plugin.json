@@ -1,6 +1,6 @@
 {
   "name": "ai-psychiatry",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "Semantic executive control for loopholes, underthinking, overthinking, evidence, recursion, context, memory, and reliable delivery.",
   "author": {
     "name": "Ihab Khaled"
@@ -48,5 +48,6 @@
       "Balance underthinking and overthinking using sufficient reasoning.",
       "Use $all-the-medicine for autonomous execution with concise, evidence-based completion."
     ]
-  }
+  },
+  "hooks": []
 }
