@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.7.1] - 2026-11-25
+
+- Explicitly exclude Claude-only lifecycle hooks from the Codex plugin manifest. Codex continues to use its documented `AGENTS.md` adapter; Claude hooks remain unchanged.
+
 ## [0.7.0] - 2026-10-03
 
 - **Always followed, on every prompt.** A second hook, `UserPromptSubmit` (`hooks/prompt-reminder.sh`, exec form), prints a three-line loud reminder with every prompt: apply the one applicable control, prove completion. It prints static text, decides nothing and exits 0. `SessionStart` keeps no matcher, so the contract is injected on startup, resume, clear and compact. Verified live on Claude Code: both hooks respond, and the plugin adds exactly one `/` entry, `ai-psychiatry:all-the-medicine`.

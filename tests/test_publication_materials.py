@@ -28,10 +28,16 @@ class PublicationTests(unittest.TestCase):
     def test_submission_archive_has_portable_root(self):
         import zipfile
 
-        archive = REPO / "dist/ai-psychiatry-0.7.0.zip"
+        archive = REPO / "dist/ai-psychiatry-0.7.1.zip"
         self.assertTrue(archive.exists())
         with zipfile.ZipFile(archive) as bundle:
             names = set(bundle.namelist())
+            import json
+
+            codex_manifest = json.loads(bundle.read(".codex-plugin/plugin.json"))
+            self.assertEqual(codex_manifest["hooks"], [])
+            claude_hooks = json.loads(bundle.read("hooks/hooks.json"))["hooks"]
+            self.assertEqual(sorted(claude_hooks), ["SessionStart", "UserPromptSubmit"])
         self.assertIn(".claude-plugin/plugin.json", names)
         self.assertIn(".codex-plugin/plugin.json", names)
         self.assertIn("skills/all-the-medicine/references/skills/underthinking-detector/underthinking-detector.md", names)

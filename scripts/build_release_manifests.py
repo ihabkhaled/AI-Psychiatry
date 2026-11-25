@@ -8,7 +8,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = "0.7.0"
+VERSION = "0.7.1"
 NEW_SKILLS = [
     "loophole-hunter", "framework-red-team", "anti-gaming", "false-progress-detector",
     "blocker-validator", "hidden-recursion-detector", "strategy-laundering-detector",

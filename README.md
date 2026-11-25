@@ -28,6 +28,9 @@ It installs for every one of Claude Code, Codex and Cursor it finds. Re-run to u
 | Codex | `sh install.sh --codex` (`.\install.ps1 -Codex`) | a marked block in `~/.codex/AGENTS.md` | `$all-the-medicine` |
 | Cursor | `sh install.sh --cursor` (`.\install.ps1 -Cursor`) | an `alwaysApply` rule in `~/.cursor/rules/` | `/all-the-medicine` |
 
+
+Codex explicitly declares no bundled lifecycle hooks: it uses the marked `AGENTS.md` block. The shared `hooks/hooks.json` is Claude Code-specific and is excluded by the Codex manifest, so its Claude `command`/`args` contract is not interpreted by Codex.
+
 You normally type nothing. The contract is one file, `skills/all-the-medicine/references/always-on.md`; the session hook, the Codex block and the Cursor rule all print it, and a short reminder rides along with every prompt on Claude Code.
 
 <details>

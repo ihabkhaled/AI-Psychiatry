@@ -1,5 +1,9 @@
 # Release Notes
 
+## 0.7.1
+
+Codex manifests explicitly opt out of the shared Claude lifecycle hooks. Codex continues to use the portable `AGENTS.md` adapter; Claude hook execution is unchanged.
+
 ## 0.7.0
 
 Always followed: a `UserPromptSubmit` hook adds a three-line loud reminder to every prompt, next to the `SessionStart` contract. Version discipline joins the one skill (rule 58, `scripts/psychiatry_version.py`, a CI job): a shipped change needs a higher version and a CHANGELOG entry. Uninstall now removes the installer's download cache.

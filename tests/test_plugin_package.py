@@ -26,6 +26,15 @@ class PluginPackageTests(unittest.TestCase):
         self.assertEqual(codex["skills"], "./skills/")
         self.assertTrue((REPO / "skills/all-the-medicine/references/skills/install-framework/install-framework.md").exists())
 
+    def test_codex_does_not_load_claude_only_lifecycle_hooks(self):
+        codex = load_json(REPO / ".codex-plugin/plugin.json")
+        self.assertEqual(codex["hooks"], [])
+
+        # Codex uses its AGENTS.md adapter. Keep Claude's shared hook file intact.
+        claude_hooks = load_json(REPO / "hooks/hooks.json")["hooks"]
+        self.assertEqual(sorted(claude_hooks), ["SessionStart", "UserPromptSubmit"])
+        self.assertNotIn("hooks", load_json(REPO / ".claude-plugin/plugin.json"))
+
     def test_master_prompt_is_progressively_disclosed(self):
         skill_path = REPO / "skills/all-the-medicine/references/skills/install-framework/install-framework.md"
         skill = read(skill_path)
@@ -40,7 +49,7 @@ class PluginPackageTests(unittest.TestCase):
         codex = load_json(REPO / ".codex-plugin/plugin.json")
         marketplace = load_json(REPO / ".claude-plugin/marketplace.json")
         release = install["release"]
-        self.assertEqual(release, "0.7.0")
+        self.assertEqual(release, "0.7.1")
         self.assertEqual(claude["version"], release)
         self.assertEqual(codex["version"], release)
         self.assertEqual(marketplace["plugins"][0]["version"], release)
